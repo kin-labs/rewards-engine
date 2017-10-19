@@ -30,7 +30,12 @@ After releasing an RFC on each of these subjects, feedback will be collected
 from the community of Kin enthusiasts and integrated into a technical paper 
 that will complete the final implementation plan for Kin.
 
-[[TOC]]
+## Table Of Contents
+   1. [The participants](#the-participants)
+   2. [The Kin Rewards Engine formula](#the-kin-rewards-engine-formula)
+   3. [Model analysis: incentivized behaviors](#model-analysis-incentivized-behaviors)
+   4. [Rewards Engine vulnerability analysis](#rewards-engine-vulnerability-analysis)
+   5. [Appendix](#appendix)
 
 # The participants
 
@@ -359,7 +364,7 @@ stake’s size relative to the entire economy, even though it may not have
 contributed an exchange of goods and services to the economy. Such behavior 
 will be referred to as self-voting.
 
-Note that even when such an scheme is attempted, it may not be an "attack" on 
+Note that even when such a scheme is attempted, it may not be an "attack" on 
 the system because (1) nobody in the ecosystem is harmed by this behavior, and 
 (2) there is no theoretical return on such scheme, beyond aversion of loss. 
 Note that each reward payout event is an inflationary event, in the sense that 
