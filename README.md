@@ -1,2 +1,6 @@
-# kin-rfcs
-RFCs maintained by Kin Foundation
+# Kin RFCs
+
+Here be Kin techonlogy and economy RFCs.
+Opinions, issues, and pull requests welcome!
+
+![Kin Token](kin.png)
