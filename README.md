@@ -1,6 +1,6 @@
 # Kin RFCs
 
-Here be Kin techonlogy and economy RFCs.
+Here be Kin technology and economy RFCs.
 Opinions, issues, and pull requests welcome!
 
 ![Kin Token](kin.png)
