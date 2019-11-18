@@ -1,7 +1,6 @@
-# Kin RFCs
+# Kin Rewards Engine
 
-Here be Kin technology and economy RFCs.
-Opinions, issues, and pull requests welcome!
+This is the repository for the Kin Rewards Engine. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
 
 ![Kin Token](kin.png)
 
