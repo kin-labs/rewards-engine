@@ -3,7 +3,7 @@
 This is the repository for the Kin Rewards Engine, or "KRE". Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
 
 ## Resources
-To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(accepted)](rewards-engine/accepted.
+To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(accepted)](rewards-engine/accepted).
 
 ## How To Contribute
 
