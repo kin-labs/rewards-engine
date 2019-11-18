@@ -1,6 +1,4 @@
 # Defining a Valid KRE Spend - Guidelines
-## Version: 1.0
-#### Note: These guidelines outline the minimum required activity by developers to receive a payout from the KRE. These guidelines came into effect on August 25th, 2019.
 ### Key concepts
 1. The user has control over the initiation of a transaction
 2. The user is aware that a transaction is happening
