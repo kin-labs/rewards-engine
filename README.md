@@ -1,9 +1,9 @@
 ![KRE](kinrewardsengine.png)
 # Kin Rewards Engine
 This is the repository for the Kin Rewards Engine. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
-## Contributing
+## How To Contribute
 
-Please review our [HowToContribute.md](HowToContribute.md) guide before opening issues and pull requests.
+Please use the improvement-proposals directory. Review the [HowToContribute.md](HowToContribute.md) guide before opening issues and pull requests.
 
 ## About Kin 
 ### The Problem
