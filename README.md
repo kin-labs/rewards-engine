@@ -15,4 +15,4 @@ The distribution and algorithmic logic of the Kin Rewards Engine is overseen by 
 
 ## Contributing
 
-Please review our [CONTRIBUTING.md](CONTRIBUTING.md) guide before opening issues and pull requests.
+Please review our [HowtoContribute.md](HowToContribute.md) guide before opening issues and pull requests.
