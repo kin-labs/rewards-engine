@@ -1,7 +1,6 @@
+![KRE](kinrewardsengine.png)
 # Kin Rewards Engine
-
 This is the repository for the Kin Rewards Engine. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
-
 
 ## About Kin 
 ### The Problem
