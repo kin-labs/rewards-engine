@@ -1,6 +1,9 @@
 ![KRE](kinrewardsengine.png)
 # Kin Rewards Engine
 This is the repository for the Kin Rewards Engine. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
+## Contributing
+
+Please review our [HowToContribute.md](HowToContribute.md) guide before opening issues and pull requests.
 
 ## About Kin 
 ### The Problem
@@ -12,7 +15,3 @@ The Kin blockchain operates autonomously via a federated consensus model, curren
 
 The distribution and algorithmic logic of the Kin Rewards Engine is overseen by the Kin Foundation, a non-profit organization based out of Ontario, Canada. Undistributed Kin is held in an institutional-grade treasury that is controlled via a series of vesting periods, inflation guidelines, and fiduciary custody controls that ensure the safe transfer and proper use of funds. Anti-spam and anti-fraud assurances are also provided as a service until such time that the distribution of Kin can be fully automated with those additional safeguards in place. No more than 10 trillion Kin will ever exist by the end of the distribution period, the large supply meant to allow mass adoption by users around the world while still transacting in whole-number denominations, as opposed to decimal places.
 
-
-## Contributing
-
-Please review our [HowtoContribute.md](HowToContribute.md) guide before opening issues and pull requests.
