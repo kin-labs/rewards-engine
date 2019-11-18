@@ -34,7 +34,7 @@ Proportionate Spend
 If the amount that is to be paid via the Daily Payout is greater than the Daily Reward Budget plus the Additional Daily Reward, the developer will receive a percentage of the payout based on their DAS relative to the total DAS. 
 ```
 If DP > DRB + ADR then:
-DP’_i = [DP_i / sum(DP_j for all apps j)] * (DRB + ADR)
+	DP’_i = [DP_i / sum(DP_j for all apps j)] * (DRB + ADR)
 	Apps are paid out based on DP’_i
 Else:
 	Apps are paid out based on DP_i
