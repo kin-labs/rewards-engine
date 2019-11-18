@@ -38,5 +38,4 @@ DP’_i = [DP_i / sum(DP_j for all apps j)] * (DRB + ADR)
 	Apps are paid out based on DP’_i
 Else:
 	Apps are paid out based on DP_i
-FINAL CALCULATION = **EED TO TIE ALL THESE TOGETHER ***
 ```
