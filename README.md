@@ -1,6 +1,10 @@
 ![KRE](kinrewardsengine.png)
 # Kin Rewards Engine
-This is the repository for the Kin Rewards Engine. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
+This is the repository for the Kin Rewards Engine, or "KRE". Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
+
+## Resources
+To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(Accepted)](rewards-engine/accepted.
+
 ## How To Contribute
 
 Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals). Review the [HowToContribute.md](HowToContribute.md) guide before opening issues and pull requests.
