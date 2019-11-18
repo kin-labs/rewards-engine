@@ -5,6 +5,9 @@ This is the repository for the Kin Rewards Engine. Here you will find the latest
 
 Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals). Review the [HowToContribute.md](HowToContribute.md) guide before opening issues and pull requests.
 
+## Process
+Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been accepted for consideration, it will be merged into the improvement proposals folder and a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation.
+
 ## About Kin 
 ### The Problem
 The digital world has become the hub of daily human experience and interaction. Every day billions of people meet, connect, and share their experiences online through consumer platforms and applications. Unfortunately, while these applications have come to dominate the human experience, the methods by which they maintain and grow their business have become largely unsustainable. Applications that exploit, harvest, and sell user data with no benefit to the user have monopolized developer revenue, while smaller businesses and those that value user privacy and anonymity struggle to compete. Furthermore, the content creators that drive the value of these platforms go mostly unrewarded unless a large cut is taken, with the exchange of value between users being inhibited by fees and a lack of support for microtransactions. These effects have compounded to create an environment in which user data has essentially become the most valuable commodity of the signals the need for a new paradigm in the way that developers monetize, the way in which consumers engage in experiences, and the way in which we think about the creation of value.
