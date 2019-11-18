@@ -8,7 +8,7 @@ Please follow these rules when suggesting improvements:
 or just want to ask a question related to it.
 
 - If you have a specific proposal, feel free to add a Pull Request with the
-proposed changes to kinecosystem/rewards-engine/improvement-proposals.
+proposed changes to : kinecosystem/rewards-engine/improvement-proposals.
 
 - Discussion on this repo must relate to contents discussed in one the improvement proposals.
 
