@@ -3,7 +3,7 @@
 This is the repository for the Kin Rewards Engine, or "KRE", which is overseen by the Kin Foundation. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals. Fraud & spam prevention will continued to be provided as a service privately.
 
 ## Resources
-To view the current KRE and spend guidelines, review the [current-KRE](current.md) and [current-valid-spend-guidelines](current-valid-spend-guidelines.md) guides, respectively.
+To view the current KRE and spend guidelines, review the [current-KRE](rewards-engine/current.md) and [current-valid-spend-guidelines](rewards-engine/current-valid-spend-guidelines.md) guides, respectively.
 
 To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(accepted)](accepted).
 
