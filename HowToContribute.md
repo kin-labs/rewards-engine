@@ -14,10 +14,10 @@ Please follow these rules when suggesting improvements:
 - Please open an issue if you want to make a general suggestion for change, discuss a topic mentioned,
 or want to ask a question related to it.
 
-- When appropriate, you can also comment on specific line changes.
-
 - If you have a specific proposal, feel free to add a Pull Request with the
 proposed changes to: [Improvement Proposals](rewards-engine/improvement-proposals).
+
+- When appropriate, you can also comment on specific line changes. 
 
 - Discussion on this repo must relate to contents discussed in one of the improvement proposals.
 
