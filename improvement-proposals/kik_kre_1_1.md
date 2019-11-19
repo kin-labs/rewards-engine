@@ -20,7 +20,7 @@ The following improvement proposal consists of three elements (two spend guideli
 
 **i. Subscription Guidelines**
 
-In the current guidelines passive payments are not included in the definition of a Daily Active Spender except for a subscription. The current subscription guidelines allow a user to into daily payments where their wallet passively pays Kin in the background. Going forward, we are proposing that subscriptions are limited to a monthly cadence. The day in which this payment comes through will count as a daily active spender, but any passive payments that occur within the month will not count. 
+In the current guidelines passive payments are not included in the definition of a Daily Active Spender except for a subscription. The current subscription guidelines allow a user to opt into daily payments where their wallet passively pays Kin in the background. Going forward, we are proposing that subscriptions are limited to a monthly cadence. The day in which this payment comes through will count as a daily active spender, but any passive payments that occur within the month will not count. 
 
 Monthly was selected based on the industry standard for subscription based services ie. Netflix, Spotify, Audible. Weekly and bi-weekly passive payments were also considered, however, in our view this cadence is inconsistent with standard expectations of user experience for subscriptions and would therefore only be implemented to gain additional KRE payments in the current DAS payout framework. The proposed [KRE V2.0](https://github.com/kinecosystem/kin-rfcs/improvment-proposals/kik_kre_1_1.md) aims to address this and make the frequency of payments irrelevant through a proportional payout structure tied to the value of the transaction. 
 
