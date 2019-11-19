@@ -40,4 +40,4 @@ The purpose of this document is to outline a proposed improvement to the existin
 ``` X + Y = Z ```
 
 ## Implementation
-*insert suggestions for implementation and timelines here.*
+*Insert recommendations for implementation and timelines here.*
