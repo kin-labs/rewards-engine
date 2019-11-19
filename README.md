@@ -11,7 +11,7 @@ To view the historical archive of accepted changes to the KRE, visit the "accept
 Review the [HowToContribute](HowToContribute.md) guide before contributing.
 
 ## Process 
-Contribute by following the [HowToContribute](HowToContribute.md) guide. Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been picked up for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) and a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation. 
+Contribute by following the [HowToContribute](HowToContribute.md) guide. Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been picked up for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) after which a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation. 
 
 ## About Kin 
 ### The Problem
