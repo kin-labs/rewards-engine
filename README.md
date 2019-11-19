@@ -8,12 +8,7 @@ To view the current KRE and spend guidelines, review the [current-KRE](current.m
 To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(accepted)](accepted).
 
 ## How To Contribute
-
-Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) to submit new proposed KRE iterations. Review the [HowToContribute](HowToContribute.md) guide before opening issues and pull requests.
-
-Use the [improvement proposal template](rewards-engine/improvement-proposals/improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem, which should be compensated in Kin.
-
-Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been accepted for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) and a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation.
+Review the [HowToContribute](HowToContribute.md) guide before contributing.
 
 ## About Kin 
 ### The Problem
