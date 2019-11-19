@@ -11,8 +11,10 @@ Use the [improvement proposal template](rewards-engine/improvement-proposals/imp
 
 Please follow these rules when suggesting improvements:
 
-- Please open an issue if you want to discuss a topic mentioned in an improvement proposal
-or just want to ask a question related to it.
+- Please open an issue if you want to make a general suggestion for change, discuss a topic mentioned,
+or want to ask a question related to it.
+
+- When appropriate, you can also comment on specific line changes.
 
 - If you have a specific proposal, feel free to add a Pull Request with the
 proposed changes to: [Improvement Proposals](rewards-engine/improvement-proposals).
