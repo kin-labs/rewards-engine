@@ -3,7 +3,7 @@
 This is the repository for the Kin Rewards Engine, or "KRE", which is overseen by the Kin Foundation. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals. Fraud & spam prevention will continued to be provided as a service privately.
 
 ## Resources
-To view the current KRE and spend guidelines, review the [current-KRE](rewards-engine/current.md) and [current-valid-spend-guidelines](rewards-engine/current-valid-spend-guidelines.md) guides, respectively.
+To view the current KRE and spend guidelines, review the [current-KRE](current.md) and [current-valid-spend-guidelines](current-valid-spend-guidelines.md) guides, respectively.
 
 To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(accepted)](accepted).
 
@@ -11,7 +11,7 @@ To view the historical archive of accepted changes to the KRE, visit the "accept
 Review the [HowToContribute](HowToContribute.md) guide before contributing.
 
 ## Process 
-Contribute by following the [HowToContribute](HowToContribute.md) guide. Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been picked up for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) after which a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation. 
+Contribute by following the [HowToContribute](HowToContribute.md) guide. Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been picked up for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](improvement-proposals) after which a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation. 
 
 ## About Kin 
 ### The Problem
