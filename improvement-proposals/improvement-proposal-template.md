@@ -27,6 +27,9 @@ The purpose of this document is to outline a proposed improvement to the existin
 <i>Elaborate upon and lay out the improvement proposal. Customize as necessary.</i>
 </ol>
 
+*Insert all math and equations with appropriate formatting:*
+``` X + Y = Z ```
+
 ## Valid Spend Guideline Updates
 <ol type="a">
   <li>Improvement A</li>
@@ -35,9 +38,6 @@ The purpose of this document is to outline a proposed improvement to the existin
 <li>Improvement B</li>
 <i>Elaborate upon and lay out the improvement proposal. Customize as necessary.</i>
 </ol>
-
-*Insert all math and equations with appropriate formatting:*
-``` X + Y = Z ```
 
 ## Implementation
 *Insert recommendations for implementation and timelines here.*
