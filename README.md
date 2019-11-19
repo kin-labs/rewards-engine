@@ -1,6 +1,6 @@
 ![KRE](kinrewardsengine.png)
 # Kin Rewards Engine
-This is the repository for the Kin Rewards Engine, or "KRE", which is overseen by the Kin Foundation, a non-profit entity. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals. Fraud & spam prevention will continued to be provided as a service privately.
+This is the repository for the Kin Rewards Engine, or "KRE", which is overseen by the Kin Foundation. Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals. Fraud & spam prevention will continued to be provided as a service privately.
 
 ## Resources
 To view the current KRE and spend guidelines, review the [current-KRE](current.md) and [current-valid-spend-guidelines](current-valid-spend-guidelines.md) guides, respectively.
