@@ -3,11 +3,13 @@
 This is the repository for the Kin Rewards Engine, or "KRE". Here you will find the latest iterations and resources pertaining to the KRE, as well as a place to submit improvement proposals.
 
 ## Resources
+To view the current KRE and spend guidelines, review the [current](current.md) guide.
+
 To view the historical archive of accepted changes to the KRE, visit the "accepted" directory [(accepted)](accepted).
 
 ## How To Contribute
 
-Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals). Review the [HowToContribute.md](HowToContribute.md) guide before opening issues and pull requests.
+Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals). Review the [HowToContribute](HowToContribute.md) guide before opening issues and pull requests.
 
 ## Process
 Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been accepted for consideration, it will be merged into the improvement-proposals directory[(Improvement Proposals)](rewards-engine/improvement-proposals) and a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation.
