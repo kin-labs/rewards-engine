@@ -3,6 +3,10 @@
 # Kin Improvement Proposal
 The purpose of this document is to outline a proposed improvement to the existing KRE algorithm and/or valid spend guidelines. 
 
+*versioning:*
+- *if an update to an existing algorithm, it should be an incremental update (e.g. 1.1, 1.2)*
+- *if suggesting to update to a new algorithm, it should be a new upgrade (e.g. 2.0, 3.0)*
+
 ## Proposed by:
 *(optional: insert name or organization)*
 
