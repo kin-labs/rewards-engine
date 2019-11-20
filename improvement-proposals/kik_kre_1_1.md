@@ -4,7 +4,7 @@ The purpose of this document is to outline a proposed improvement to the existin
 ## Proposed by: Kik Interactive Inc. 
 
 ## Abstract
-The objective of KRE V1.0 was to incentivize developers to get people using Kin. Within that parameter, the current iteration of the KRE has been successful. As of this writing November 19th, 2019 there are over 1 million monthly active spenders across 83 independent apps. However, while the ecosystem continues to grow, there have been some vulnerabilities exposed in the current algorithm that we aim to address in this improvement proposal. This KRE V1.1 proposal is being put forth for immediate adoption. We have also submitted a proposal for a [KRE V2.0](kik_kre_2_0.md) to commence January 2020.
+The objective of [KRE V1.0](https://github.com/kinecosystem/rewards-engine/blob/master/accepted/KRE-v1.0.md) was to incentivize developers to get people using Kin. Within that parameter, the current iteration of the KRE has been successful. As of this writing November 19th, 2019 there are over 1 million monthly active spenders across 83 independent apps. However, while the ecosystem continues to grow, there have been some vulnerabilities exposed in the current algorithm that we aim to address in this improvement proposal. This KRE V1.1 proposal is being put forth for immediate adoption. We have also submitted a proposal for a [KRE V2.0](kik_kre_2_0.md) to commence January 2020.
 
 ## Summary of Improvements
 The following improvement proposal consists of three elements (two spend guideline changes and one change to the KRE algorithm itself): 
