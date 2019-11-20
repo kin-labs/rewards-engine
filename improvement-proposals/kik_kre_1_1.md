@@ -4,17 +4,15 @@ The purpose of this document is to outline a proposed improvement to the existin
 ## Proposed by: Kik Interactive Inc. 
 
 ## Abstract
-The objective of KRE V1.0 was to incentivize developers to get people using Kin. Within that parameter, the current iteration of the KRE has been successful. As of this writing November 19th, 2019 there are over 1 million monthly active spenders across 83 independent apps. However, while the ecosystem continues to grow, there have been some vulnerabilities exposed in the current algorithm that we aim to address in this improvement proposal. This KRE V1.1 proposal is being put forth for immediate adoption. We have also submitted a proposal for a [KRE V2.0](https://github.com/kinecosystem/rewards-engine/improvment-proposals/kik_kre_2_0.md) to commence January 2020.
-
-[Current KRE Algorithm: V1.0](https://github.com/kinecosystem/rewards-engine/current-KRE.md)
+The objective of KRE V1.0 was to incentivize developers to get people using Kin. Within that parameter, the current iteration of the KRE has been successful. As of this writing November 19th, 2019 there are over 1 million monthly active spenders across 83 independent apps. However, while the ecosystem continues to grow, there have been some vulnerabilities exposed in the current algorithm that we aim to address in this improvement proposal. This KRE V1.1 proposal is being put forth for immediate adoption. We have also submitted a proposal for a [KRE V2.0](kik_kre_2_0.md) to commence January 2020.
 
 ## Summary of Improvements
 The following improvement proposal consists of three elements (two spend guideline changes and one change to the KRE algorithm itself): 
 1. Valid Spend Guidelines Updates
    1. Update to the subscription guidelines
-   1. Transparency claus
+   1. Transparency Clause
 1. KRE Algorithm Update
-   1. Monopoly Claus
+   1. Monopoly Clause
 
 ## 1. Valid Spend Guidelines Updates
 
@@ -24,15 +22,15 @@ In the current guidelines passive payments are not included in the definition of
 
 Monthly was selected based on the industry standard for subscription based services ie. Netflix, Spotify, Audible. Weekly and bi-weekly passive payments were also considered, however, in our view this cadence is inconsistent with standard expectations of user experience for subscriptions and would therefore only be implemented to gain additional KRE payments in the current DAS payout framework. The proposed [KRE V2.0](https://github.com/kinecosystem/kin-rfcs/improvment-proposals/kik_kre_1_1.md) aims to address this and make the frequency of payments irrelevant through a proportional payout structure tied to the value of the transaction. 
 
-**ii. Transparency Claus**
+**ii. Transparency Clause**
 
-There are currently no guidelines on transparency of applications participating in the KRE. The KRE is an open incentive protocol. To ensure fairness in the KRE we are proposing a transparency claus where only apps that are public known entities are eligible for KRE payouts. This benefits the ecosystem broadly by increasing discoverability of each of the apps and will also allow the community to hold each app accountable for adherence to the guidelines.
+There are currently no guidelines on transparency of applications participating in the KRE. The KRE is an open incentive protocol. To ensure fairness in the KRE we are proposing a transparency clause where only apps that are public known entities are eligible for KRE payouts. This benefits the ecosystem broadly by increasing discoverability of each of the apps and will also allow the community to hold each app accountable for adherence to the guidelines.
 
 ## 2. KRE Algorithm Update
 
-**i. Monopoly Claus**
+**i. Monopoly Clause**
 
-The purpose of the KRE is to drive the growth of a healthy economy. The foundation of a thriving economy is healthy competition. Absent competition, innovation slows and consumer experience diluted. Given that, we are recommending a monopoly claus to the KRE that would stop any developer from monopolizing the KRE payout. This will ensure there is an opportunity for other developers to contribute and be fairly compensated. The monopoly claus has been modelled on existing precedence from antitrust legislation in place to promote healthy competition. There are two prongs to the proposed monopoly claus: 
+The purpose of the KRE is to drive the growth of a healthy economy. The foundation of a thriving economy is healthy competition. Absent competition, innovation slows and consumer experience diluted. Given that, we are recommending a monopoly clause to the KRE that would stop any developer from monopolizing the KRE payout. This will ensure there is an opportunity for other developers to contribute and be fairly compensated. The monopoly clause has been modelled on existing precedence from antitrust legislation in place to promote healthy competition. There are two prongs to the proposed monopoly clause: 
 No single developer will receive more than 66.67% of the KRE payout for a given period and any developer that would have received more than 50% of the payout will have their payout adjusted.
 No two developers will receive more than 90% of the KRE payout for a given period.
 In both cases, residual payouts will be redistributed proportionally to other developers
