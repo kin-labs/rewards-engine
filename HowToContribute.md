@@ -7,7 +7,7 @@ Review this guide before submitting issues or requests.
 
 ### Contributing to Existing Proposals & Documents
 
-- Create an "Issue" within an existing proposal in order to start a new thread with your conceptual suggestion for change, questions, or discussions. You can do this by clicking on "Issues" and then "New Issue". Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) can be changed.
+- Create an "Issue" within an existing proposal in order to start a new thread with your conceptual suggestion for change, questions, or discussions. You can do this by clicking on "Issues" and then "New Issue". Preferably, include a link to the exact proposal that you are discussing, for reference. Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) can be changed.
 
 ### Submitting KRE Algorithm and Spend Guideline Improvement Proposals
 
