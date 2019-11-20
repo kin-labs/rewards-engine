@@ -5,17 +5,18 @@ Thank you for taking the time to contributing to the mission of building a bette
 ## How To Contribute
 Review this guide before submitting issues or requests.
 
-Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) to submit new proposed KRE iterations. Review this entire guide before submitting issues or requests.
+### Contributing to Existing Proposals & Documents
 
-Use the [improvement proposal template](rewards-engine/improvement-proposals/improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem, which should be compensated in Kin.
+- Create an "Issue" within an existing proposal in order to start a new thread with your conceptual suggestion for change, questions, or discussions. You can do this by clicking on "Issues" and then "New Issue". Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) can be changed.
 
+### Submitting KRE Algorithm and Spend Guideline Improvement Proposals
+
+1. Location: Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) to submit pull requests with new proposed KRE iterations. 
+
+2. Template: Use the [improvement proposal template](rewards-engine/improvement-proposals/improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem to be compensated in Kin.
+
+### General Rules
 Please follow these rules when suggesting improvements:
-
-- Please open an issue if you want to make a general suggestion for change, discuss a topic mentioned,
-or want to ask a question related to it.
-
-- If you have a specific proposal, feel free to add a Pull Request with the
-proposed changes to: [Improvement Proposals](rewards-engine/improvement-proposals).
 
 - When appropriate, you can also comment on specific line changes. 
 
