@@ -5,17 +5,18 @@ Thank you for taking the time to contributing to the mission of building a bette
 ## How To Contribute
 Review this guide before submitting issues or requests.
 
-Please use the improvement-proposals directory [(Improvement Proposals)](https://github.com/kinecosystem/rewards-engine/tree/master/improvement-proposals) to submit new proposed KRE iterations. Review this entire guide before submitting issues or requests.
+### Contributing to Existing Proposals & Documents
 
-Use the [improvement proposal template](improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem, which should be compensated in Kin.
+- Create an "Issue" within an existing proposal in order to start a new thread with your conceptual suggestion for change, questions, or discussions. You can do this by clicking on "Issues" and then "New Issue". Preferably, include a link to the exact proposal that you are discussing, for reference. Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) can be changed.
 
+### Submitting KRE Algorithm and Spend Guideline Improvement Proposals
+
+1. Location: Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) to submit pull requests with new proposed KRE iterations. 
+
+2. Template: Use the [improvement proposal template](rewards-engine/improvement-proposals/improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem to be compensated in Kin.
+
+### General Rules
 Please follow these rules when suggesting improvements:
-
-- Please open an issue if you want to make a general suggestion for change, discuss a topic mentioned,
-or want to ask a question related to it.
-
-- If you have a specific proposal, feel free to add a Pull Request with the
-proposed changes to: [Improvement Proposals](https://github.com/kinecosystem/rewards-engine/tree/master/improvement-proposals).
 
 - When appropriate, you can also comment on specific line changes. 
 
@@ -26,4 +27,4 @@ proposed changes to: [Improvement Proposals](https://github.com/kinecosystem/rew
 Discussions not adhering to the following rules will be closed.
 
 ## Process 
-Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been picked up for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](https://github.com/kinecosystem/rewards-engine/tree/master/improvement-proposals), shortly after which a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation. 
+Proposal submissions are reviewed by the Kin Foundation and accepted, denied, or modified at their own discretion. When a new proposal has been picked up for consideration, it will be merged into the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals), shortly after which a window of time will be specified by the Kin Foundation for comments (via issues) and proposed changes (pull requests) to be reviewed. This process will iterate over time at the discretion of the Kin Foundation. 
