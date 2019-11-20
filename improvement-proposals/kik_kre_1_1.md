@@ -30,7 +30,7 @@ There are currently no guidelines on transparency of applications participating 
 
 **i. Monopoly Clause**
 
-The purpose of the KRE is to drive the growth of a healthy economy. The foundation of a thriving economy is healthy competition. Absent competition, innovation slows and consumer experience diluted. Given that, we are recommending a monopoly clause to the KRE that would stop any developer from monopolizing the KRE payout. This will ensure there is an opportunity for other developers to contribute and be fairly compensated. The monopoly clause has been modelled on existing precedence from antitrust legislation in place to promote healthy competition. There are two prongs to the proposed monopoly clause: 
+The purpose of the KRE is to drive the growth of a healthy economy. The foundation of a thriving economy is healthy competition. Absent competition, innovation slows and consumer experience diluted. Given that, we are recommending a monopoly clause to the KRE that would stop any developer from monopolizing the KRE payout. This will ensure there is an opportunity for other developers to contribute and be fairly compensated. The monopoly clause has been modelled on existing precedent from antitrust legislation in place to promote healthy competition. There are two prongs to the proposed monopoly clause: 
 No single developer will receive more than 66.67% of the KRE payout for a given period and any developer that would have received more than 50% of the payout will have their payout adjusted.
 No two developers will receive more than 90% of the KRE payout for a given period.
 In both cases, residual payouts will be redistributed proportionally to other developers
