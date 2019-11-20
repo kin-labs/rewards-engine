@@ -4,12 +4,12 @@ The purpose of this document is to outline a proposed new version of the KRE Alg
 ## Proposed by: Kik Interactive Inc. 
 
 ## Abstract
-In the [KRE V1.1](https://github.com/kinecosystem/rewards-engine/improvement-proposals/kik_kre_1_1.md) Kin Improvement Proposal (KIP) we identified vulnerabilities in the existing KRE V1.0 algorithm and made recommendations for an immediate adoption of these new principles - you can see that here [insert link]. The KRE V1.0 was simple. As the first iteration it was important to make it (1) easy to understand and (2) incentivize the initial growth of the economy. Since launching KRE V1.0 the number of developers building in the ecosystem has more than tripled, and the number of people spending Kin per month has gone from 80k to [insert MAS stat at time of publishing]as of [insert date of publishing]. Now that the ecosystem is reaching a state of maturity, we believe that the incentive protocol should also evolve. This KRE V2.0 proposal is being put forth for a January 1, 2020 kick off. This will give developers time to adapt their use cases to optimize for the updated incentives.
+In the [KRE V1.1](https://github.com/kinecosystem/rewards-engine/improvement-proposals/kik_kre_1_1.md) Kin Improvement Proposal (KIP) we identified vulnerabilities in the existing KRE V1.0 algorithm and made recommendations for an immediate adoption of these new principles. The KRE V1.0 was simple. As the first iteration it was important to make it (1) easy to understand and (2) incentivize the initial growth of the economy. Since launching KRE V1.0 the number of developers building in the ecosystem has more than tripled, and the number of people spending Kin per month has gone from 80k to 1.0MM as of November 19, 2019. Now that the ecosystem is reaching a state of maturity, we believe that the incentive protocol should also evolve. This KRE V2.0 proposal is being put forth for a January 1, 2020 kick off. This will give developers time to adapt their use cases to optimize for the updated incentives.
 
 [Current KRE Algorithm: V1.0](https://github.com/kinecosystem/rewards-engine/current-KRE.md)
 
 ## Summary of Improvements
-For the Kin economy to grow, Kin needs to grow in value. The value of Kin is driven by supply and demand. Today the KRE is increasing the supply of Kin, which developers are selling into low liquidity, while very few people are buying Kin. That is pushing the value of Kin lower. While the price of Kin is purely a function of the free market, and no one can control or guarantee it, it is paramount that the economics behind the issuance of this digital currency are designed in such a way that the participants of the economy can prosper, wherever possible.
+For the Kin economy to grow, Kin needs to grow in value. The value of Kin is driven by supply and demand. Today the KRE is increasing the supply of Kin very few people are buying Kin. That is pushing the value of Kin lower. While the price of Kin is purely a function of the free market, and no one can control or guarantee it, it is paramount that the economics behind the issuance of this digital currency are designed in such a way that the participants of the economy can prosper, wherever possible.
 
 There are three key challenges with the existing algorithm: 
 1. There is insufficient incentive to get individual users to spend more Kin
@@ -18,7 +18,7 @@ There are three key challenges with the existing algorithm:
 
 The following proposal has three tracks to address these challenges:
 1. Update to the existing DAS track to include a payout structure proportional to amount of Kin spend
-1. Introduction of a new, separate track to incentivize Daily Active Buyers (DAB)
+1. Introduction of a new, separate track to incentivize buying
 1. Introduction of a developer holding track
 
 ## 1. Daily Spender Payouts
@@ -40,7 +40,7 @@ The notation of the DAS algorithm going forward will then be:
 `Payout_das_i = min(KRE_das * spend_i / sum for all apps i (spend_i), 3000 * spend_i)`  
 
 ## 2. Buy Demand
-The value of Kin is driven by the amount of buy-side pressure relative to the sell-side pressure. In the simplest form, if more people want to buy Kin than people want to sell Kin then Kin is more valuable. In the early stages of the ecosystem there were no easy ways for users to buy Kin and use in app, so the initial incentives were tied to spending. Spending is the closest proxy to demand of a currency - the more someone is spending it, the more they will demand the currency. As the ecosystem has matured there are now easier ways to enable user buying of Kin. Given that, we are proposing a new track within the KRE to reward developers to the extent that they get users buying Kin in their app. 
+The value of Kin is driven by the amount of buy-side pressure relative to the sell-side pressure. In the simplest form, if more people want to buy Kin than people want to sell Kin then Kin is more valuable. In the early stages of the ecosystem there were no easy ways for users to buy Kin and use in app, so the initial incentives were tied to spending. Spending is the closest proxy to demand of a currency - the more someone is spending it, the more they will demand the currency. As the ecosystem has matured there are now easier ways to enable users to buy Kin. Given that, we are proposing a new track within the KRE to reward developers to the extent that they get users buying Kin in their app. 
 
 Buy demand generated by ecosystem apps can be roughly thought of as:  
 `Sum of User Wallet Increases - Sum of Wallet Decreases - Sum of Prior KRE Payouts - Sum of Prior Buy Demand`
@@ -84,7 +84,7 @@ The notation for the holding payout calculation is as follows:
 `Payout_hold_i = sum(b'_ij for all holds j for app i)`
 
 **Option 2 - Continuous**  
-The continuous option would pay a proportional payment to each developer wallet. 
+The continuous option would pay a proportional payment to each developer wallet based on the amount of Kin they hold each day. 
 
 The notation for the holding payout calculation is as follows (computed daily, paid out monthly):  
 `Let w_i = min(KRE_prior_payouts_i, amount of Kin in KRE wallet)`  
