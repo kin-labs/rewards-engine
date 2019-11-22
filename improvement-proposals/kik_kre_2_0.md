@@ -88,7 +88,7 @@ The notation for the holding payout calculation is as follows (computed daily, p
 `Let w_i = min(KRE_prior_payouts_i, amount of Kin in KRE wallet)`  
 `Payout_hold_i = min(w_i / sum(w_j for all apps j in A) * KRE_hold, w_i * 50% / 365)`  
 
-Note that we have capped developers to receive a holding reward no greater than 50% of the size of their KRE wallet holdings divided by 365 days in a year.
+Note that we have capped developers to receive a holding reward no greater than 50% of the size of their KRE wallet holdings divided by 365 days in a year. Also note that a developer's `KRE wallet` will include both their KRE payout wallet and an optional verified cold-storage wallet they have provided.
 
 The continuous option is less predictive than the fixed-term option because, unlike the fixed-term option, no Kin is explicitly locked up, so a developer can still sell at any point. The benefit of the fixed-term option to the ecosystem is the increased predictability of potential sell-pressure, the tradeoff is the higher friction point for developers who need to explicitly opt-in to the holding option by sending to an observable address. Note: In the current proposed implementation a developer could still opt out of a fixed-term hold since it is not locked in a smart contract, but they would lose the reward. There is implicit lock-in through this incentive. 
 
