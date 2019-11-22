@@ -82,10 +82,10 @@ The notation for the holding payout calculation is as follows:
 `Payout_hold_i = sum(b'_ij for all holds j for app i)`
 
 **Option 2 - Continuous**  
-The continuous option would pay a proportional payment to each developer wallet based on the amount of Kin they hold each day. 
+The continuous option would pay a proportional payment to each developer wallet based on the amount of Kin they hold (minimum balance) each day. 
 
 The notation for the holding payout calculation is as follows (computed daily, paid out monthly):  
-`Let w_i = min(KRE_prior_payouts_i, amount of Kin in KRE wallet)`  
+`Let w_i = min(KRE_prior_payouts_i, minimum amount of Kin in KRE wallet during a day)`  
 `Payout_hold_i = min(w_i / sum(w_j for all apps j in A) * KRE_hold, w_i * 50% / 365)`  
 
 Note that we have capped developers to receive a holding reward no greater than 50% of the size of their KRE wallet holdings divided by 365 days in a year. Also note that a developer's `KRE wallet` will include both their KRE payout wallet and an optional verified cold-storage wallet they have provided.
