@@ -96,7 +96,7 @@ Given these tradeoffs, it is recommended that the continuous option is adopted, 
 
 **Final Payout**  
 Across these three KRE tracks, a developers total payout would be:  
-`Payout_das_i + Payout_hold_i + Payout_buy_i`
+`Payout_i = Payout_das_i + Payout_hold_i + Payout_buy_i`
 
 ## Implementation  
 It is recommended that these new incentive structures take effect beginning January 1, 2020. In order to help developers in the economy get ramped up on the new incentive structure, we recommend a roll-out strategy of total KRE payout allocation as follows: 
@@ -123,14 +123,22 @@ The notation for KRE payout allocation will be as follows (sample month: January
 **The KRE Carryover Pool**  
 Like in the KRE 1.0, Kin that was not paid out to developers will accumulate for future use. We propose rebranding this to be the “carryover pool” as opposed to the “bonus pool” to more clearly articulate its purpose. 
 
-Given the constraints proposed in the KRE tracks above, there may be unused payout on any given day. If there is unused payout for a particular KRE track this will become carryover pool added to payouts for that track averaged over the remainder of the year.
+Given the constraints proposed in the KRE tracks above, there may be unused payout on any given day. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
 
 The notation for the KRE carryover pool calculation is as follows:  
 
-Let `x` be one of the 3 payout pillars: `{das, hold, buy}`  
-Let `r` be the number of days left in 2020:
+Let `r` be the number of days left in 2020
+Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
+
+Before a payout:
 ```
-If sum(Payout_x_i for all apps i in A) < KRE_x:
-    KRE’_x = KRE_x + [(KRE_x - sum(Payout_x_i for all apps i in A)) / r]
-    Developers will now be paid based on KRE’_x
+If KRE_carryover > 0:
+    KRE'_total = KRE_total + [KRE_carryover / r]
+    Apps will be paid based on KRE'_total
+```
+
+After a payout:
+```
+If sum(Payout_x_i for all apps i in A) < KRE_total:
+    KRE_carryover += sum(Payout_i for all apps i in A)
 ```
