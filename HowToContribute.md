@@ -7,13 +7,13 @@ Review this guide before submitting issues or requests.
 
 ### Contributing to Existing Proposals & Documents
 
-- Create an "Issue" and include the name/version of the referred improvement proposal in the title in order to start a new thread with your conceptual suggestion for change, questions, or discussions. For example "Issue X [KRE-v1.0]". You can do this by clicking on "Issues" and then "New Issue". You can also include a link to the exact proposal that you are discussing, for reference. Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) can be changed.
+- Create an "Issue" and include the name/version of the referred improvement proposal in the title in order to start a new thread with your conceptual suggestion for change, questions, or discussions. For example "Issue X [KRE-v1.0]". You can do this by clicking on "Issues" and then "New Issue". You can also include a link to the exact proposal that you are discussing, for reference. Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](improvement-proposals) can be changed.
 
 ### Submitting KRE Algorithm and Spend Guideline Improvement Proposals
 
-1. Location: Please use the improvement-proposals directory [(Improvement Proposals)](rewards-engine/improvement-proposals) to submit pull requests with new proposed KRE iterations. 
+1. Location: Please use the improvement-proposals directory [(Improvement Proposals)](improvement-proposals) to submit pull requests with new proposed KRE iterations. 
 
-2. Template: Use the [improvement proposal template](rewards-engine/improvement-proposals/improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem to be compensated in Kin.
+2. Template: Use the [improvement proposal template](improvement-proposals/improvement-proposal-template.md) as a sample template to submit proposals to improve (i) the Kin Rewards Engine and its underlying mathematics & economics and (ii) the "Valid Spend Guidelines" which determine the definition of valid work in the Kin Ecosystem to be compensated in Kin.
 
 ### General Rules
 Please follow these rules when suggesting improvements:
