@@ -36,19 +36,22 @@ No two developers will receive more than 90% of the KRE payout for a given perio
 In both cases, residual payouts will be redistributed proportionally to other developers
 
 Let `s_1, s_2, …, s_n` be the KRE payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
-```If s_1 + s_2  > 0.90 or s_1 > 0.5:
-If s_1 > 0.5:
-	s_1 = 0.5 + ((s_1 - 0.5) / 0.5)*(2/3 - 1/2)
-	If s_1 + s_2  > 0.90 then:
-		s_2 = s_2 / (s_1+s_2) * 0.9
+```
+If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
+    If s_1 > 0.5:
+        s_1' = 0.5 + ((s_1 - 0.5) / 0.5) * (2/3 - 1/2)
+    Else:
+        s_1' = s_1
+    If s_1' + s_2  > 0.90 then:
+        s_2 = s_2 / (s_1+s_2) * 0.9
 
-	s_1’ = minimum(s_1 / (s_1+s_2) * 0.9, )
-	If s_1’ = s_1 / (s_1 + s_2) * 0.9:
-		For i = 3 to n:
-			s_i’ = s_i / (sum from i = 3 to n of s_i) * 0.1
-	Else:
-		For i = 2 to n:
-			s_i’ = s_i / (sum from i = 2 to n of s_i) * (1 - s_i)
+    s_1’ = minimum(s_1 / (s_1+s_2) * 0.9, s_1')
+    If s_1’ == s_1 / (s_1 + s_2) * 0.9:
+        For i = 3 to n:
+            s_i’ = s_i / (sum from i = 3 to n of s_i) * 0.1
+    Else:
+        For i = 2 to n:
+            s_i’ = s_i / (sum from i = 2 to n of s_i) * (1 - s_1')
 	Developers are paid out based on s_i’
 Else:
 	Developers are paid out based on s_i
