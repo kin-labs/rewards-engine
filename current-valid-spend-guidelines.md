@@ -20,27 +20,29 @@ A transaction must be initiated by a user action, while the Kin logo must be vis
 3. Transactions of more than 1 Kin require a flow with a minimum of 2 clicks (undo/confirm/user input
 amount/amount selection)
 ### User-to-developer (U-to-D) transactions
-4. Every U-to-D experience, regardless of the amount transacted, must include the following:
+1. Every U-to-D experience, regardless of the amount transacted, must include the following:
 - Clear messaging communicating the transaction amount
 - Clear messaging telling the user what they will receive in return for their Kin 
 - Must be a confirm/acknowledge button
 ### Subscription guidelines
-Subscriptions can be daily, weekly, monthly, or yearly.
-Comment: A user can subscribe to an app (spend) or to a specific content creator (P2P)
-5. Subscriptions must be initiated explicitly by the user
-6. Transactions must be set to a fixed amount (from charge to charge)
-7. Users must explicitly renew their subscription every X payments depending on the time period: Daily
+A user can subscribe to an app (spend) or to a specific content creator (P2P). 
+1. The day in which a subscription payment comes through will count as a daily active spender, but any passive payments that occur within the month will not count. 
+2. Subscriptions must be initiated explicitly by the user
+3. Transactions must be set to a fixed amount (from charge to charge)
+4. Users must explicitly renew their subscription every X payments depending on the time period: Daily
 (30), weekly (4), monthly (12), or yearly (1)
-8. Before subscribing, the user must receive clear communication that includes:
+4. Before subscribing, the user must receive clear communication that includes:
 - How much Kin will be charged in total
 - Charging cadence and amount
 - What the user receives as a subscriber
 - A confirm/acknowledge button
 - Information on how to unsubscribe
-9. Users must be able to unsubscribe at any time
+5. Users must be able to unsubscribe at any time
 ### Process handling for guidelines violation
 If an app has an experience violating these guidelines:
 1. App’s developer will be noticed about the violating experience
 2. This app will be excluded from the KRE from the following payout
 3. In order to be eligible again for KRE, there should be an updated app version in the App Store/Play
 Store with the experienced fixed
+### Transparency Clause
+1. Only apps that are public known entities are eligible for KRE payouts. This benefits the ecosystem broadly by increasing discoverability of each of the apps and will also allow the community to hold each app accountable for adherence to the guidelines.
