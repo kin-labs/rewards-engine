@@ -100,7 +100,8 @@ Across these three KRE tracks, a developers total payout would be:
 ## Implementation  
 It is recommended that these new incentive structures take effect beginning January 1, 2020. In order to help developers in the economy get ramped up on the new incentive structure, we recommend a roll-out strategy of total KRE payout allocation as follows. We have presented two options:
 
-**Option 1** 
+**Option 1**
+
 Month | DAS | Buy Demand | Holding 
 ------|-----|------------|---------
 January | 90% | 5% | 5%
@@ -114,6 +115,7 @@ August | 20% | 65% | 15%
 September | 10% | 75% | 15%
 
 **Option 2**
+
 Month | DAS | Buy Demand | Holding 
 ------|-----|------------|---------
 January | 95% | 0% | 5%
