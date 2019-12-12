@@ -31,13 +31,13 @@ A user can subscribe to an app (spend) or to a specific content creator (P2P).
 3. Transactions must be set to a fixed amount (from charge to charge)
 4. Users must explicitly renew their subscription every X payments depending on the time period: Daily
 (30), weekly (4), monthly (12), or yearly (1)
-4. Before subscribing, the user must receive clear communication that includes:
+5. Before subscribing, the user must receive clear communication that includes:
 - How much Kin will be charged in total
 - Charging cadence and amount
 - What the user receives as a subscriber
 - A confirm/acknowledge button
 - Information on how to unsubscribe
-5. Users must be able to unsubscribe at any time
+6. Users must be able to unsubscribe at any time
 ### Process handling for guidelines violation
 If an app has an experience violating these guidelines:
 1. App’s developer will be noticed about the violating experience
