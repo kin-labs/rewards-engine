@@ -22,7 +22,7 @@ The following proposal has three tracks to address these challenges:
 ## 1. Daily Spender Payouts
 The current KRE algorithm has one track incentivizing developers to grow the number of daily active spenders in their app. This got people into the economy and using Kin on a daily basis. What the current DAS algorithm does not account for is the amount of Kin people are spending. The more Kin that users are spending, the higher the demand will be, which should translate to a higher value of Kin. Given that, we are proposing that the payout structure for the DAS track be proportional to the amount of Kin that a user is spending with a cap on payout per DAS threshold. Below is the recommended schedule of payout proportions: 
 
-Kin spent per DAS per day | 1 - 9 Kin spent per day | 10 - 99 Kin spent per day | 100 - 999 Kin spent per | 1,000+
+Kin spent per DAS per day | 1 - 9 Kin spent per day | 10 - 99 Kin spent per day | 100 - 999 Kin spent per day | 1,000+
 --------------------------|-------------------------|---------------------------|-------------------------|-------
 Max Payout per spender | 3,000 Kin | 6,000 Kin | 12,000 Kin | 30,000 Kin
 
