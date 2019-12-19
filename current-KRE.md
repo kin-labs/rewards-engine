@@ -177,7 +177,9 @@ December | 35% | 50% | 15%
 
 The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  
 `KRE_das = 0.95 * KRE_total`
+
 `KRE_buy = 0.00 * KRE_total`
+
 `KRE_hold = 0.05 * KRE_total`
 
 **The KRE Carryover Pool**  
