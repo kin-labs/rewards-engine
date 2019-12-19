@@ -133,10 +133,15 @@ The notation of the Spend algorithm going forward will then be:
 `Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 3000 * spend_i)`  
 
 ## 2. Buy
+
 `Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`
+
 `Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`
+
 `Let w_decrease_i be the summed wallet balance decrease in app i over the lifetime of the KRE`
+
 `w_i is the amount of Kin held in a developer's holding wallet from prior KRE payouts. This is properly defined in the Holding section`
+
 `Let KRE_prior_buy_demand_payouts_i be the summed Kin paid to app i over the lifetime of the KRE (including grants)`  
 
 We define `buy_demand_i` for app `i` as:  
