@@ -55,10 +55,11 @@ If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
     Else:
         s_1' = s_1
     If s_1' + s_2  > 0.90 then:
-        s_2 = s_2 / (s_1 + s_2) * 0.9
-
-    s_1’ = minimum(s_1 / (s_1 + s_2) * 0.9, s_1')
-    If s_1’ == s_1 / (s_1 + s_2) * 0.9:
+        s_2' = s_2 / (s_1+s_2) * 0.9
+    Else:
+    	s_2' = s_2
+    s_1’ = minimum(s_1' / (s_1'+s_2) * 0.9, s_1')
+    If s_2’ != s_2:
         For i = 3 to n:
             s_i’ = s_i / (sum from i = 3 to n of s_i) * 0.1
     Else:
@@ -132,10 +133,10 @@ The notation of the Spend algorithm going forward will then be:
 `Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 3000 * spend_i)`  
 
 ## 2. Buy
-`Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`  
-`Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`  
+`Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`
+`Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`
 `Let w_decrease_i be the summed wallet balance decrease in app i over the lifetime of the KRE`
-`w_i is the amount of Kin held in a developer's holding wallet from prior KRE payouts. This is properly defined in the Holding section` 
+`w_i is the amount of Kin held in a developer's holding wallet from prior KRE payouts. This is properly defined in the Holding section`
 `Let KRE_prior_buy_demand_payouts_i be the summed Kin paid to app i over the lifetime of the KRE (including grants)`  
 
 We define `buy_demand_i` for app `i` as:  
