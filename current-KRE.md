@@ -2,6 +2,9 @@
 
 The purpose of this document is to provide an overview of the methodology and rules used for the Kin Rewards Engine.
 
+## KRE 1.1
+KRE 1.1 will continue to run until until December 31, 2019. Starting January 1, 2020, payouts will be based on KRE 2.0 which is described below.
+
 ## Base Algorithm
 ```
 Let DAS_i be the number of daily active spenders in app i.
@@ -52,10 +55,11 @@ If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
     Else:
         s_1' = s_1
     If s_1' + s_2  > 0.90 then:
-        s_2 = s_2 / (s_1+s_2) * 0.9
-
-    s_1’ = minimum(s_1 / (s_1+s_2) * 0.9, s_1')
-    If s_1’ == s_1 / (s_1 + s_2) * 0.9:
+        s_2' = s_2 / (s_1+s_2) * 0.9
+    Else:
+    	s_2' = s_2
+    s_1’ = minimum(s_1' / (s_1'+s_2) * 0.9, s_1')
+    If s_2’ != s_2:
         For i = 3 to n:
             s_i’ = s_i / (sum from i = 3 to n of s_i) * 0.1
     Else:
@@ -73,7 +77,7 @@ Reasoning: Clause does not apply
 
 **Example 2:**  
 Payout shares before clause: `{0.90, 0.05, 0.03, 0.02}`  
-Payout shares after clause: `{0.663, 0.183, 0.11, 0.073}`  
+Payout shares after clause: `{0.633, 0.183, 0.11, 0.073}`  
 Reasoning: 2.i.1 applies
 
 **Example 3:**  
@@ -99,3 +103,101 @@ Payout shares before clause | Payout shares after clause
 `95%` | `65%`
 
 This table assumes that 2.i.2 does not apply.
+
+## KRE 2.0 
+
+**Payout**  
+Across the three KRE tracks (Spend, Buy, Hold), a developer's (developer `i`) total payout would be:  
+`Payout_i = Payout_spend_i + Payout_buy_i + Payout_hold_i`
+
+## 1. Spend  
+`Let KRE_spend be the total amount of Kin paid to developers for the Spend track in a day.`  
+`Let spend_i be the number of users who spend Kin in a day in app i.`  
+`Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 15000 * spend_i)`  
+
+Starting Feb 1, 2020 the payout proportions will be: 
+
+Kin spent per DAS per day | 1 - 9 Kin spent per day | 10 - 99 Kin spent per day | 100 - 999 Kin spent per day | 1,000+
+--------------------------|-------------------------|---------------------------|-------------------------|-------
+Max Payout per spender | 3,000 Kin | 6,000 Kin | 12,000 Kin | 30,000 Kin
+
+Thresholds and maximum payout amounts will be recalibrated on a quarterly basis to align with roughly $0.15 for a 1,000+ Kin spender (assuming the price of Kin is still below $0.15 for 1000 Kin). In the event of a dramatic price change (+/- 50% as defined by a 7-day average of closing price on CoinMarketCap), this frequency of recalibration can be more dynamic and can be addressed through a proposal to the Foundation.
+
+The notation of the Spend algorithm going forward will then be:  
+`Let KRE_spend be the total amount of Kin paid to developers for the Spend track in a day.`  
+`Let spend_i_1 be the number of users who spend 1-9 Kin in a day in app i.`  
+`Let spend_i_10 be the number of users who spend 10-99 Kin in a day in app i.`  
+`Let spend_i_100 be the number of users who spend 100-999 Kin in a day in app i.`  
+`Let spend_i_1000 be the number of users who spend 1000 or Kin in a day in app i.`  
+`Then spend_i = spend_i_1 + 2*spend_i_10 + 4*spend_i_100 + 10*spend_i_1000`  
+`Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 3000 * spend_i)`  
+
+## 2. Buy
+`Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
+`Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`  <br/>
+`Let w_decrease_i be the summed wallet balance decrease in app i over the lifetime of the KRE`  <br/>
+`w_i is the amount of Kin held in a developer's holding wallet from prior KRE payouts. This is properly defined in the Holding section`<br/> 
+`Let KRE_prior_buy_demand_payouts_i be the summed Kin paid to app i over the lifetime of the KRE (including grants)`<br/>  
+
+We define `buy_demand_i` for app `i` as:  
+`buy_demand_i = max(w_increase_i - w_decrease_i - KRE_prior_buy_demand_payouts_i + minimum(w_i, KRE_prior_buy_demand_payouts_i), 0)`
+
+Then the buy payout for app i is:  
+`Payout_buy_i = min(KRE_buy * buy_demand_i / (sum for all apps j buy_demand_j), buy_demand_i)`
+
+## 3. Hold
+The notation for the holding payout calculation is as follows:  
+`Let w_i = min(KRE_prior_payouts_i, minimum amount of Kin in KRE wallet during a day)`  
+`Payout_hold_i = min(w_i / sum(w_j for all apps j in A) * KRE_hold, w_i * 50% / 365)`  
+Note that a developer's KRE wallet will include both their KRE payout wallet and an optional verified cold-storage wallet they have provided.
+
+## Implementation
+
+Month | Spend | Buy | Hold
+------|-----|------------|---------
+January | 95% | 0% | 5%
+February | 92% | 3% | 5%
+March | 84% | 6% | 10%
+April | 80% | 10% | 10%
+May | 75% | 15% | 10%
+June | 65% | 20% | 15%
+July | 60% | 25% | 15%
+August | 55% | 30% | 15%
+September | 50% | 35% | 15%
+October | 45% | 40% | 15%
+November | 40% | 45% | 15%
+December | 35% | 50% | 15%
+
+`KRE_total`: This will be 500,000,000 Kin / day in 2020.
+
+The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  <br/>
+`KRE_das = 0.95 * KRE_total`<br/>
+`KRE_buy = 0.00 * KRE_total`<br/>
+`KRE_hold = 0.05 * KRE_total`<br/>
+
+**The KRE Carryover Pool**  
+Like in the KRE 1.0, Kin that was not paid out to developers will accumulate for future use. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
+
+The notation for the KRE carryover pool calculation is as follows:  
+
+Let `r` be the number of days left in 2020
+Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
+
+Before a payout:
+```
+If KRE_carryover > 0:
+    KRE'_total = KRE_total + [KRE_carryover / r]
+    Apps will be paid based on KRE'_total
+```
+
+After a payout:
+```
+If sum(Payout_x_i for all apps i in A) < KRE_total:
+    KRE_carryover += sum(Payout_i for all apps i in A)
+```
+
+**Monopoly Clause** 
+
+As in KRE 1.1 we propose a continuation of the Monopoly Clause. The fundamental change is that it will apply separately to each KRE track to ensure that developers targeting a specific track will still be able to compete effectively.
+
+For a more complete explanation of the reasoning behind the Monopoly Clause and examples please refer to to the Monopoly Clause section above.
