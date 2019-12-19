@@ -149,6 +149,7 @@ Then the buy payout for app i is:
 The notation for the holding payout calculation is as follows:  
 `Let w_i = min(KRE_prior_payouts_i, minimum amount of Kin in KRE wallet during a day)`  
 `Payout_hold_i = min(w_i / sum(w_j for all apps j in A) * KRE_hold, w_i * 50% / 365)`  
+Note that a developer's KRE wallet will include both their KRE payout wallet and an optional verified cold-storage wallet they have provided.
 
 ## Implementation
 
