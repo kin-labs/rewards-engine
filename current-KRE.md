@@ -170,12 +170,10 @@ December | 35% | 50% | 15%
 
 `KRE_total`: This will be 500,000,000 Kin / day in 2020.
 
-The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  
-`KRE_das = 0.95 * KRE_total`
-
-`KRE_buy = 0.00 * KRE_total`
-
-`KRE_hold = 0.05 * KRE_total`
+The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  <br/>
+`KRE_das = 0.95 * KRE_total`<br/>
+`KRE_buy = 0.00 * KRE_total`<br/>
+`KRE_hold = 0.05 * KRE_total`<br/>
 
 **The KRE Carryover Pool**  
 Like in the KRE 1.0, Kin that was not paid out to developers will accumulate for future use. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
