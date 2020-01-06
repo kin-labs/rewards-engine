@@ -5,6 +5,9 @@ Thank you for taking the time to contributing to the mission of building a bette
 ## How To Contribute
 Review this guide before submitting issues or requests.
 
+### Tutorial
+You can find a step-by-step guide on How to Contribute to the Kin Rewards Engine here: https://medium.com/kinblog/how-to-contribute-to-the-kin-rewards-engine-d420928e6191
+
 ### Contributing to Existing Proposals & Documents
 
 - Create an "Issue" and include the name/version of the referred improvement proposal in the title in order to start a new thread with your conceptual suggestion for change, questions, or discussions. For example "Issue X [KRE-v1.0]". You can do this by clicking on "Issues" and then "New Issue". You can also include a link to the exact proposal that you are discussing, for reference. Note that only improvement proposals in the improvement-proposals directory [(Improvement Proposals)](improvement-proposals) can be changed.
