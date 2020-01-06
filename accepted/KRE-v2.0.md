@@ -143,7 +143,7 @@ The more aggressive Option 1 will force developers to move quickly and generate 
 `KRE_total`: The total amount is still to be defined. A budget will be presented to the Kin Foundation Board at a later time. For 2019 this is `590,000,000` Kin per day.
 
 The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  
-`KRE_das = 0.95 * KRE_total`
+`KRE_spend = 0.95 * KRE_total`
 `KRE_buy = 0.00 * KRE_total`
 `KRE_hold = 0.05 * KRE_total`
 
