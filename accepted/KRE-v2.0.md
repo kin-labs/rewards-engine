@@ -57,7 +57,7 @@ More formally:
 `Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`  
 `Let w_decrease_i be the summed wallet balance decrease in app i over the lifetime of the KRE`
 `w_i is the amount of Kin held in a developer's holding wallet from prior KRE payouts. This is properly defined in the Holding section` 
-`Let KRE_prior_buy_demand_payouts_i be the summed Kin paid to app i over the lifetime of the KRE (including grants)`  
+`Let KRE_prior_buy_demand_payouts_i be the summed Kin paid to app i from the buy track over the lifetime of the KRE`  
 
 We define `buy_demand_i` for app `i` as:  
 `buy_demand_i = max(w_increase_i - w_decrease_i - KRE_prior_buy_demand_payouts_i + minimum(w_i, KRE_prior_buy_demand_payouts_i), 0)`
