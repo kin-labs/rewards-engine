@@ -57,7 +57,7 @@ More formally:
 `Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`  
 `Let w_decrease_i be the summed wallet balance decrease in app i over the lifetime of the KRE`
 `w_i is the amount of Kin held in a developer's holding wallet from prior KRE payouts. This is properly defined in the Holding section` 
-`Let KRE_prior_buy_demand_payouts_i be the summed Kin paid to app i over the lifetime of the KRE (including grants)`  
+`Let KRE_prior_buy_demand_payouts_i be the sum of the Kin paid to app i from the buy track over the lifetime of the KRE`  
 
 We define `buy_demand_i` for app `i` as:  
 `buy_demand_i = max(w_increase_i - w_decrease_i - KRE_prior_buy_demand_payouts_i + minimum(w_i, KRE_prior_buy_demand_payouts_i), 0)`
@@ -143,7 +143,7 @@ The more aggressive Option 1 will force developers to move quickly and generate 
 `KRE_total`: The total amount is still to be defined. A budget will be presented to the Kin Foundation Board at a later time. For 2019 this is `590,000,000` Kin per day.
 
 The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  
-`KRE_das = 0.95 * KRE_total`
+`KRE_spend = 0.95 * KRE_total`
 `KRE_buy = 0.00 * KRE_total`
 `KRE_hold = 0.05 * KRE_total`
 
