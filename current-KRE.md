@@ -110,6 +110,8 @@ This table assumes that 2.i.2 does not apply.
 Across the three KRE tracks (Spend, Buy, Hold), a developer's (developer `i`) total payout would be:  
 `Payout_i = Payout_spend_i + Payout_buy_i + Payout_hold_i`
 
+Note that a developer will only be rewarded KRE payouts for days where at least one Kin blockchain transaction took place in their respective application.
+
 ## 1. Spend  
 `Let KRE_spend be the total amount of Kin paid to developers for the Spend track in a day.`  
 `Let spend_i be the number of users who spend Kin in a day in app i.`  
