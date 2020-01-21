@@ -187,15 +187,15 @@ Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
 
 Before a payout:
 ```
+KRE_total = 500,000,000
 If KRE_carryover > 0:
-    KRE'_total = KRE_total + [KRE_carryover / r]
-    Apps will be paid based on KRE'_total
+    KRE_total += [KRE_carryover / r]
 ```
 
 After a payout:
 ```
-If sum(Payout_x_i for all apps i in A) < KRE_total:
-    KRE_carryover += sum(Payout_i for all apps i in A)
+If sum(Payout_i for all apps i in A) < KRE_total:
+    KRE_carryover += KRE_total - sum(Payout_i for all apps i in A)
 ```
 
 **Monopoly Clause** 
