@@ -148,7 +148,20 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 *[**Asparagusm** comment: I've added that remedying a non-compliance does not entitle to the developer to missed payments.  They will be left in the overflow pool, please confirm]*
 
+----
 
+*[**Asparagusm** comment: Discussion point - Rave
+
+The format of this new document allows us to describe and carve out undesirable behaviours from the guidelines.   We can do this by creating a new concept for example "Excluded Transactions".  Let's discuss if we should add the following at 8.2. to address Rave.
+
+8.2.  A Spend Transaction under 8.1. must not be an Excluded Transaction:
+
+Excluded Transaction means:
+
+(a) a Transaction or series of Transactions where the Application gifts KIN to the User then immediately requires the User to make payment back to the Application.
+
+(We can add further limbs to this definition has new behaviours are identified). 
+]]]
 
 
 
