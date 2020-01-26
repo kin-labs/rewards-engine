@@ -15,12 +15,12 @@ The following definitions apply in this document:
 
 | Term | Definition |
 | ------------- | ------------- |
-|  "***User***"| an End-User that is a natural person with a single wallet in your Application.  |
-| "***P2P***" |a Transaction between one User and another User within your Application.  |
-| "***Spend Transaction***" | a Transaction originated from a User to you within your Application.  |
-| "***Subscription***" | an arrangement made between a User and (a) you; or (b) with another User within your Application, to receive something by advance payment. |
+|  "***User***"| an End-User that is a natural person with a single wallet in your Application;  |
+| "***P2P***" |a Transaction between one User and another User within your Application;  |
+| "***Spend Transaction***" | a Transaction originated from a User to you within your Application;  |
+| "***Subscription***" | an arrangement made between a User and (a) you; or (b) with another User within your Application, to receive something by advance payment; |
 |  "***Transaction***"| an instance where KIN is transferred from one wallet to another wallet within the Kin Ecosystem;|
-| "***you***" | the Developer, and where the context requires, their Application,  |
+| "***you", "your***" | the Developer, and where the context requires, their Application.  |
 
 [***Asparagusm*** comment: Many of the definitions in 1.0 were unnecessary and made the terminology not consistent between clauses]
 
