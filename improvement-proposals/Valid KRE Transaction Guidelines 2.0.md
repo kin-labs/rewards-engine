@@ -158,7 +158,7 @@ The format of this new document allows us to describe and carve out undesirable 
 
 Excluded Transaction means:
 
-(a) a Transaction or series of Transactions where the Application gifts KIN to the User then immediately requires the User to make payment back to the Application.
+(a) a Transaction or series of Transactions where the Application gifts KIN to the User but then immediately requires the User to pay all or part of the gifted KIN back to the Application.
 
 (We can add further limbs to this definition has new behaviours are identified). 
 ]]]
