@@ -118,7 +118,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.7. A User must be able to unsubscribe from a Subscription at any time without further obligation to pay. 
 
-SECTION C - PROCESS FOR HANDLING VIOLATIONS
+**SECTION C - PROCESS FOR HANDLING VIOLATIONS**
 
 10. **Developer to be excluded from KRE payments**
 
