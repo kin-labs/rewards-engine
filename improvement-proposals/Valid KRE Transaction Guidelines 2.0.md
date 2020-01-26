@@ -13,7 +13,8 @@ This guideline outlines the minimum requirements for a Developer to receive a pa
 
 The following definitions apply in this document:
 
-|  |  |
+| Term | Definition |
+| ------------- | ------------- |
 |  "***User***"| an End-User that is a natural person with a single wallet in your Application.  |
 | "***P2P***" |a Transaction between one User and another User within your Application.  |
 | "***Spend Transaction***" | a Transaction originated from a User to you within your Application.  |
