@@ -13,10 +13,6 @@ This guideline outlines the minimum requirements for a Developer to receive a pa
 
 The following definitions apply in this document:
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 |  |  |
 |---|---|
 |  "***User***"| an End-User that is a natural person with a single wallet in your Application.  |
