@@ -96,27 +96,37 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.1. A User may enter into a Subscription with:
 
-(a) an Application and each Transaction which is a Subscription payment will be treated as a spend Transaction; or
+(a) the Application (and the payment Transaction by the User of the Subscription will be treated as a Spend Transaction); or
 
-(b) another User, for example a specific content creator, and each Transaction which is a Subscription payment will be treated as a P2P Transaction. 
+(b) another User, for example a specific content creator (and the payment Transaction by the User of the Subscription will be treated as a P2P Transaction). 
 
-9.2. The day on which the relevant Subscription payment occurs will count as a Daily Active Spender, but any passive payments that occurring with the Subscription period will not be counted. 
+9.2. The day on which payment of the Subscription by the User occurs will be counted Daily Active Spender, but any passive payments made by the User during period of the Subscription will not be counted. 
 
 9.3. The entering into a Subscription by a User must be clear and explicit to the User and it must contain the following:
 
 (a) How much KIN will be charged in total for the period of the Subscription;
-(b) Charging cadence and amount;
-(c\) What the User receives as a subscriber;
-(d) A confirm/acknowledgement button;
+
+(b) The period of the Subscription;
+
+(c\) What the User is to receive as a subscriber;
+
+(d) A confirm/acknowledgement button; and
+
 (e) Information on how to unsubscribe.
 
 9.4. The cost of the Subscription must be set to a fixed amount for the period of the Subscription.
 
 9.5. The length of a Subscription may only be daily (30), weekly (4), monthly (12), or yearly (1).  A Subscription must not exceed one year. 
 
+*[**Asparagusm** comment: To ensure consistency across apps, subscriptions must be in the above intervals up to the maximum prescribed]*
+
 9.6. A User must explicitly elect to renew their Subscription and this must be around the time their current Subscription is due to expire.  An option to renew must comply with 7.3.
 
+*[**Asparagusm** comment: I've added the renewls are to be dealt with close to the termination of the current subscription period and renewals must follow the same information requirements as starting a subscription]*
+
 9.7. A User must be able to unsubscribe from a Subscription at any time without further obligation to pay. 
+
+*[**Asparagusm** comment: Added no further obligation to pay, so a Developer cannot impose on Users penalty fees or termination fees for unsubscribing early]*
 
 **SECTION C - PROCESS FOR HANDLING VIOLATIONS**
 
@@ -125,6 +135,8 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 10.1. If we reasonably believe that your Application is not in compliance with these KRE Transaction Guidelines:
 
 (a) we will provide notice to you that you are not in compliance.    We may additionally provide steps you need to take to remedy the non-compliance however we are not obliged to do so; and
+
+*[**Asparagusm** comment: Do you want a standard form notice that can be emailed to the developer?  If so I suggest we add this as an annexure]*
 
 (b) your Application may be excluded from payouts from the KRE.
 
