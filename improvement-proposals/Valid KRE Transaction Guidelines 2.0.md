@@ -12,8 +12,13 @@ This guideline outlines the minimum requirements for a Developer to receive a pa
 1. **Definitions** 
 
 The following definitions apply in this document:
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 |  |  |
-|--|--|
+|---|---|
 |  "***User***"| an End-User that is a natural person with a single wallet in your Application.  |
 | "***P2P***" |a Transaction between one User and another User within your Application.  |
 | "***Spend Transaction***" | a Transaction originated from a User to you within your Application.  |
@@ -27,7 +32,7 @@ The following definitions apply in this document:
 
 To receive a payout from the KRE you must satisfy in our discretion all of the Minimum Requirements as set out in Section A and all of the applicable Specific Transaction Requirements as set out in Section B.  
 
-**Section A - Minimum requirements**
+**SECTION A - MINIMUM REQUIREMENTS**
 
 3. **User to be aware and in control**
 
@@ -59,7 +64,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 *[**Asparagusm** comment: This is straight from 1.0 however it would be better to say the Application is in compliance with whatever UI policy you have issued].*
 
-**Section B - Specific Transaction requirements**
+**SECTION B - SPECIFIC TRANSACTION REQUIREMENTS**
 
 7.  **Peer-to-Peer (P2P) transactions**
 
