@@ -100,13 +100,15 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 (b) another User, for example a specific content creator (and the payment Transaction by the User of the Subscription will be treated as a P2P Transaction). 
 
-9.2. The day on which payment of the Subscription by the User occurs will be counted Daily Active Spender, but any passive payments made by the User during period of the Subscription will not be counted. 
+9.2. The day on which payment of the Subscription by the User occurs will be counted as a Daily Active Spender, but any passive payments made by the User during period of the Subscription will not be counted. 
+
+[**Asparagusm** comment:  This is from 1.0 however I do not think it's right.  Please confirm and let's clarify this sentence.]
 
 9.3. The entering into a Subscription by a User must be clear and explicit to the User and it must contain the following:
 
-(a) How much KIN will be charged in total for the period of the Subscription;
+(a) How much KIN will be charged in total for the length of the Subscription period;
 
-(b) The period of the Subscription;
+(b) The length of the Subscription period;
 
 (c\) What the User is to receive as a subscriber;
 
@@ -116,11 +118,11 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.4. The cost of the Subscription must be set to a fixed amount for the period of the Subscription.
 
-9.5. The length of a Subscription may only be daily (30), weekly (4), monthly (12), or yearly (1).  A Subscription must not exceed one year. 
+9.5. The length of a Subscription period may only be daily (30), weekly (4), monthly (12), or yearly (1).  A Subscription must not exceed one year. 
 
 *[**Asparagusm** comment: To ensure consistency across apps, subscriptions must be in the above intervals up to the maximum prescribed]*
 
-9.6. A User must explicitly elect to renew their Subscription and this must be around the time their current Subscription is due to expire.  An option to renew must comply with 7.3.
+9.6. A User must explicitly elect to renew their Subscription and this must be around the time their current Subscription is due to expire.  An option to renew must comply with section 9.3.
 
 *[**Asparagusm** comment: I've added the renewls are to be dealt with close to the termination of the current subscription period and renewals must follow the same information requirements as starting a subscription]*
 
@@ -138,13 +140,13 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 *[**Asparagusm** comment: Do you want a standard form notice that can be emailed to the developer?  If so I suggest we add this as an annexure]*
 
-(b) your Application may be excluded from payouts from the KRE.
+(b) we may exclude your Application from receiving any payout from the KRE.
 
 11. **Remedying non-compliance** 
 
-11.1. If your Application is determined to be not in compliance with these KRE Transaction Guidelines, in order to remedy the non-compliance (if capable of remedy) you must provide an updated version of the Application in each app store it is available evidencing that the Application is now in compliance.
+11.1. If we have determined your Application is not in compliance with these KRE Transaction Guidelines, in order to remedy the non-compliance (if capable of remedy) you must provide an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines.
 
-11.2. Any payouts from the KRE the Application may have received during the period the Application was excluded from payouts from the KRE are forfeited.  The forfeited KIN will be available within the overflow pool.
+11.2. Any payouts from the KRE the Application may have received during the period the Application was excluded from payouts from the KRE are forfeited.  Any KIN which is forfeitted pursuant to this section will form part of the KRE's overflow pool.
 
 *[**Asparagusm** comment: I've added that remedying a non-compliance does not entitle to the developer to missed payments.  They will be left in the overflow pool, please confirm]*
 
@@ -154,7 +156,9 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 The format of this new document allows us to describe and carve out undesirable behaviours from the guidelines.   We can do this by creating a new concept for example "Excluded Transactions".  Let's discuss if we should add the following at 8.2. to address Rave.
 
-8.2.  A Spend Transaction under 8.1. must not be an Excluded Transaction:
+8.2.  A Spend Transaction under section 8.1. must not be an Excluded Transaction:
+
+New definition:
 
 Excluded Transaction means:
 
