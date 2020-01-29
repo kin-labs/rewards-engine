@@ -164,6 +164,6 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 The following are Prohibited Transactions for the purposes of the KRE.    An Application which contains any Prohibited Transaction will be excluded from payouts from the KRE.
 
-13. a Transaction or series of Transactions where you have credited a User an amount of KIN and force a Spend Transaction on the User to pay all or part of the credited KIN back to you in circumstances which will be evident where (i) the User had no control to choose whether the Spend Transaction would be executed or not; and/or (ii) the User was not aware the Spend Transaction occured; and/or (iii) in our view the series of Transactions is desigined to manufacture a high volume of Spend Transactions on behalf of Users within your Application.  
+13. a Transaction or series of Transactions where you have credited a User an amount of KIN, only to force the User to repay all or part of the credited KIN back to you. The User does not have control or is aware over key aspects of the Transaction sequence.  The purpose of the Transaction or series of Transactions appears, in our view, designed to manufacture the number of Spend Transactions on behalf of Users within your Application. 
 
 *[**Asparagusm** comment: Idea is that Section D is focused on describing bad behaviour and KIN experiences that we don't want in the ecosystem.  
