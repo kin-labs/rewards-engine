@@ -127,7 +127,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 10.4. The length of a Subscription period may only be daily, weekly, monthly or annually.  The length of a Subscription must not exceed one year.
 
-10.5 For each Subscription period set out in Column 1 in the table below (a) the User's payment obligations for that Subscription must correspond to Column 2; and (b) unless the Subscription is renewed by the User, the maximum length of the Subscription must be in accordance with Column 3.
+10.5 For each Subscription period set out in Column 1 in the table below (a) the User's payment obligations for that Subscription must correspond to Column 2; and (b) unless the Subscription is renewed by the User, the maximum length of the Subscription must not exceed the numbers of days in Column 3.
 
 | Column 1 (Subscription Period) | Column 2  (How does a User pay for the Subscription) | Column 3  Maximum length of Subscription (unless User elects to renew) |
 | ------------- | ------------- | ------------- |
@@ -164,4 +164,6 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 The following are Prohibited Transactions for the purposes of the KRE.    An Application which contains any Prohibited Transaction will be excluded from payouts from the KRE.
 
-13. a Transaction or series of Transactions where you have credited the User an amount of KIN, only to require the User to repay all or part of the KIN back to you. The User does not have control or is aware over key aspects of the Transaction sequence.  The purpose of the Transaction or series of Transactions appears, in our view, designed to increase the number of Spend Transactions occurring within your Application.
+13. a Transaction or series of Transactions where you have credited the User an amount of KIN, only to force the User to repay all or part of the credited KIN back to you. Additionally, the User does not have control or is aware over key aspects of the Transaction sequence.  The purpose of the Transaction or series of Transactions appears, in our view, designed to manufacture the number of Spend Transactions on behalf of Users within your Application.
+
+*[**Asparagusm** comment: Idea is that Section D is focused on describing bad behaviour and KIN experiences that we don't want in the ecosystem.  
