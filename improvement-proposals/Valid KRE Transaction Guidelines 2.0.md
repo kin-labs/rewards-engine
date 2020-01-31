@@ -148,13 +148,13 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 10.3  Any temporary ban may be instated, lifted or reinstated at our sole discretion and subject to any conditions we see fit.  
 
-11. **Remedying non-compliance**
+11. **Remedying a breach**
 
 If you have breached these KRE Transaction Guidelines:
 
-11.1  We may permit you to remedy the breach where it is capable of remedy by providing an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines, however we are not obliged to consider remedial action.
+11.1  we may permit you to remedy the breach where it is capable of remedy by providing an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines, however we are not obliged to consider remedial action;
 
-11.2  Any payouts from the KRE the Application may have received during the period the Application was excluded from payouts from the KRE will not be re-credited.
+11.2  any payouts from the KRE the Application may have received during the period the Application was excluded from payouts from the KRE will not be re-credited.
 
 **SECTION D – PROHIBITED TRANSACTIONS**
 
