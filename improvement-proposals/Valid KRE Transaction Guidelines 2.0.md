@@ -30,7 +30,7 @@ To receive a payout from the KRE:
 
 2.1 you must satisfy in our discretion all of the Minimum Requirements as set out in Section A and all of the applicable Specific Transaction Requirements as set out in Section B; and
 
-2.2  your Application must not contain any Prohibited Transactions as set out in Section D .
+2.2  your Application must not contain any Prohibited Transactions as set out in Section D.
 
 
 **SECTION A - MINIMUM REQUIREMENTS**
@@ -105,7 +105,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.2. The entering into a Subscription by a User must be clear and explicit to the User and it must contain the following:
 
-(a) How much KIN will be charged in total for the length of the Subscription period;
+(a) the amount of KIN to be charged in total for the length of the Subscription period;
 
 (b) The length of the Subscription period;
 
