@@ -63,7 +63,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 7.1. Each Spend Transaction must:
 
-(a) include clear communication to the User of the amount of the Transaction;
+(a) include clear communication to the User of the amount of the Spend Transaction;
 
 (b) include clear communication to the User of what they will receive in return for their KIN;
 
