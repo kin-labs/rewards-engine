@@ -14,7 +14,7 @@ The following definitions apply in this document:
 | Term | Definition |
 | ------------- | ------------- |
 | "***Earn Transaction***" |a Transaction originated by you to a User within your Application;  |
-| "***Passive Subscription Payment***" | a Transaction made by a User to pay for a Subscription and the User is not required actively initiate the Transaction in accordance with Section 9.7;  |
+| "***Passive Subscription Payment***" | a Transaction made by a User to pay for a Subscription where the User is not required actively initiate the Transaction in accordance with Section 9.7;  |
 | "***P2P Transaction***" |a Transaction between one User and another User within your Application;  |
 | "***Prohibited Transaction***" | any Transaction described in '*Section D – Prohibited Transactions*';  |
 | "***Spend Transaction***" | a P2P Transaction or a U2D Transaction, as the case may be;|
