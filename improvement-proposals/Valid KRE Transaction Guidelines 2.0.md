@@ -75,7 +75,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 7.2  If the amount of the Spend Transaction is equal to 1 KIN then the Transaction may be initiated by a single tap by the User (such as the User tapping 'like' or a 'heart', or tapping 'ok');
 
-7.3  If the amount of the Spend Transaction is for more than 1 KIN, then:
+7.3  If the amount of the Spend Transaction is greater than 1 KIN, then:
 
 (a) the amount of KIN must be clearly stated on or near the action/button that will initiate the Spend Transaction; and
 
