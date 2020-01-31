@@ -130,7 +130,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.7. Other than the initial payment of the Subscription cost, subsequent payments for the same Subscription during the Subscription Period may be Passive Subscription Payments.  A Passive Subscription Payment does not require the User to actively initiate the Transaction rather it may occur automatically.    You still must ensure that the User is made aware that a Passive Subscription Payment was made by the User in connection with the Subscription at the time the payment is made.
 
-9.8 A Passive Subscription Payment will be counted as an U2D Transaction, or a P2P Transaction, as the case may be, provided that the frequency of such payments does not exceed Column 2 in Section 9.5 for the relevant Subscription period.  
+9.8 A Passive Subscription Payment will be counted as an U2D Transaction or a P2P Transaction, as the case may be, provided that the frequency of such payments does not exceed Column 2 in Section 9.5 for the relevant Subscription period.  
 
 9.9 A User must be able to unsubscribe from a Subscription at any time without further obligation to pay.
 
