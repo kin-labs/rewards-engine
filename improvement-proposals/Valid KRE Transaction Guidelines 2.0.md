@@ -73,9 +73,9 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 (e) include the ability to acknowledge and dismiss the confirmation above.  Once acknowledged or dismissed, there should be no need to re-communicate the information to the User.
 
-7.2  If the amount of the Spend Transaction is less than or equal to 10 KIN then the Transaction may be initiated by a single tap by the User (such as the User tapping 'like' or a 'heart', or tapping 'ok').
+7.2  If the amount of the Spend Transaction is less than or equal to 100 KIN then the Transaction may be initiated by a single tap by the User (such as the User tapping 'like' or a 'heart', or tapping 'ok') provided that you have firstly informed the User the cost of undertaking the relevant action that initiates the Spend Transaction (e.g. by a tutorial, button confirmation or notification). 
 
-7.3  If the amount of the Spend Transaction is greater than 10 KIN, then:
+7.3  If the amount of the Spend Transaction is greater than 100 KIN, then:
 
 (a) the amount of KIN must be clearly stated on or near the action/button that will initiate the Spend Transaction;
 
