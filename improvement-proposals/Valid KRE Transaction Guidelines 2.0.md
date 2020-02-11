@@ -35,7 +35,7 @@ To receive a payout from the KRE:
 
 **SECTION A - MINIMUM REQUIREMENTS**
 
-3. **User to be aware and in control**
+3. **Awareness and control**
 
 3.1.  The sending party of a Transaction must have control over the initiation of that Transaction unless it is Passive Subscription Payment.
 
@@ -73,9 +73,10 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 (e) include the ability to acknowledge and dismiss the confirmation above.  Once acknowledged or dismissed, there should be no need to re-communicate the information to the User.
 
-7.2  If the amount of the Spend Transaction is equal to 1 KIN then the Transaction may be initiated by a single tap by the User (such as the User tapping 'like' or a 'heart', or tapping 'ok').
 
-7.3  If the amount of the Spend Transaction is greater than 1 KIN, then:
+7.2  If the amount of the Spend Transaction is less than or equal to 100 KIN then the Transaction may be initiated by a single tap by the User (such as the User tapping 'like' or a 'heart', or tapping 'ok') provided that you have firstly informed the User the cost of undertaking the relevant action that initiates the Spend Transaction (e.g. by a tutorial, button confirmation or notification). 
+
+7.3  If the amount of the Spend Transaction is greater than 100 KIN, then:
 
 (a) the amount of KIN must be clearly stated on or near the action/button that will initiate the Spend Transaction;
 
@@ -130,7 +131,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.7. Other than the initial payment of the Subscription cost, subsequent payments for the same Subscription during the Subscription Period may be Passive Subscription Payments.  A Passive Subscription Payment does not require the User to actively initiate the Transaction rather it may occur automatically.    You still must ensure that the User is made aware that a Passive Subscription Payment was made by the User in connection with the Subscription at the time the payment is made.
 
-9.8 A Passive Subscription Payment will be counted as an U2D Transaction or a P2P Transaction, as the case may be, provided that the frequency of such payments does not exceed Column 2 in Section 9.5 for the relevant Subscription period.  
+9.8 A Passive Subscription Payment will be counted as a U2D Transaction or a P2P Transaction, as the case may be, provided that the frequency of such payments does not exceed Column 2 in Section 9.5 for the relevant Subscription period.  
 
 9.9 A User must be able to unsubscribe from a Subscription at any time without further obligation to pay.
 
