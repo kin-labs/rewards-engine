@@ -100,12 +100,11 @@ If sum(Payout_i for all apps i in A) < KRE_total:
 
 As in KRE 1.1 we propose a continuation of the Monopoly Clause. The fundamental change is that it will apply separately to each KRE track to ensure that developers targeting a specific track will still be able to compete effectively.
 
-## Monopoly Clause
-No single developer will receive more than 66.67% of the KRE payout for a given period and any developer that would have received more than 50% of the payout will have their payout adjusted.
-No two developers will receive more than 90% of the KRE payout for a given period.
+No single developer will receive more than 66.67% of the KRE payout for specific track for a given period and any developer that would have received more than 50% of the track's payout will have their track payout adjusted.
+No two developers will receive more than 90% of any KRE track's payout for a given period.
 In both cases, residual payouts will be redistributed proportionally to other developers
 
-Let `s_1, s_2, …, s_n` be the KRE payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
+Let `s_1, s_2, …, s_n` be the KRE track payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
 ```
 If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
     If s_1 > 0.5:
@@ -129,29 +128,29 @@ Else:
  ```
 
 **Example 1:**  
-Payout shares before clause: `{0.35, 0.3, 0.2, 0.15}`  
-Payout shares after clause: `{0.35, 0.3, 0.2, 0.15}`  
+Payout track shares before clause: `{0.35, 0.3, 0.2, 0.15}`  
+Payout track shares after clause: `{0.35, 0.3, 0.2, 0.15}`  
 Reasoning: Clause does not apply
 
 **Example 2:**  
-Payout shares before clause: `{0.90, 0.05, 0.03, 0.02}`  
-Payout shares after clause: `{0.633, 0.183, 0.11, 0.073}`  
+Payout track shares before clause: `{0.90, 0.05, 0.03, 0.02}`  
+Payout track shares after clause: `{0.633, 0.183, 0.11, 0.073}`  
 Reasoning: 2.i.1 applies
 
 **Example 3:**  
-Payout shares before clause: `{0.50, 0.45, 0.03, 0.02}`  
-Payout shares after clause: `{0.474, 0.426, 0.06, 0.04}`  
+Payout track shares before clause: `{0.50, 0.45, 0.03, 0.02}`  
+Payout track shares after clause: `{0.474, 0.426, 0.06, 0.04}`  
 Reasoning: 2.i.2 applies
 
 **Example 4:**  
-Payout shares before clause: `{0.55, 0.44, 0.01}`  
-Payout shares after clause: `{0.486, 0.414, 0.06, 0.10}`  
+Payout track shares before clause: `{0.55, 0.44, 0.01}`  
+Payout track shares after clause: `{0.486, 0.414, 0.06, 0.10}`  
 Reasoning: Both 3.1 and 3.2 apply, first `0.55` is changed to `0.517` by 3.1, then `0.517` and `0.44` are changed to by 2.a.2.
 
 While `66.67%` seems high for a single developer to receive, we do not want to discourage strong developers from entering the ecosystem. Moreover, because any app with payout shares above `50%` will be adjusted, most of the time the top app will receive much less than `66.67%`:
 
 
-Payout shares before clause | Payout shares after clause
+Payout track shares before clause | Payout track shares after clause
 --------------------------- | --------------------------
 `50%` | `50%`
 `60%` | `53.33%`
