@@ -5,7 +5,7 @@ The purpose of this document is to outline a proposed improvement to the existin
 - *2.1*
 
 ## Proposed by:
-*Kik Interactice Inc*
+*Kik Interactive Inc*
 
 ## Abstract
 This is a simple fix to remove the language "buy demand" and replace with simply "demand".
