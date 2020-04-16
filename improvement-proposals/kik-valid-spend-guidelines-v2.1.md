@@ -1,20 +1,20 @@
 # Kin Improvement Proposal
-The purpose of this document is to outline a proposed improvement to the Valid Transaction Guidelines and Introduce KRE Update Guidelines. 
+The purpose of this document is to outline a proposed improvement to the Valid Transaction Guidelines. 
 
 *versioning:*
-- *Valid Transaction Guidelines 2.1, KRE Update Guidelines 1.0*
+- *Valid Transaction Guidelines 2.1*
 
 ## Proposed by:
 *Kik Interactive Inc. with significant contributions and revisions by asparagusm.*
 
 ## Abstract
-The purpose of this proposal is to introduce more effective policy for policing KRE payouts and KRE proposals. This proposal does not attempt to change the KRE algorithm: an app who is following the Valid Transaction Guidelines should see no change to their KRE payouts. 
+The purpose of this proposal is to introduce more effective policy for policing KRE payouts. This proposal does not attempt to change the KRE algorithm: an app who is following the Valid Transaction Guidelines should see no change to their KRE payouts. 
 
-First, the proposal tightens existing process for KRE violations and introduces the Kin Community Council as a violations filter for the Kin Foundation. Secondly, this proposal introduces timelines and cadence for new KRE monetary policy so developers can be more confident about design decisions which optimize for the KRE.
+The proposal tightens existing process for KRE violations and introduces the Kin Community Council as a violations filter for the Kin Foundation.
 
 ## Summary of Improvements
 
-### 1) Valid Transaction Guidelines 2.1 ###
+### Valid Transaction Guidelines 2.1 ###
 
 *The text below is to replace SECTION C of the Valid Transaction Guidelines.*
 
@@ -62,23 +62,6 @@ If you have breached these KRE Transaction Guidelines:
 13.1 we may permit you to remedy the breach where it is capable of remedy by providing an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines;
 
 13.2 any payouts from the KRE that the Application would have received during the period the Application was suspended from payouts will not be re-credited.
-
-### 2) KRE Update Guidelines 1.0 ###
-
-Central banks like the Bank of Canada and the U.S. Federal Reserve System have adopted preset dates for interest rate changes. It is believed that these preset dates lead to better monetary policy. The KRE similarly, should adopt a preset cadence for algorithmic changes. This will allow developers to feel more confident in their application design decisions.
-
-In order for a change to the KRE to be taken from ideation to implementation it must be: publicly posted to Github, the community must have time to weigh in, it must be approved by the Kin Foundation, the community must be notified, and finally the update must be coded.
-
-The Kin Foundation should reserve the right to make changes to the KRE as necessary in extreme circumstances. These changes should be limited to: closing necessary loopholes that go against the spirit of the KRE, correcting other small errors with minimal monetary impact, and fixing larger issues in the case of emergency.
-
-Other than the aforementioned emergency fixes, we propose the following deadlines for various stages of the KRE update process:
-*Note that these are placeholder dates and will be updated in a subsequent commit after discussion with the KF*
-
-| Update   | Proposal Draft Deadline | Proposal Final Deadline | Kin Foundation Vote | Date Changes Take Effect |
-|----------|-------------------------|-------------------------|---------------------|---------------------|
-| Q3 2020  | June 15, 2020 | June 22, 2020 | June 25, 2020| July 1, 2020 |
-| Q4 2020  | September 15, 2020 | September 22, 2020 | September 25, 2020| October 1, 2020 |
-| Q1 2021  | December 5, 2020 | December 12, 2020 | December 15, 2020| January 1, 2021 |
 
 ## Implementation
 We propose that this change happens immediately pending approval from the Kin Foundation.
