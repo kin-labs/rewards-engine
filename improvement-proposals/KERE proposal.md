@@ -9,7 +9,7 @@ Liquidity is more important than ever for the success of the Kin project. Kin is
 
 Exchanges are key ecosystem infrastructure and unlocking access is vital for project longevity. Alongside incentives for exchanges, the KERE has a real likelihood of generating interest from market makers and key influencers that have been out of reach. Recent efforts such as the Kin Community Rewards program point to the understanding that all pieces of the Kin ecosystem deserve to be incentivized.
 
-In the spirit of creating additional incentive structures to support the Kin Ecosystem, the Kin Exchange Rewards Engine (KERE) will pay exchanges on a monthly/weekly basis for their liquidity contributions to the ecosystem. The proposal is a 500 Billion Kin Fund to incentivize liquidity: the Kin Exchange Reward Engine or KERE. A 10 year programme paying out 46 Billion Kin per year (~125,941,136 Kin/day;) to exchanges that include Kin as an active trading pair, with 8% set aside for new integration bonuses. The KERE will have 5 tracts: Volume, Derivatives Volume, Liquidity, and Holding in order to replicate the KRE 2.0 model and incentivize multiple kin-supporting verticals within exchanges.
+In the spirit of creating additional incentive structures to support the Kin Ecosystem, the Kin Exchange Rewards Engine (KERE) will pay exchanges on a monthly/weekly basis for their liquidity contributions to the ecosystem. The proposal is a 500 Billion Kin Fund to incentivize liquidity: the Kin Exchange Reward Engine or KERE. A 10 year programme paying out 46 Billion Kin per year (~125,941,136 Kin/day;) to exchanges that include Kin as an active trading pair, with 8% set aside for new integration bonuses. The KERE will have 4 tracts: Volume, Derivatives Volume, Liquidity, and Holding in order to replicate the KRE 2.0 model and incentivize multiple kin-supporting verticals within exchanges.
 
 ## KERE 1.0
 - 4 Tracts (Volume (42%), Derivatives Volume (20%), Liquidity (20%),   Holding (10%))
@@ -62,6 +62,17 @@ Note that an exchange will only be rewarded KERE payouts for days where at least
 Note that an exchange’s KERE wallet will include both their KERE payout wallet and an optional verified cold-storage wallet they have provided.
 
 
+**Bonus Incentives**
+
+Finally, 40 Billion or 8% of the total KERE will be set aside to attract the initial investment in Kin liquidity from top exchanges as integration bonuses
+
+8% Integration Bonuses: The first 8 of the 15 “desirable” exchanges to integrate Kin will be delivered 500 Million Kin.
+
+A reasonable goal of any top-tier cryptocurrency with more than 5 million monthly users is to be listed on the best exchanges. Based on reputation and volume, 10 exchanges and 5 Futures exchanges will be targeted for integration bonuses by the KERE.
+
+Exchanges: Binance, OKEx, Coinbase Pro, Kraken, Bittrex, Gemini, BitHumb, Huobi Global, BitStamp, BitFinex
+Derivatives Market: OKEx (Futures), BitMex, Huobi DM, Binance (Futures), Bakkt
+
 ## Valid Volume Guidelines
 <ol type="a">
   <li> Data Sources: Link Oracle, CoinMarketCap, CoinGecko, LiveCoinWatch </li>
@@ -83,19 +94,23 @@ The notation for KERE payout allocation will be as follows:
 
 Like in the KRE, Kin that was not paid out to developers will accumulate for future use. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
 
-The notation for the KRE carryover pool calculation is as follows:
+The notation for the KRE carryover pool calculation is as follows:  
 
-Let r be the number of days left in 2020 Let KRE_carryover be the KRE carryover pool (initialized at 0)
+Let `r` be the number of days left in 2020
+Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
 
 Before a payout:
+```
+KRE_total = 500,000,000
+If KRE_carryover > 0:
+    KRE_total += [KRE_carryover / r]
+```
 
-`KERE_total = 46,000,000,000/365.25
-If KERE_carryover > 0:
-    KERE_total += [KERE_carryover / r]
 After a payout:
-
-If sum(Payout_i for all apps i in A) < KERE_total:
-    KERE_carryover += KERE_total - sum(Payout_i for all exchanges i in A)`
+```
+If sum(Payout_i for all apps i in A) < KRE_total:
+    KRE_carryover += KRE_total - sum(Payout_i for all apps i in A)
+```
 
 **Monopoly Clause** 
 
@@ -161,30 +176,3 @@ Payout track shares before clause | Payout track shares after clause
 `95%` | `65%`
 
 This table assumes that 2.i.2 does not apply.
-
-**Holding/Staking**
-
-A 10% Hold Tract: Similar to the KRE hold track, this will pay out to the exchange’s “staking” wallet of choice for holding Kin. This track can only be earned by exchanges already earning KERE rewards through the trading and liquidity tracts. The larger proportion of Kin held in the preferred wallet, the larger the payout. 
-
-**Spot Trading Volume**
-
-42% to the normalized volume tract: it’s a well known fact that exchanges amplify their volume in order to appear more attractive to day traders. Fortunately, websites like CoinGecko and LiveCoinWatch provide normalized volume data for free.  Payouts can be based on adjusted volume calculated from an average of freely available normalized CoinGecko and LiveCoinWatch market data.
-
-**Derivatives Volume**
-
-20% to the derivatives volume tract: day traders prefer options contracts to direct exposure. By incentivizing derivative volumes alongside spot trading, Kin will allow itself to massively increase liquidity, similar to the massive volumes generated by crypto commodities exchanged on exchanges such as BitMex.
-
-**Liquidity**
-
-20% allocated to a liquidity tract: using CoinMarketCap’s freely available liquidity score, the remaining 22% of the KERE will be paid out proportionally to exchanges based on their ability to provide immediate liquidity to developers and speculators alike.
-
-**Integration Bonuses**
-
-Finally, 40 Billion or 8% of the total KERE will be set aside to attract the initial investment in Kin liquidity from top exchanges as integration bonuses
-
-8% Integration Bonuses: The first 8 of the 15 “desirable” exchanges to integrate Kin will be delivered 500 Million Kin.
-
-A reasonable goal of any top-tier cryptocurrency with more than 5 million monthly users is to be listed on the best exchanges. Based on reputation and volume, 10 exchanges and 5 Futures exchanges will be targeted for integration bonuses by the KERE.
-
-Exchanges: Binance, OKEx, Coinbase Pro, Kraken, Bittrex, Gemini, BitHumb, Huobi Global, BitStamp, BitFinex
-Derivatives Market: OKEx (Futures), BitMex, Huobi DM, Binance (Futures), Bakkt
