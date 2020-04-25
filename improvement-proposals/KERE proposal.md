@@ -5,7 +5,7 @@ The purpose of this document is to outline a proposed improvement to the existin
 *WeviNest*
 
 ## Abstract
-Kin is now spent by over 4 million people per month and liquidity is more important than ever for both the short and long-term success of the project.  A Kin Exchange Rewards Engine aligns with the vision of the ecosystem as an incentive structure that allows all participants an equal shot at earning a stake of a significant reward. 
+Liquidity is more important than ever for the success of the Kin project. Kin is now spent by over 4 million people per month and several new incentive structures have been created this year.  A Kin Exchange Rewards Engine aligns with the vision of the ecosystem as an incentive structure that allows all participants an equal shot at earning a stake of a significant reward. 
 
 Exchanges are key ecosystem infrastructure and unlocking access is vital for project longevity. Alongside incentives for exchanges, the KERE has a real likelihood of generating interest from market makers and key influencers that have been out of reach. Recent efforts such as the Kin Community Rewards program point to the understanding that all pieces of the Kin ecosystem deserve to be incentivized.
 
