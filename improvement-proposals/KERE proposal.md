@@ -11,14 +11,11 @@ Exchanges are key ecosystem infrastructure and unlocking access is vital for pro
 
 In the spirit of creating additional incentive structures to support the Kin Ecosystem, the Kin Exchange Rewards Engine (KERE) will pay exchanges on a monthly/weekly basis for their liquidity contributions to the ecosystem. The proposal is a 500 Billion Kin Fund to incentivize liquidity: the Kin Exchange Reward Engine or KERE. A 10 year programme paying out 46 Billion Kin per year (~125,941,136 Kin/day;) to exchanges that include Kin as an active trading pair, with 8% set aside for new integration bonuses. The KERE will have 5 tracts: Volume, Derivatives Volume, Liquidity, and Holding in order to replicate the KRE 2.0 model and incentivize multiple kin-supporting verticals within exchanges.
 
-## Summary
-*High level overview of improvements proposed, divided into (i)KRE and (ii)Valid Spend Guidelines. Customize as necessary.*
-1. KERE 1.0
+## KERE 1.0
 - 4 Tracts (Volume (42%), Derivatives Volume (20%), Liquidity (20%),   Holding (10%))
 - 500 Billion Kin paid out over 10 years
 - 8% set aside as Bonus Incentives to attract desirable exchanges
-
-2. Valid Volume Guidelines
+### Valid Volume Guidelines
 - Accepted data sources: CoinGecko, CoinMarketCap, LiveCoinWatch, Link Oracles
 
 
@@ -26,40 +23,58 @@ In the spirit of creating additional incentive structures to support the Kin Eco
 ## KERE Algorithm
 
 Payout:
+
 Across the four KERE tracks (Volume, Derivatives Volume, Liquidity, Hold), an exchange's (exchange i) total payout would be:
-'Payout_i = Payout_volume_i + Payout_DerivativesVolume_i + Payout_Liquidity_i + Payout_hold_i
+
+`Payout_i = Payout_volume_i + Payout_DerivativesVolume_i + Payout_Liquidity_i + Payout_hold_i`
+
 Note that an exchange will only be rewarded KERE payouts for days where at least $1000 worth of Kin was traded on their respective exchange.
+
 Volume Tract:  
-'Let KERE_volume be the total amount of Kin paid to exchanges for the Volume track in a day.
-'Let volume_i be the total Kin trading volume in thousands of USD traded in a day by exchange i.
-'The Payout_volume_i = min(KERE_volume * volume_i / sum for all exchanges i (volume_i), 20000 * volume_i)
+`Let KERE_volume be the total amount of Kin paid to exchanges for the Volume track in a day.`
+
+`Let volume_i be the total Kin trading volume in thousands of USD traded in a day by exchange i.`
+
+`Payout_volume_i = min(KERE_volume * volume_i / sum for all exchanges i (volume_i), 20000 * volume_i)`
+
 Derivatives Volume Tract:  
-'Let KERE_DerivativesVolume be the total amount of Kin paid to exchanges for the Derivatives Volume track in a day.
-'Let DerivativesVolume_i be the total Kin trading volume in thousands of USD traded in a day by derivatives exchange i.
-'The Payout_volume_i = min(KERE_DerivativesVolume * DerivaitvesVolume_i / sum for all derivatives exchanges i (DerivativesVolume_i), 10000 * DerivativesVolume_i)
+`Let KERE_DerivativesVolume be the total amount of Kin paid to exchanges for the Derivatives Volume track in a day.`
+
+`Let DerivativesVolume_i be the total Kin trading volume in thousands of USD traded in a day by derivatives exchange i.`
+
+`The Payout_volume_i = min(KERE_DerivativesVolume * DerivaitvesVolume_i / sum for all derivatives exchanges i (DerivativesVolume_i), 10000 * DerivativesVolume_i)`
+
 Liquidity Tract:
-'Let KERE_Liquidity be the total amount of Kin paid to exchanges for the Liquidity track in a day.
-'Let Liquidity_i be the minimum Kin liquidity in thousands of USD available in a day by exchange i.
-'The Payout_volume_i = min(KERE_DerivativesVolume * DerivaitvesVolume_i / sum for all derivatives exchanges i (DerivativesVolume_i), 10000 * DerivativesVolume_i)
+`Let KERE_Liquidity be the total amount of Kin paid to exchanges for the Liquidity track in a day.`
+
+`Let Liquidity_i be the minimum Kin liquidity in thousands of USD available in a day by exchange i.`
+
+`The Payout_volume_i = min(KERE_DerivativesVolume * DerivaitvesVolume_i / sum for all derivatives exchanges i (DerivativesVolume_i), 10000 * DerivativesVolume_i)`
+
 Holding Tract: the notation for the holding tract payout calculation is as follows
-'Let w_i = min(KERE_prior_payouts_i, minimum amount of Kin in KERE wallet during a day)
-'Payout_hold_i = min(w_i / sum(w_j for all exchanges j in A) * KERE_hold, w_i * 50% / 365.25)
+
+`Let w_i = min(KERE_prior_payouts_i, minimum amount of Kin in KERE wallet during a day)`
+
+`Payout_hold_i = min(w_i / sum(w_j for all exchanges j in A) * KERE_hold, w_i * 50% / 365.25)`
 
 Note that an exchange’s KERE wallet will include both their KERE payout wallet and an optional verified cold-storage wallet they have provided.
 
 
 ## Valid Volume Guidelines
 <ol type="a">
-  <li>Data Sources: Link Oracle, CoinMarketCap, CoinGecko, LiveCoinWatch</li>
+  <li> Data Sources: Link Oracle, CoinMarketCap, CoinGecko, LiveCoinWatch </li>
 </ol>
 
 ## Implementation
-'KERE_total: This will be (46,000,000,000/365.25) or ~125,941,136 Kin/day from January 2021 to December 2030.
-'The notation for KERE payout allocation will be as follows:
-'KERE_volume = 0.457 * KRE_total
-'KERE_DerivativesVolume = 0.217 * KRE_total
-'KERE_Liquidity = 0.217 * KRE_total
-'KERE_DerivativesVolume = 0.109 * KRE_total
+`KERE_total: This will be (46,000,000,000/365.25) or ~125,941,136 Kin/day from January 2021 to December 2030.`
+The notation for KERE payout allocation will be as follows:
+`KERE_volume = 0.457 * KRE_total
+
+KERE_DerivativesVolume = 0.217 * KRE_total
+
+KERE_Liquidity = 0.217 * KRE_total
+
+KERE_DerivativesVolume = 0.109 * KRE_total`
 
 The KERE Carryover Pool
 Like in the KRE, Kin that was not paid out to developers will accumulate for future use. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
@@ -70,13 +85,13 @@ Let r be the number of days left in 2020 Let KRE_carryover be the KRE carryover 
 
 Before a payout:
 
-KERE_total = 46,000,000,000/365.25
+`KERE_total = 46,000,000,000/365.25
 If KERE_carryover > 0:
     KERE_total += [KERE_carryover / r]
 After a payout:
 
 If sum(Payout_i for all apps i in A) < KERE_total:
-    KERE_carryover += KERE_total - sum(Payout_i for all exchanges i in A)
+    KERE_carryover += KERE_total - sum(Payout_i for all exchanges i in A)`
 
 **Monopoly Clause** 
 
