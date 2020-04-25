@@ -73,6 +73,8 @@ A reasonable goal of any top-tier cryptocurrency with more than 5 million monthl
 Exchanges: Binance, OKEx, Coinbase Pro, Kraken, Bittrex, Gemini, BitHumb, Huobi Global, BitStamp, BitFinex
 Derivatives Market: OKEx (Futures), BitMex, Huobi DM, Binance (Futures), Bakkt
 
+![Payout Distribution](https://github.com/WeviNest/rewards-engine/blob/master/improvement-proposals/KERE%20Payout%201.0%20Distribution%20.png)
+
 ## Valid Volume Guidelines
 <ol type="a">
   <li> Data Sources: Link Oracle, CoinMarketCap, CoinGecko, LiveCoinWatch </li>
