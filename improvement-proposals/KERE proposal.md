@@ -118,11 +118,11 @@ If sum(Payout_i for all apps i in A) < KRE_total:
 
 As in the KRE, I propose a continuation of the Monopoly Clause. Continually, it will apply separately to each KERE track to ensure that exchanges targeting a specific track will still be able to compete effectively.
 
-No single exchange will receive more than 66.67% of the KRE payout for specific track for a given period and any exchange that would have received more than 50% of the track's payout will have their track payout adjusted.
+No single exchange will receive more than 66.67% of the KERE payout for specific track for a given period and any exchange that would have received more than 50% of the track's payout will have their track payout adjusted.
 No two exchanges will receive more than 90% of any KERE track's payout for a given period.
 In both cases, residual payouts will be redistributed proportionally to other exchanges
 
-Let `s_1, s_2, …, s_n` be the KRE track payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
+Let `s_1, s_2, …, s_n` be the KERE track payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
 ```
 If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
     If s_1 > 0.5:
