@@ -98,20 +98,20 @@ Like in the KRE, Kin that was not paid out to developers will accumulate for fut
 
 The notation for the KRE carryover pool calculation is as follows:  
 
-Let `r` be the number of days left in 2020
-Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
+Let `r` be the number of days left in 2021
+Let `KERE_carryover` be the KERE carryover pool (initialized at 0)
 
 Before a payout:
 ```
-KRE_total = 500,000,000
-If KRE_carryover > 0:
-    KRE_total += [KRE_carryover / r]
+KERE_total = 500,000,000
+If KERE_carryover > 0:
+    KERE_total += [KERE_carryover / r]
 ```
 
 After a payout:
 ```
-If sum(Payout_i for all apps i in A) < KRE_total:
-    KRE_carryover += KRE_total - sum(Payout_i for all apps i in A)
+If sum(Payout_i for all exchanges i in A) < KERE_total:
+    KERE_carryover += KERE_total - sum(Payout_i for all exchanges i in A)
 ```
 
 **Monopoly Clause** 
