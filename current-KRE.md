@@ -34,8 +34,10 @@ The notation of the Spend algorithm going forward will then be:
 
 ## 2. Buy
 `Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
-`Let w_increase_i be the summed user wallet balance increase in app i over the lifetime of the KRE`  <br/>
-`Let w_decrease_i be the summed wallet balance decrease in app i over the lifetime of the KRE`  <br/>
+`Let w_increase_i be the amount of Kin sent from the registered developer wallet to 
+user wallets (earns, creates) in app i over the lifetime of the KRE`  <br/>
+`Let w_decrease_i be the amount of Kin sent from user wallets to the registered
+developer wallet (spends) in app i over the lifetime of the KRE`  <br/>
 `Let KRE_prior_buy_payouts_i be the summed Kin paid to app i through the Buy track over the lifetime of the KRE`<br/> 
 `Let demand_i be the amount of Kin that has flowed into user wallets: w_increase_i - w_decrease_i.`<br/> 
 
