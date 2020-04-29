@@ -71,6 +71,7 @@ Finally, 40 Billion or 8% of the total KERE will be set aside to attract the ini
 A reasonable goal of any top-tier cryptocurrency with more than 5 million monthly users is to be listed on the best exchanges. Based on reputation and volume, 10 exchanges and 5 Futures exchanges will be targeted for integration bonuses by the KERE.
 
 Exchanges: Binance, OKEx, Coinbase Pro, Kraken, Bittrex, Gemini, BitHumb, Huobi Global, BitStamp, BitFinex
+
 Derivatives Market: OKEx (Futures), BitMex, Huobi DM, Binance (Futures), Bakkt
 
 ![Payout Distribution](https://github.com/WeviNest/rewards-engine/blob/master/improvement-proposals/KERE%20Payout%201.0%20Distribution%20.png)
