@@ -16,7 +16,7 @@ In the spirit of creating additional incentive structures to support the Kin Eco
 - 500 Billion Kin paid out over 10 years
 - 8% set aside as Bonus Incentives to attract desirable exchanges
 ### Valid Volume Guidelines
-- Accepted data sources: CoinGecko, CoinMarketCap, LiveCoinWatch, Link Oracles
+- Accepted data sources: CoinGecko, CoinMarketCap, LiveCoinWatch, Link Oracle (I have begun the process of creating a decentralized data source to provide accurate data for the KERE smart contract) 
 
 
 
