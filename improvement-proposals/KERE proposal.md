@@ -91,7 +91,9 @@ The notation for KERE payout allocation will be as follows:
 
 `KERE_Liquidity = 0.217 * KRE_total`
 
-`KERE_DerivativesVolume = 0.109 * KRE_total`
+`KERE_hold = 0.109 * KRE_total`
+
+Hold track is only paid if volume or DerivativesVolume > 0
 
 **The KERE Carryover Pool**
 
