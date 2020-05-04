@@ -9,19 +9,19 @@ The purpose of this document is to outline a proposed improvement to the existin
 
 ## Abstract
 We believe that for the Kin economy to continue to grow, the ecosystem needs to focus on driving real demand for Kin. In order to more directly drive this goal we recommend 3 changes:
-- Update the Buy Track to reward developers directly for users purchasing Kin with their attention (ads) or fiat currency via whitelisted modules.
+- Update the Buy Track to reward developers directly for users purchasing Kin with their attention or fiat currency via whitelisted modules.
 - Update the Carryover Pool to become 3 different Carryover Pools (one for each track) which will further force developers to adjust to the Buy Track.
 - Update the Spend Track to pay developers for higher spend users; creating stronger incentive for users to earn and spend large amounts of Kin.
 
 ## Summary of Improvements
-The initial vision for the Buy Track in KRE 2.0 was incentivizing developers to get users to buy kin while maintaining making sure that it produced more buy pressure than sell pressure on the market. While the current formulation of the Buy Track accomplishes this, the Buy Track (in conjuction with the rest of the KRE) has a number of problems:
-- We have received feedback that the Buy Track is too complicated for a developer to properly optimize for
+The initial vision for the Buy Track in KRE 2.0 was incentivizing developers to get users to buy kin while making sure that it produced more buy pressure than sell pressure on the market. While the current formulation of the Buy Track accomplishes this, the Buy Track (in conjuction with the rest of the KRE) has a few problems:
+- Developers are stating that the Buy Track is too complicated to properly optimize for and doesn't strongly impact the amount of Kin being bought
 - While the buy/sell pressure created from the Buy Track may be neutral, it does not directly incentize developers to get users to buy kin
 - Developers are not incentivized to get users to spend more than 1000 Kin at a time (less than a penny USD at the time of writing). This leads to use cases where experiences cost exactly 1000 Kin in app, and users will have very little incentive to trade any meaningful amount of fiat for Kin.
 
 In order to address these problems, our proposed improvement has 3 parts:
 ### 1. Buy Track Update
-In order for developers to be more strongly incentivized to get users to buy Kin, we wish to simplify the Buy track to reward developers more directly for purchases of Kin by users in dollars or attention (through ads). The existing logic of the buy track would be replaced with the following:<br/>
+In order for developers to be more strongly incentivized to get users to buy Kin, we wish to simplify the Buy track to reward developers more directly for purchases of Kin by users in dollars or attention. The existing logic of the buy track would be replaced with the following:<br/>
 
 `Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
 `Let buy_i be the total amount of Kin purchased and sent to users through their attention (ads) or fiat currency through a registered whitelisted module in app i in a day.`  <br/>
@@ -29,10 +29,10 @@ In order for developers to be more strongly incentivized to get users to buy Kin
 Then the buy payout for app i is:  
 `Payout_buy_i = min(KRE_buy * buy_i / (sum for all apps j buy_j), buy_i)`
 
-In order for new modules to be added to the set of existing whitelisted modules, developers will have to propose and be accepted by the Kin Foundation (process TBD). Initially, the only module accepted in the Buy Track of the KRE will be Kin Ads.
+In order for new modules to be added to the set of existing whitelisted modules, developers will have to submit new modules to the Kin Foundation (process TBD). New modules will need to demonstrate that Kin is being purchased and sent to a user through some means. On launch, the first whitelisted module of the Buy Track will be Kin Ads.
 
 ### 2. Carryover Pool Update
-In order to push developers to adapt to the updated Buy Track, we recommend the KRE Carryover Pool be split into 3 distinct pools: one per track. This will ensure that unused payouts from the Buy Track will not flow back into the Spend Track. The existing logic of the KRE Carryover Pool would be replaced with the following: <br/>
+In order to push developers to adapt to the updated Buy Track, we recommend the KRE Carryover Pool be split into 3 distinct pools: one per track. This will ensure that unused payouts from the Buy Track will not flow back into the Spend Track pushing developers more strongly to adapt. The existing logic of the KRE Carryover Pool would be replaced with the following: <br/>
 
 Let `r` be the number of days left in 2020
 On June 1, 2020 (or the first day this proposal becomes takes effect) the current KRE Carryover Pool will be split into 3 (based roughly on average payouts for the remainder of 2020):
