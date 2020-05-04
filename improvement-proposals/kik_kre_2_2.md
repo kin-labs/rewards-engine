@@ -73,10 +73,12 @@ Max Payout per spender | 3,000 Kin | 6,000 Kin | 12,000 Kin | 30,000 Kin | 75,00
  
 `Let KRE_spend be the total amount of Kin paid to developers for the Spend track in a day.` <br/>
 `Let spend_i_j be the amount of Kin user j spent in app i in a day.` <br/>
-`Let spend_units_i = sum for all users j in app i (2^log(spend_i_j))` <br/>
+`Let spend_units_i = sum for all users j in app i (spend_i_j^(log(2)))` <br/>
 `Payout_spend_i = KRE_spend * spend_units_i / sum for all apps j (spend_units_j)`
 
 This effectively means a few things. Firstly, the entire Spend Track payout will be spent each day (this would have almost certainly happened anyway). Secondly, a user who spends 10 Kin will be worth twice as much as a user who spends 1 Kin, 100 Kin spender 4 times as much as a 1 Kin spender and so on. Most importantly though, a user who spends an arbitrary amount of Kin (say 8,000 Kin for the sake of argument) would be worth ~15 times as much as a user who spent 1 Kin, instead of being bucketed and worth the same as a 1,000 Kin Spender (only 8 times as much as a 1 Kin Spender using this formula). 
+
+While it would be nice to have a simpler formula for calculating spenders, we think it is important for the formula to be sub-linear: as the amount of Kin spent goes up, the return for spending decreases. This ensures that, over a certain threshold the amount paid by the KRE for the spender is less than the amount spent by the spender. This limits the impact of a form of "Kin recycling" where developers give Kin to users to spend and are then paid back to the KRE more than what they gave to the users.
 
 ## Implementation
 Because this is a large change we propose this goes into effect June 1, 2020 which will give ample time for community feedback and development.
