@@ -15,7 +15,7 @@ We believe that for the Kin economy to continue to grow, the ecosystem needs to 
 
 ## Summary of Improvements
 The initial vision for the Buy Track in KRE 2.0 was incentivizing developers to get users to buy kin while making sure that it produced more buy pressure than sell pressure on the market. While the current formulation of the Buy Track accomplishes this, the Buy Track (in conjuction with the rest of the KRE) has a few problems:
-- Developers are stating that the Buy Track is too complicated to properly optimize for and doesn't strongly impact the amount of Kin being bought
+- Developers are stating that the Buy Track is too complicated to properly optimize for
 - While the buy/sell pressure created from the Buy Track may be neutral, it does not directly incentize developers to get users to buy kin
 - Developers are not incentivized to get users to spend more than 1000 Kin at a time (less than a penny USD at the time of writing). This leads to use cases where experiences cost exactly 1000 Kin in app, and users will have very little incentive to trade any meaningful amount of fiat for Kin.
 
