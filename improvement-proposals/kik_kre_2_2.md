@@ -81,4 +81,4 @@ This effectively means a few things. Firstly, the entire Spend Track payout will
 While it would be nice to have a simpler formula for calculating spenders, we think it is important for the formula to be sub-linear: as the amount of Kin spent goes up, the return for spending decreases. This ensures that, over a certain threshold the amount paid by the KRE for the spender is less than the amount spent by the spender. This limits the impact of a form of "Kin recycling" where developers give Kin to users to spend and are then paid back to the KRE more than what they gave to the users.
 
 ## Implementation
-Because this is a large change we propose this goes into effect June 1, 2020 which will give ample time for community feedback and development.
+Because this is a large change we propose this goes into effect July 1, 2020 which will give ample time for community feedback and development.
