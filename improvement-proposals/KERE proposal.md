@@ -106,7 +106,7 @@ Let `KERE_carryover` be the KERE carryover pool (initialized at 0)
 
 Before a payout:
 ```
-KERE_total = 500,000,000
+KERE_total = 125,941,136
 If KERE_carryover > 0:
     KERE_total += [KERE_carryover / r]
 ```
