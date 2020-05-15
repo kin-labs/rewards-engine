@@ -29,7 +29,7 @@ In order for developers to be more strongly incentivized to get users to buy Kin
 Then the buy payout for app i is:  
 `Payout_buy_i = min(KRE_buy * buy_i / (sum for all apps j buy_j), buy_i)`
 
-In order for new modules to be added to the set of existing whitelisted modules, developers will have to submit new modules to the Kin Foundation (process TBD). New modules will need to demonstrate that Kin is being purchased and sent to a user through some means. On launch, the first whitelisted module of the Buy Track will be Kin Ads.
+In order for new modules to be added to the set of existing whitelisted modules, developers will have to submit new modules to the Kin Foundation (see Module Submission). New modules will need to demonstrate that Kin is being purchased and sent to a user through some means. On launch, the first whitelisted module of the Buy Track will be Kin Ads.
 
 ### 2. Carryover Pool Update
 In order to push developers to adapt to the updated Buy Track, we recommend the KRE Carryover Pool be split into 3 distinct pools: one per track. This will ensure that unused payouts from the Buy Track will not flow back into the Spend Track pushing developers more strongly to adapt. The existing logic of the KRE Carryover Pool would be replaced with the following: <br/>
@@ -80,5 +80,30 @@ This effectively means a few things. Firstly, the entire Spend Track payout will
 
 While it would be nice to have a simpler formula for calculating spenders, we think it is important for the formula to be sub-linear: as the amount of Kin spent goes up, the return for spending decreases. This ensures that, over a certain threshold the amount paid by the KRE for the spender is less than the amount spent by the spender. This limits the impact of a form of "Kin recycling" where developers give Kin to users to spend and are then paid back to the KRE more than what they gave to the users.
 
+### Module Submission
+
+In order for a submitted module to be approved for use in the Buy Track it must be demonstrated that user actions resulted in the purchase of Kin. Blockchain transactions must occur for each user earn that happens through the module demonstrating:
+- That Kin was purchased in exchange for fiat currency
+- That the user received Kin in exchange for this purchase taking place
+- Which digital service (app) the purchase was made through
+- Which submitted Buy Track module was used
+
+Specifically, for each user earn counted through the module, a buy_id must be appended to the memo field of all earn transactions done through the module. A buy_id is of the form *-mod_id-ref_id* where:
+- *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
+- *ref_id* is a unique reference id created by the module developer which exists in another Kin blockchain transaction (we will refer to this as the reference_txn).
+
+In total, the earn transaction memo field would be of the form:
+- *1-app_id-mod_id-ref_id* i.e. *1-lipz-kads-abcdefg01*
+
+The transaction ref_id is a 10-digit alphanumeric identifier that must exist in the memo field of  the reference_txn. The refernce_txn must be formatted as follows:
+- *1-mod_id-ref_id* i.e. *1-kads-abcdefg01*
+
+The reference_txn would be either:
+- The actual transaction where the Kin purchase in exchange for fiat currency took place
+- A record-keeping payment transaction with amount 0.01 Kin sent to a module-specific address (can be any wallet created by the developer). This may be done in cases where fiat currency-exchange transactions are batched over a time period. In addition, the Buy Track module submission must contain information into how this information can be audited by KRE Operators or other parties. It must be verifiable that the same amount of Kin that was claimed to be purchased through the module was in fact sent to users and/or developers.
+
+Developers must submit this form (google form link TODO) which must be approved by the Kin Foundation prior to counting towards the KRE.
+
+
 ## Implementation
-Because this is a large change we propose this goes into effect July 1, 2020 which will give ample time for community feedback and development.
+Because this is a large change we propose this goes into effect no earlier than 45 days after the Kin Foundation has accepted the proposal which will give ample time for community development.
