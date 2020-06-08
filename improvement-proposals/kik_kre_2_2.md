@@ -68,21 +68,19 @@ In order for a submitted module to be recognized for use in the Buy Track it mus
 - Which digital service (app) the purchase was made through
 - Which submitted Buy Track module was used
 
-Specifically, for each user earn counted through the module, a buy_id must be appended to the memo field of all earn transactions done through the module. A buy_id is of the form *-mod_id-ref_id* where:
-- *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
-- *ref_id* is a unique reference id created by the module developer which exists in another Kin blockchain transaction (we will refer to this as the reference_txn).
+Specifically, for each user earn counted through the module, a *mod_id* must be appended to the memo field. A *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
 
-In total, the earn transaction memo field would be of the form:
-- *1-app_id-mod_id-ref_id* i.e. *1-lipz-kads-abcdefg01*
+In total, the earn transaction memo field would start with the form:
+- *1-app_id-mod_id* i.e. *1-lipz-kads*
 
-The transaction ref_id is a 10-digit alphanumeric identifier that must exist in the memo field of  the reference_txn. The refernce_txn must be formatted as follows:
-- *1-mod_id-ref_id* i.e. *1-kads-abcdefg01*
+In addition, payment transactions from modules to developers must start with the form:
+- *1-mod_id*
 
-The reference_txn would be either:
-- The actual transaction where the Kin purchase in exchange for fiat currency took place
-- A record-keeping payment transaction with amount 0.01 Kin sent to a module-specific address (can be any wallet created by the developer). This may be done in cases where fiat currency-exchange transactions are batched over a time period. In addition, the Buy Track module submission must contain information into how this information can be audited by KRE Operators or other parties. It must be verifiable that the same amount of Kin that was claimed to be purchased through the module was in fact sent to users and/or developers.
+The Buy Track module submission must contain information into how this information can be audited by KRE Operators or other parties. It must be verifiable that the amount of Kin claimed to be sent to users through the module is no more than the amount of Kin sent to the developer from the module creator.
 
 Developers must submit this form (google form link TODO) which must be approved by the Kin Foundation prior to counting towards the KRE.
+
+We think this is the best path forward for data collection, but we considered two other options. First, we considered also requiring a 10-digit *ref_id* in the memo field of earn transactions we as well as individual Kin purchase (or empty accounting transactions) which would have made it possible to audit every purchase transaction. This would be very cumbersome though for module developers and module users to implement so we decided against it. We also considered removing the *mod-id* completely which would have made it incredibly easily to implement for all parties. However, without *mod-id* in transactions, we would have no way as a ecosystem to know how many daily active buyers (and other key buying metrics) we have.
 
 ## Implementation
 Because this is a large change we propose this goes into effect no earlier than 45 days after the Kin Foundation has accepted the proposal which will give ample time for community development.
