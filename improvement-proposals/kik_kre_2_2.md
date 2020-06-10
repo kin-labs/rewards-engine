@@ -32,9 +32,9 @@ In order for new modules to be added to the set of existing whitelisted modules,
 ### 2. Carryover Pool Update
 In order to push developers to adapt to the updated Buy Track, we recommend the KRE Carryover Pool be split into 3 distinct pools: one per track. This will ensure that unused payouts from the Buy Track will not flow back into the Spend Track pushing developers more strongly to adapt. 
 
-On the first day this proposal becomes takes effect the current KRE Carryover Pool will be split into 3 (based on that month's KRE payout proportion). For example, suppose that first day is August 1, 2020:
-Let `KRE_carryover_spend` = `KRE_carryover` * 0.5
-Let `KRE_carryover_hold` = `KRE_carryover` * 0.15
+On the first day this proposal becomes takes effect the current KRE Carryover Pool will be split into 3 (based on that month's KRE payout proportion). For example, suppose that first day is August 1, 2020:<br/>
+Let `KRE_carryover_spend` = `KRE_carryover` * 0.5 <br/>
+Let `KRE_carryover_hold` = `KRE_carryover` * 0.15 <br/>
 Let `KRE_carryover_buy` = `KRE_carryover` * 0.35
 
 The existing logic of the KRE Carryover Pool would be replaced with the following: <br/>
@@ -63,26 +63,24 @@ If sum(Payout_buy_i for all apps i in A) < KRE_buy:
 ### Module Submission
 
 In order for a submitted module to be recognized for use in the Buy Track it must be demonstrated that user actions resulted in the purchase of Kin. Blockchain transactions must occur for each user earn that happens through the module demonstrating:
-- That Kin was purchased in exchange for fiat currency
-- That the user received Kin in exchange for this purchase taking place
+- That the user received Kin in exchange for a Kin purchase taking place
 - Which digital service (app) the purchase was made through
 - Which submitted Buy Track module was used
 
-Specifically, for each user earn counted through the module, a buy_id must be appended to the memo field of all earn transactions done through the module. A buy_id is of the form *-mod_id-ref_id* where:
-- *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
-- *ref_id* is a unique reference id created by the module developer which exists in another Kin blockchain transaction (we will refer to this as the reference_txn).
+Specifically, for each user earn counted through the module, a *mod_id* must be appended to the memo field. A *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
 
-In total, the earn transaction memo field would be of the form:
-- *1-app_id-mod_id-ref_id* i.e. *1-lipz-kads-abcdefg01*
+In total, the earn transaction memo field would start with the form:
+- *1-app_id-mod_id* i.e. *1-lipz-kads*
 
-The transaction ref_id is a 10-digit alphanumeric identifier that must exist in the memo field of  the reference_txn. The refernce_txn must be formatted as follows:
-- *1-mod_id-ref_id* i.e. *1-kads-abcdefg01*
+In addition, payment transactions from modules to developers must start with the form:
+- *1-mod_id*
 
-The reference_txn would be either:
-- The actual transaction where the Kin purchase in exchange for fiat currency took place
-- A record-keeping payment transaction with amount 0.01 Kin sent to a module-specific address (can be any wallet created by the developer). This may be done in cases where fiat currency-exchange transactions are batched over a time period. In addition, the Buy Track module submission must contain information into how this information can be audited by KRE Operators or other parties. It must be verifiable that the same amount of Kin that was claimed to be purchased through the module was in fact sent to users and/or developers.
+In addition, the Buy Track module submission must contain additional information as to how it can be audited by KRE Operators or other parties. In addition to the above, developers must fill out this [form](https://docs.google.com/forms/d/e/1FAIpQLSf5h20erxuLMTFIWwqQxLynLyQV-UYXXMgOaamRArPxzL9afQ/viewform?usp=sf_link) which must be approved by the Kin Foundation prior to counting towards the KRE. In order for the submission to approved:
+- It must be verifiable that the amount of Kin claimed to be sent to users through the module is no more than the amount of Kin sent to the developer from the module creator.
+- The user either watched an advertisement, filled out a survey or paid in another currency for the Kin before Kin was sent to the user.
+- The user is paid Kin at a rate at most 3x the market rate (i.e. a user can earn at most $0.03 worth of Kin for an ad generating $0.01 of revenue, and a user buying $1.00 worth of kin cannot receive more than $3.00 worth of Kin).
 
-Developers must submit this form (google form link TODO) which must be approved by the Kin Foundation prior to counting towards the KRE.
+We think this is the best path forward for data collection, but we considered two other options. First, we considered also requiring a 10-digit *ref_id* in the memo field of earn transactions we as well as individual Kin purchase (or empty accounting transactions) which would have made it possible to audit every purchase transaction. This would be very cumbersome though for module developers and module users to implement so we decided against it. We also considered removing the *mod-id* completely which would have made it incredibly easily to implement for all parties. However, without *mod-id* in transactions, we would have no way as a ecosystem to know how many daily active buyers (and other key buying metrics) we have.
 
 ## Implementation
 Because this is a large change we propose this goes into effect no earlier than 45 days after the Kin Foundation has accepted the proposal which will give ample time for community development.
