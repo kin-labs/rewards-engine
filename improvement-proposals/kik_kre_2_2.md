@@ -32,9 +32,9 @@ In order for new modules to be added to the set of existing whitelisted modules,
 ### 2. Carryover Pool Update
 In order to push developers to adapt to the updated Buy Track, we recommend the KRE Carryover Pool be split into 3 distinct pools: one per track. This will ensure that unused payouts from the Buy Track will not flow back into the Spend Track pushing developers more strongly to adapt. 
 
-On the first day this proposal becomes takes effect the current KRE Carryover Pool will be split into 3 (based on that month's KRE payout proportion). For example, suppose that first day is August 1, 2020:
-Let `KRE_carryover_spend` = `KRE_carryover` * 0.5
-Let `KRE_carryover_hold` = `KRE_carryover` * 0.15
+On the first day this proposal becomes takes effect the current KRE Carryover Pool will be split into 3 (based on that month's KRE payout proportion). For example, suppose that first day is August 1, 2020:<br/>
+Let `KRE_carryover_spend` = `KRE_carryover` * 0.5 <br/>
+Let `KRE_carryover_hold` = `KRE_carryover` * 0.15 <br/>
 Let `KRE_carryover_buy` = `KRE_carryover` * 0.35
 
 The existing logic of the KRE Carryover Pool would be replaced with the following: <br/>
