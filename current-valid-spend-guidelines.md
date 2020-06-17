@@ -3,9 +3,9 @@
 
 These Kin Rewards Engine Valid Transaction Guidelines (the "**KRE Transaction Guidelines**") are supplemental and subject to the [Kin Foundation Developer Guidelines](https://www.kin.org/developers/guidelines.pdf) (the "**Guidelines**"). Unless otherwise defined below, terms defined in the Guidelines have the same meaning when used in these KRE Transaction Guidelines.
 
-***Who is this guideline for?***
+***About these guidelines***
 
-This document forms part of the official guidelines for buildling KIN experiences.   KIN unlocks new types of both user-to-user and user-to-app engagement that makes users active participants in the experience rather than passive consumers.    These guidelines set out the minimum requirements for in-app KIN transactions in order for a developer to be eligble to earn rewards from the Kin Rewards Engine.
+The Kin Rewards Engine was built to promote a healthy digital ecosystem which maximizes everyone's opportunity for participation and recognition.  However in order to keep a fair playing field amongst developers and ensure a safe user experience for end-users, these guidelines set minimum standards that applications must satisfy in order to be eligible for payouts from the Kin Rewards Engine.
 
 1. **Definitions**
 
