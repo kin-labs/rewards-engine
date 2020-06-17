@@ -5,7 +5,7 @@ These Kin Rewards Engine Valid Transaction Guidelines (the "**KRE Transaction Gu
 
 ***Who is this guideline for?***
 
-This guideline outlines the minimum requirements for a Developer to receive a payout from the KRE.  [*link to medium articles that explain context*].
+This document forms part of the official guidelines for buildling KIN experiences.   KIN unlocks new types of both user-to-user and user-to-app engagement that makes users active participants in the experience rather than passive consumers.    These guidelines set out the minimum requirements for in-app KIN transactions in order for a developer to be eligble to earn rewards from the Kin Rewards Engine.
 
 1. **Definitions**
 
@@ -14,6 +14,7 @@ The following definitions apply in this document:
 | Term | Definition |
 | ------------- | ------------- |
 | "***Earn Transaction***" |a Transaction originated by you to a User within your Application;  |
+| "***Module***" | a whitelisted module which directly or indirectly purchases KIN from external markets;  |
 | "***Passive Subscription Payment***" | a Transaction made by a User to pay for a Subscription where the User is not required to actively initiate the Transaction pursuant to Section 9.7;  |
 | "***P2P Transaction***" |a Transaction between one User and another User within your Application;  |
 | "***Prohibited Transaction***" | any Transaction described in '*Section D – Prohibited Transactions*';  |
@@ -135,35 +136,45 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.9 A User must be able to unsubscribe from a Subscription at any time without further obligation to pay.
 
+10. **Module Requirements**
+
+10.1   A User must voluntarily intiate the use of a Module, which by way of example may be by watching an advertisement, filling out a survey or purchasing KIN with fiat currency. 
+
+10.2  The amount of KIN sent to a User by use of the Module must not exceed the amount of KIN sent to the Developer from the creator of the Module.
+
+10.3 The total aggregate KIN sent to a User by its use of the Module must not exceed the ratio of $1 to 3 KIN, based on the prevailing market rate of KIN at the time of payment.   (Example: A user can earn at most $0.03 worth of Kin for an ad generating $0.01 of revenue).
+
+10.4  Any duplication of a particular Module within an Application will be deemed to be and treated as a single Module. 
+
 **SECTION C - PROCESS FOR HANDLING VIOLATIONS**
 
-10. **Developer to be excluded from KRE payments**
+11. **Developer to be excluded from KRE payments**
 
-10.1. If we reasonably believe that your Application is in breach of these KRE Transaction Guidelines:
+11.1. If we reasonably believe that your Application is in breach of these KRE Transaction Guidelines:
 
 (a) we will provide notice to you.  We may additionally provide steps you need to take to remedy the breach however we are not obliged to do so; and
 
 (b) we may exclude your Application from receiving any payout from the KRE.  If your Application is excluded, the payout available from the KRE will be distributed rateably amongst the remaining participants of the KRE who remain eligible.
 
-10.2  Repeated or an egregious breach of these KRE Transaction Guidelines may result in your temporary or permanent ban from the KRE.  
+11.2  Repeated or an egregious breach of these KRE Transaction Guidelines may result in your temporary or permanent ban from the KRE.  
 
-10.3  Any temporary ban may be instated, lifted or reinstated at our sole discretion and subject to any conditions we see fit.  
+11.3  Any temporary ban may be instated, lifted or reinstated at our sole discretion and subject to any conditions we see fit.  
 
-11. **Remedying a breach**
+12. **Remedying a breach**
 
 If you have breached these KRE Transaction Guidelines:
 
-11.1  we may permit you to remedy the breach where it is capable of remedy by providing an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines, however we are not obliged to consider remedial action;
+12.1  we may permit you to remedy the breach where it is capable of remedy by providing an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines, however we are not obliged to consider remedial action;
 
-11.2  any payouts from the KRE the Application may have received during the period the Application was excluded from payouts from the KRE will not be re-credited.
+12.2  any payouts from the KRE the Application may have received during the period the Application was excluded from payouts from the KRE will not be re-credited.
 
 **SECTION D – PROHIBITED TRANSACTIONS**
 
 The following are Prohibited Transactions for the purposes of the KRE.  An Application which contains any Prohibited Transaction will be excluded from payouts from the KRE.
 
-12. A Transaction or series of Transactions where:
+13. A Transaction or series of Transactions where:
 
-12.1 you have credited a User an amount of KIN, only to force the User to pay all or part of the credited KIN back to you;  or
+13.1 you have credited a User an amount of KIN, only to force the User to pay all or part of the credited KIN back to you;  or
 
-12.2 the purpose of the Transaction or series of Transactions appears, in our view, designed to manufacture the number of Spend Transactions on behalf of Users within your Application.
+13.2 the purpose of the Transaction or series of Transactions appears, in our view, designed to manufacture the number of Spend Transactions on behalf of Users within your Application.
 
