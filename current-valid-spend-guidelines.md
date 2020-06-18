@@ -1,11 +1,13 @@
 
-# KRE Valid Transaction Guidelines 2.0
+# KRE Valid Transaction Guidelines V2.2
 
 These Kin Rewards Engine Valid Transaction Guidelines (the "**KRE Transaction Guidelines**") are supplemental and subject to the [Kin Foundation Developer Guidelines](https://www.kin.org/developers/guidelines.pdf) (the "**Guidelines**"). Unless otherwise defined below, terms defined in the Guidelines have the same meaning when used in these KRE Transaction Guidelines.
 
 ***About these guidelines***
 
 The Kin Rewards Engine was built to promote a healthy digital ecosystem which maximizes everyone's opportunity for participation and recognition.  However in order to keep a fair playing field amongst developers and ensure a safe user experience for end-users, these guidelines set minimum standards that applications must satisfy in order to be eligible for payouts from the Kin Rewards Engine.
+
+Last updated:  18 June 2020
 
 1. **Definitions**
 
@@ -14,7 +16,7 @@ The following definitions apply in this document:
 | Term | Definition |
 | ------------- | ------------- |
 | "***Earn Transaction***" |a Transaction originated by you to a User within your Application;  |
-| "***Module***" | a whitelisted module which directly or indirectly purchases KIN from external markets;  |
+| "***Module***" | a whitelisted module which purchases KIN from external markets;  |
 | "***Passive Subscription Payment***" | a Transaction made by a User to pay for a Subscription where the User is not required to actively initiate the Transaction pursuant to Section 9.7;  |
 | "***P2P Transaction***" |a Transaction between one User and another User within your Application;  |
 | "***Prohibited Transaction***" | any Transaction described in '*Section D – Prohibited Transactions*';  |
@@ -29,12 +31,12 @@ The following definitions apply in this document:
 
 To receive a payout from the KRE:
 
-2.1 you must satisfy in our discretion all of the Minimum Requirements as set out in Section A and all of the applicable Specific Transaction Requirements as set out in Section B; and
+2.1 you must satisfy in our discretion all of the General Requirements as set out in Section A and all of the applicable Specific Transaction Requirements as set out in Section B; and
 
-2.2  your Application must not contain any Prohibited Transaction as set out in Section D.
+2.2  the Application must not contain any Prohibited Transactions as set out in Section D.
 
 
-**SECTION A - MINIMUM REQUIREMENTS**
+**SECTION A - GENERAL REQUIREMENTS**
 
 3. **Awareness and control**
 
@@ -48,7 +50,7 @@ You must not in our reasonable opinion be:
 
 4.1 in breach of the Guidelines and/or these KRE Transaction Guidelines; or
 
-4.2 in breach of any app store policy that your Application is subject to the extent we consider this breach to be or likely to be detrimental to the Kin Ecosystem.
+4.2 in breach of any app store policy that your Application is subject to the extent we consider this detrimental to the Kin Ecosystem.
 
 5. **Publicly known entity**
 
@@ -138,13 +140,15 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 10. **Module Requirements**
 
-10.1   A User must voluntarily intiate the use of a Module, which by way of example may be by watching an advertisement, filling out a survey or purchasing KIN with fiat currency. 
+10.1   A User must voluntarily initiate a Module, which by way of example may occur by watching an advertisement, filling out a survey or being prompted to purchase KIN with fiat currency. 
 
 10.2  The amount of KIN sent to a User by use of the Module must not exceed the amount of KIN sent to the Developer from the creator of the Module.
 
 10.3 The total aggregate KIN sent to a User by its use of the Module must not exceed the ratio of $1 to 3 KIN, based on the prevailing market rate of KIN at the time of payment.   (Example: A user can earn at most $0.03 worth of Kin for an ad generating $0.01 of revenue).
 
-10.4  Any duplication of a particular Module within an Application will be deemed to be and treated as a single Module. 
+10.4  Modules must not be duplicated within an Application.
+
+10.5  A User cannot initiate  multiple Modules by a single action.  
 
 **SECTION C - PROCESS FOR HANDLING VIOLATIONS**
 
