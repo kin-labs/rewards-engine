@@ -152,13 +152,13 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 A breach of these KRE Transaction Guidelines can be reported by creating a new issue on Github: https://github.com/kinecosystem/rewards-engine/issues (a "**Report**"). The title of the report should contain "KRE Violation" as well as the name of the Application. In the report, please reference the specific rule(s) breached along with reasonable evidence.
 
-** Decision making process**
+**Decision making process**
 
 11.1. If we believe that the Application has a case to answer in the Report, we will notify the Developer.  The procedure and decision making process is set out in the [KRE Transaction Guidelines Violation Procedure](https://github.com/kinecosystem/rewards-engine/blob/master/KRE%20Transaction%20Guidelines%20Procedure.pdf).
 
 11.2  No delay in making a decision, or any Application remedying the breach in the intervening period will act as a waiver or impede the decision making process.
 
-** Developer is in violation ***
+**Developer is in violation ***
 
 12.1. If it is determined that the Application breached the KRE Transaction Guidelines the Application may be suspended from receiving all KRE Rewards.  If we are already withholding your payments, the Application will deemed to be suspended from the date we began withholding these payments.
 
@@ -170,10 +170,10 @@ A breach of these KRE Transaction Guidelines can be reported by creating a new i
 
 12.4 Any suspension may be instated, lifted or reinstated at our sole discretion and subject to any conditions we see fit.
 
-** Rectifying a breach of the KRE Transaction Guidelines:
+**Rectifying a breach of the KRE Transaction Guidelines:
 
-13.1 If may offer the Developer the opportunity to rectify the breach and if so this will be satisfied by providing an updated version of the Application in each App Store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines.
+13.1 The Developer may be offered the opportunity to rectify the breach and if so this will be satisfied by providing an updated version of the Application in each App Store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines.
 
-13.2 Any KRE Rewards that the Application would have received during the period the Application was suspended from payouts will not be re-credited.
+13.2 Any KRE Rewards that the Application would have received during the period the Application was suspended from receiving KRE Rewards will not be re-credited.
 
 
