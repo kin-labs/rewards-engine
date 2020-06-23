@@ -158,7 +158,7 @@ A breach of these KRE Transaction Guidelines can be reported by creating a new i
 
 11.2  No delay in making a decision, or any Application remedying the breach in the intervening period will act as a waiver or impede the decision making process.
 
-**Developer is in violation ***
+**Developer is in violation**
 
 12.1. If it is determined that the Application breached the KRE Transaction Guidelines the Application may be suspended from receiving all KRE Rewards.  If we are already withholding your payments, the Application will deemed to be suspended from the date we began withholding these payments.
 
@@ -170,7 +170,7 @@ A breach of these KRE Transaction Guidelines can be reported by creating a new i
 
 12.4 Any suspension may be instated, lifted or reinstated at our sole discretion and subject to any conditions we see fit.
 
-**Rectifying a breach of the KRE Transaction Guidelines:
+**Rectifying a breach of the KRE Transaction Guidelines**
 
 13.1 The Developer may be offered the opportunity to rectify the breach and if so this will be satisfied by providing an updated version of the Application in each App Store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines.
 
