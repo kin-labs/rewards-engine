@@ -7,7 +7,7 @@ These Kin Rewards Engine Valid Transaction Guidelines (the "**KRE Transaction Gu
 
 The Kin Rewards Engine was built to promote a healthy digital ecosystem which maximizes everyone's opportunity for participation and recognition.  However in order to keep a fair playing field amongst developers and ensure a safe user experience for end-users, these guidelines set minimum standards that applications must satisfy in order to be eligible for payouts from the Kin Rewards Engine.
 
-These guidelines are applied, interpreted and enforced by the members of the Kin Community Council and the Kin Foundation and may be updated from time to time. 
+These guidelines are enforced by the members of the Kin Community Council and the Kin Foundation and may be updated from time to time. 
 
 Last updated:  18 June 2020
 
@@ -140,7 +140,7 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 10.2  The total aggregate KIN sent to a User by his/her use of the Module must not be greater than the amount of KIN the Developer received through the Module for the equivalent operation.
 
-10.3  The Developer is responsible to ensure that each Module incorporated in their Application does not reward KIN at a ratio that exceeds the ratio of $1 to 3 KIN, based on the prevailing market rate of KIN at the time the Module makes a payment. (Example: A user can earn at most $0.03 worth of Kin for an ad generating $0.01 of revenue).  While Modules are tested at the time of being whitelisted, Developers must report Modules which are not compliant. 
+10.3  If the Developer can edit the Module code or is involved in the Module's development, then the Developer must ensure that each operation of the Module does not reward KIN at a rate greater than 3.00x the revenue generated (Example: A Module can pay at most $0.03 worth of Kin for an ad generating $0.01 of revenue). While Modules are tested at the time of being whitelisted, Developers must report Modules which are not compliant.
 
 10.4  Modules must not be duplicated within an Application.
 
@@ -154,17 +154,17 @@ A breach of these KRE Transaction Guidelines can be reported by creating a new i
 
 **Decision making process**
 
-11.1. If we believe that the Application has a case to answer in the Report, we will notify the Developer.  The procedure and decision making process is set out in the [KRE Transaction Guidelines Violation Procedure](https://github.com/kinecosystem/rewards-engine/blob/master/KRE%20Transaction%20Guidelines%20Procedure.pdf).
+11.1. If the Application has a case to answer in a Report, we will notify the Developer.  The procedure and decision making process is set out in the [KRE Transaction Guidelines Violation Procedure](https://github.com/kinecosystem/rewards-engine/blob/master/KRE%20Transaction%20Guidelines%20Procedure.pdf).
 
 11.2  No delay in making a decision, or any Application remedying the breach in the intervening period will act as a waiver or impede the decision making process.
 
 **Developer is in violation**
 
-12.1. If it is determined that the Application breached the KRE Transaction Guidelines the Application may be suspended from receiving all KRE Rewards.  If we are already withholding your payments, the Application will deemed to be suspended from the date we began withholding these payments.
+12.1. If it is determined that the Application breached the KRE Transaction Guidelines the Application may be suspended from receiving all KRE Rewards.  If we are already withholding your KRE Rewards, the Application will deemed to be suspended from the date we began withholding these payments.
 
 (b) we may offer you the opportunity rectify the breach however we are not obliged to offer this option.
 
-12.2 any KRE Rewards that would have been paid to you during the period of the suspension will instead be added to the KRE Carryover pool for use in the remainder of the current calendar year by eligible ecosystem participants.
+12.2 any KRE Rewards that would have been paid to you during the period of the suspension will instead be added to the KRE Carryover pool for use in the remainder of the current calendar year by the remaining eligible ecosystem participants.
 
 12.3 Repeated or a serious breach of these KRE Transaction Guidelines may result in a permanent ban from the KRE.
 
