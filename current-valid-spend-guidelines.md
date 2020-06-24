@@ -7,7 +7,7 @@ These Kin Rewards Engine Valid Transaction Guidelines (the "**KRE Transaction Gu
 
 The Kin Rewards Engine was built to promote a healthy digital ecosystem which maximizes everyone's opportunity for participation and recognition.  However in order to keep a fair playing field amongst developers and ensure a safe user experience for end-users, these guidelines set minimum standards that applications must satisfy in order to be eligible for payouts from the Kin Rewards Engine.
 
-These guidelines are enforced by the members of the Kin Community Council and the Kin Foundation and may be updated from time to time. 
+These guidelines are applied and enforced by the members of the Kin Community Council and the Kin Foundation and may be updated from time to time. 
 
 Last updated:  18 June 2020
 
