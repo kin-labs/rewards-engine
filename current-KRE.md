@@ -2,7 +2,7 @@
 
 The purpose of this document is to provide an overview of the methodology and rules used for the Kin Rewards Engine.
 
-## KRE 2.0 
+## KRE 2.2 
 
 **Payout**  
 Across the three KRE tracks (Spend, Buy, Hold), a developer's (developer `i`) total payout would be:  
@@ -33,6 +33,8 @@ The notation of the Spend algorithm going forward will then be:
 `Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 3000 * spend_i)`  
 
 ## 2. Buy
+For Dates up to and including July 31, 2020:
+
 `Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
 `Let w_increase_i be the amount of Kin sent from the registered developer wallet to 
 user wallets (earns, creates) in app i over the lifetime of the KRE`  <br/>
@@ -45,7 +47,14 @@ We define net_demand_i for app i as:
 `net_demand_i = max(demand_i - KRE_prior_buy_payouts_i, 0)`
 
 Then the buy payout for app i is:  
-`Payout_buy_i = min(KRE_buy * net_demand_i / (sum for all apps j net_demand_j), net_demand_i)`
+`Payout_buy_i = min(KRE_buy * net_demand_i / (sum for all apps j net_demand_j), net_demand_i)`<br/>
+
+**2.2 Update** For August 1, 2020 - December 31, 2020: <br/>
+`Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
+`Let buy_i be the total amount of Kin purchased and sent to users through their attention (ads) or fiat currency through a registered whitelisted module in app i in a day.`  <br/>
+
+Then the buy payout for app i is:  
+`Payout_buy_i = min(KRE_buy * buy_i / (sum for all apps j buy_j), buy_i)`
 
 ## 3. Hold
 The notation for the holding payout calculation is as follows:  
@@ -81,6 +90,7 @@ The notation for KRE payout allocation will be as follows (sample month: January
 Like in the KRE 1.0, Kin that was not paid out to developers will accumulate for future use. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
 
 The notation for the KRE carryover pool calculation is as follows:  
+For Dates up to and including July 31, 2020:
 
 Let `r` be the number of days left in 2020
 Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
@@ -96,6 +106,35 @@ After a payout:
 ```
 If sum(Payout_i for all apps i in A) < KRE_total:
     KRE_carryover += KRE_total - sum(Payout_i for all apps i in A)
+```
+
+**2.2 Update** <br/>
+On August 1, 2020 the KRE Carryover Pool will be split into 3 pools: <br/>
+Let `KRE_carryover_spend` = `KRE_carryover` * 0.55 <br/>
+Let `KRE_carryover_hold` = `KRE_carryover` * 0.15 <br/>
+Let `KRE_carryover_buy` = `KRE_carryover` * 0.30
+
+Then, for August 1, 2020 - December 31, 2020:
+
+Let `r` be the number of days left in 2020<br/>
+Before a payout:
+```
+If KRE_carryover_spend > 0:
+    KRE_spend += [KRE_carryover_spend / r]
+If KRE_carryover_hold > 0:
+    KRE_hold += [KRE_carryover_hold / r]
+If KRE_carryover_buy > 0:
+    KRE_buy += [KRE_carryover_buy / r]
+```
+
+After a payout:
+```
+If sum(Payout_spend_i for all apps i in A) < KRE_spend:
+    KRE_carryover_spend += KRE_spend - sum(Payout_spend_i for all apps i in A)
+If sum(Payout_hold_i for all apps i in A) < KRE_hold:
+    KRE_carryover_hold += KRE_spend - sum(Payout_hold_i for all apps i in A)
+If sum(Payout_buy_i for all apps i in A) < KRE_buy:
+    KRE_carryover_buy += KRE_spend - sum(Payout_buy_i for all apps i in A)
 ```
 
 **Monopoly Clause** 
@@ -120,11 +159,11 @@ If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
     s_1’ = minimum(s_1' / (s_1'+s_2) * 0.9, s_1')
     If s_2’ != s_2:
         For i = 3 to n:
-            s_i’ = s_i / (sum from i = 3 to n of s_i) * 0.1
+            s_i' = s_i / (sum from i = 3 to n of s_i) * 0.1
     Else:
         For i = 2 to n:
-            s_i’ = s_i / (sum from i = 2 to n of s_i) * (1 - s_1')
-	Developers are paid out based on s_i’
+            s_i' = s_i / (sum from i = 2 to n of s_i) * (1 - s_1')
+	Developers are paid out based on s_i'
 Else:
 	Developers are paid out based on s_i
  ```
