@@ -11,7 +11,7 @@ The purpose of this document is to outline a proposed improvement to the existin
 After discussions with the Kin Ads team, the data collection technique described in KRE 2.2 does not adequately support for banner ads. This proposal remedies that issue.
 
 ## Summary of Improvements
-Using banner ads as a form of advertisement creates a unique challenge for data collection. At the time a banner ad is view, developers do not know how much the impression was worth. Moreover, it is unreasonably disruptive to compensate the user at that exact time. In the current description of KRE 2.2 Module Submission, developers are required to label all earns which come from Kin Bought through a module. This is not practical for banner ads. Thus, we recommend:
+Using banner ads as a form of advertisement creates a unique challenge for data collection. At the time a banner ad is viewed, developers do not know how much the impression was worth. Moreover, it is unreasonably disruptive to compensate the user at that exact time. In the current description of KRE 2.2 Module Submission, developers are required to label all earns which come from Kin Bought through a module. This is not practical for banner ads. Thus, we recommend:
 - Implementers of modules will no longer have to label earns as coming from a module. All earns that happen in an app in a day will be considered applicable earns.
 - Module creators will need to pay developers daily (or more frequently) for Kin bought, and label payments accordingly.
 - The amount of Kin bought will be the minimum of: the daily amount of Kin earned by users, and the daily amount of Kin Bought via modules. I.e. Kin that is bought through a module and sent to users.
