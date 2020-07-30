@@ -1,11 +1,15 @@
 
-# KRE Valid Transaction Guidelines 2.0
+# KRE Valid Transaction Guidelines V2.2
 
 These Kin Rewards Engine Valid Transaction Guidelines (the "**KRE Transaction Guidelines**") are supplemental and subject to the [Kin Foundation Developer Guidelines](https://www.kin.org/developers/guidelines.pdf) (the "**Guidelines**"). Unless otherwise defined below, terms defined in the Guidelines have the same meaning when used in these KRE Transaction Guidelines.
 
-***Who is this guideline for?***
+***About these guidelines***
 
-This guideline outlines the minimum requirements for a Developer to receive a payout from the KRE.  [*link to medium articles that explain context*].
+The Kin Rewards Engine was built to promote a healthy digital ecosystem which maximizes everyone's opportunity for participation and recognition.  However in order to keep a fair playing field amongst developers and ensure a safe user experience for end-users, these guidelines set minimum standards that applications must satisfy in order to be eligible for payouts from the Kin Rewards Engine.
+
+These guidelines are regulated by the members of the Kin Community Council and the Kin Foundation and may be updated from time to time. 
+
+Last updated:  18 June 2020
 
 1. **Definitions**
 
@@ -14,6 +18,8 @@ The following definitions apply in this document:
 | Term | Definition |
 | ------------- | ------------- |
 | "***Earn Transaction***" |a Transaction originated by you to a User within your Application;  |
+| "***KRE Rewards***" | payments of KIN from the Kin Rewards Engine;  |
+| "***Module***" | a whitelisted module which purchases KIN from external markets;  |
 | "***Passive Subscription Payment***" | a Transaction made by a User to pay for a Subscription where the User is not required to actively initiate the Transaction pursuant to Section 9.7;  |
 | "***P2P Transaction***" |a Transaction between one User and another User within your Application;  |
 | "***Prohibited Transaction***" | any Transaction described in '*Section D – Prohibited Transactions*';  |
@@ -24,34 +30,30 @@ The following definitions apply in this document:
 |  "***User***"| an End-User that is a natural person with a single wallet in your Application;  |
 | "***you", "your***" | the Developer, and where the context requires, their Application.  |
 
-2. **Eligibility to receive a KRE Payout**
+2. **Eligibility to receive KRE Rewards**
 
-To receive a payout from the KRE:
-
-2.1 you must satisfy in our discretion all of the Minimum Requirements as set out in Section A and all of the applicable Specific Transaction Requirements as set out in Section B; and
-
-2.2  your Application must not contain any Prohibited Transaction as set out in Section D.
+To be eligible to receive KRE Rewards the Application must satisfy all of the Section A - General Requirements and all of the applicable Section B - Specific Transaction Requirements.
 
 
-**SECTION A - MINIMUM REQUIREMENTS**
+**SECTION A - GENERAL REQUIREMENTS**
 
 3. **Awareness and control**
 
-3.1.  The sending party of a Transaction must have control over the initiation of that Transaction unless it is Passive Subscription Payment.
+3.1.  For each Spend Transaction, the User must make a voluntary choice to initiate the Spend Transaction unless it is Passive Subscription Payment. 
 
-3.2. Both parties to a Transaction must be aware of the Transaction at the time it occurs. 
+The Spend Transaction is not a voluntary choice of the User if (a) the User is forced to perform it (b) the User is not aware the Spend Transaction is occurring at the time it occurs, or (c) the User's wallet was debited by the Developer and this was not expressly authorised by the User at the time of the Transaction.  Being aware of the action that initiated the Spend Transaction is not the same as being aware of the Spend Transaction itself. 
 
 4. **Developer to be in compliance**
 
-You must not in our reasonable opinion be:
+You must not be:
 
 4.1 in breach of the Guidelines and/or these KRE Transaction Guidelines; or
 
-4.2 in breach of any app store policy that your Application is subject to the extent we consider this breach to be or likely to be detrimental to the Kin Ecosystem.
+4.2 in breach of any App Store policy (howsoever described) that your Application is available to the extent this is detrimental to the Kin Ecosystem,
 
 5. **Publicly known entity**
 
-Your Application must be publicly available.
+The Application must be publicly available.
 
 6. **Usability**
 
@@ -84,7 +86,6 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 (c\)  a button must be included requiring the User to confirm/acknowledge the initiation of the Spend Transaction.
 
-7.4.  A Spend Transaction must not be a Prohibited Transaction.
 
 8. **Earn Transactions**
 
@@ -93,8 +94,6 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 (a) clear communication to the User of the amount of the Transaction; and
 
 \(b\) the Transaction is generated by a unique action undertaken by the User.
-
-8.2.  An Earn Transaction must not be a Prohibited Transaction.
 
 9. **Subscription Transactions**
 
@@ -135,57 +134,44 @@ For each Transaction initiated by a User, the KIN logo must be present on the ac
 
 9.9 A User must be able to unsubscribe from a Subscription at any time without further obligation to pay.
 
+10. **Module Requirements**
+
+10.1  A User must voluntarily initiate a Module, which by way of example may occur by watching an advertisement, filling out a survey or being prompted to purchase KIN with fiat currency. 
+
+10.2  The total aggregate KIN sent to a User by his/her use of the Module must not be greater than the amount of KIN the Developer received through the Module for the equivalent operation.
+
+10.3  If the Developer can edit the Module code or is involved in the Module's development, then the Developer must ensure that each operation of the Module does not reward KIN at a rate greater than 3.00x the revenue generated (Example: A Module can pay at most $0.03 worth of Kin for an ad generating $0.01 of revenue). While Modules are tested at the time of being whitelisted, Developers must report Modules which are not compliant.
+
+10.4  Modules must not be duplicated within an Application.
+
+10.5  A User cannot initiate  multiple Modules by a single action.  
+
 **SECTION C - PROCESS FOR HANDLING VIOLATIONS**
 
-10. **Reporting a breach**
+**Reporting a breach
 
-A breach of these KRE Transaction Guidelines can be reported by creating a new issue on Github: https://github.com/kinecosystem/rewards-engine/issues (a "Report"). The title of the report must contain "KRE Violation" as well as the name of the Application. In the report, please reference the specific rule(s) breached along with reasonable evidence.
+A breach of these KRE Transaction Guidelines can be reported by creating a new issue on Github: https://github.com/kinecosystem/rewards-engine/issues (a "**Report**"). The title of the report should contain "KRE Violation" as well as the name of the Application. In the report, please reference the specific rule(s) breached along with reasonable evidence.
 
-11. **Decision making process**
+**Decision making process**
 
-11.1. If we reasonably believe that your Application is in breach of these KRE Transaction Guidelines or that there is a case to answer in the Report:
+11.1. If the Application has a case to answer in a Report, we will notify the Developer.  The decision making process is set out in the [KRE Transaction Guidelines Violation Procedure](https://github.com/kinecosystem/rewards-engine/blob/master/KRE%20Transaction%20Guidelines%20Procedure.pdf).
 
-(a) we will provide notice to you; and
+11.2  If there is any delay in making a decision, or the Application remedies the breach before the decision is made this will not act as a waiver or impede the decision making process.
 
-(b) we will withhold any payments your Application is due to receive from the KRE while we investigate and until a final decision is made.
+**Developer is in violation**
 
-11.2 Within 14 days from the date the Report is posted, the Kin Community Council will review the Report and the Application and determine whether the alleged breach of the KRE Transaction Guidelines is substantiated:
+12.1. If it is determined that the Application breached the KRE Transaction Guidelines the Application may be suspended from receiving all KRE Rewards.  If we are already withholding your KRE Rewards, the Application will deemed to be suspended from the date we began withholding these payments.
 
-(a) if the breach is substantiated: the matter will be referred to the Kin Foundation for the final decision;
+12.2 Any KRE Rewards that would have been paid to the Developer during the period of the suspension will instead be added to the KRE Carryover pool for use in the remainder of the current calendar year by the remaining eligible KRE participants.
 
-(b) if the breach is not substantiated: the Report will be closed. Any payments that were withheld from the Application during this period will be released in full.
-
-11.3 No delay in making a decision, or any Application remedying the breach in the intervening period will act as a waiver or impede the decision making process.
-
-12. **Developer is in violation**
-
-12.1. If we determine that your Application breached the KRE Transaction Guidelines:
-
-(a) we will provide notice to you;
-
-(b) we may suspended your Application from receiving all payments from the KRE (if we are already withholding your payments, you will be deemed to be suspended from the date we began withholding these payments);
-
-(c) we may additionally provide steps you need to take to remedy the breach however we are not obliged to give you the option to remedy the breach
-
-12.2 any payments that would have been paid to you during the period of the suspension will instead be added to the KRE Carryover pool for use in the remainder of the current calendar year.
-
-12.3 Repeated or a serious breach of these KRE Transaction Guidelines may result in your permanent ban from the KRE.
+12.3 Repeated or a serious breach of these KRE Transaction Guidelines may result in a permanent ban from the KRE.
 
 12.4 Any suspension may be instated, lifted or reinstated at our sole discretion and subject to any conditions we see fit.
 
-13 **Remedying a breach**
-If you have breached these KRE Transaction Guidelines:
+**Rectifying a breach of the KRE Transaction Guidelines**
 
-13.1 we may permit you to remedy the breach where it is capable of remedy by providing an updated version of the Application in each app store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines;
+13.1 The Developer may be offered the opportunity to rectify the breach and if so this will be satisfied by providing an updated version of the Application in each App Store it is available evidencing that the Application is no longer in breach of these KRE Transaction Guidelines.
 
-13.2 any payouts from the KRE that the Application would have received during the period the Application was suspended from payouts will not be re-credited.
+13.2 Any KRE Rewards that the Application would have received during the period the Application was suspended from receiving KRE Rewards will not be re-credited.
 
-**SECTION D – PROHIBITED TRANSACTIONS**
 
-The following are Prohibited Transactions for the purposes of the KRE.  An Application which contains any Prohibited Transaction will be excluded from payouts from the KRE.
-
-14. A Transaction or series of Transactions where:
-
-14.1 you have credited a User an amount of KIN, only to force the User to pay all or part of the credited KIN back to you;  or
-
-14.2 the purpose of the Transaction or series of Transactions appears, in our view, designed to manufacture the number of Spend Transactions on behalf of Users within your Application.
