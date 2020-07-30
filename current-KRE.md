@@ -51,10 +51,40 @@ Then the buy payout for app i is:
 
 **2.2 Update** For August 1, 2020 - December 31, 2020: <br/>
 `Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
-`Let buy_i be the total amount of Kin purchased and sent to users through their attention (ads) or fiat currency through a registered whitelisted module in app i in a day.`  <br/>
+`Let buy_i be the total amount of Kin purchased and sent to users in app i in a day. The amount purchased and sent to users will be the minimum of: the 
+amount of Kin earned by users, and the daily amount of Kin Bought via modules.`<br/>
 
 Then the buy payout for app i is:  
 `Payout_buy_i = min(KRE_buy * buy_i / (sum for all apps j buy_j), buy_i)`
+
+**Example 1:**  
+If 100 Kin is bought through a module (i.e. sent to the developer from a module) in app i on August 1st, and 200 is earned by users in app i on August 1st, buy_i=100.
+Payout track shares after clause: 
+
+**Example 2:**  
+If 100 Kin is bought through a module (i.e. sent to the developer from a module) in app i on August 1st, and 50 is earned by users in app i on August 1st, buy_i=50.
+
+**Impermissible Kin Bought**<br/>
+Note: Any Kin purchased due to user actions before August 1st, 2020 will not be considered part of Buy Track from August 1st, 2020 and forward. i.e. if a user watches an ad on July 1st, 2020 and the developer is paid by the module creator on August 1st, 2020, this Kin will not count towards the Buy Track. <br/>
+
+**Module Submission**
+
+For a submitted module to be recognized for use in the Buy Track it must be demonstrated that user actions resulted in the purchase of Kin. Blockchain transactions must occur for each user earn that happens through the module demonstrating:
+- That the user received Kin in exchange for a Kin purchase taking place
+- Which digital service (app) the purchase was made through
+- Which submitted Buy Track module was used
+
+Specifically, a *mod_id* must be appended to the memo field for daily (or more frequent) Kin payments to developers for purchases. A *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
+
+The payment transactions from modules to developers must start with the form:
+- *1-mod_id-app_id* i.e. *1-kads-lipz*
+
+In addition, the Buy Track module submission must contain information denoting how it can be audited by KRE Operators or other parties. Developers must complete this [form](https://docs.google.com/forms/d/e/1FAIpQLSf5h20erxuLMTFIWwqQxLynLyQV-UYXXMgOaamRArPxzL9afQ/viewform?usp=sf_link) which must be approved by the Kin Foundation prior to counting towards the KRE. In order for the submission to approved:
+- The user either watched an advertisement, filled out a survey or paid in another currency for the Kin before Kin was sent to the developer.
+- The user/developer are paid Kin at a rate at most 3x the market rate (i.e. a user can earn the developer at most $0.03 worth of Kin for an ad generating $0.01 of revenue, and a user buying $1.00 worth of kin cannot receive more than $3.00 worth of Kin).
+- Kin was purchased on the open market.
+
+Note that the amount of Kin bought via modules on a certain day will be the amount of Kin sent to developers from approved modules on that day (regardless of when the user action took place that resulted in a subsequent purchase of Kin). i.e. If a user watches an ad on August 1st, 2020, and the developer is paid for that ad completion by the module creator on September 1st, 2020 the Kin will have been considered bought on September 1st, 2020.
 
 ## 3. Hold
 The notation for the holding payout calculation is as follows:  
