@@ -22,7 +22,6 @@ The following definitions apply in this document:
 | "***Module***" | a whitelisted module which purchases KIN from external markets;  |
 | "***Passive Subscription Payment***" | a Transaction made by a User to pay for a Subscription where the User is not required to actively initiate the Transaction pursuant to Section 9.7;  |
 | "***P2P Transaction***" |a Transaction between one User and another User within your Application;  |
-| "***Prohibited Transaction***" | any Transaction described in '*Section D – Prohibited Transactions*';  |
 | "***Spend Transaction***" | a P2P Transaction or a U2D Transaction;|
 | "***Subscription***" | an arrangement made between a User and (a) you; or (b) with another User within your Application, to receive something by advance payment; |
 |  "***Transaction***"| an instance where KIN is transferred from one wallet to another wallet within the Kin Ecosystem;|
