@@ -15,7 +15,7 @@ First, we recommend removing 10.2 from the [KRE Valid Transaction Guidelines](ht
 *10.2 The total aggregate KIN sent to a User by his/her use of the Module must not be greater than the amount of KIN the Developer received through the Module for the equivalent operation.*
 
 
-Second, we recommend streamlining the process for new Buy Track Modules to be approved by the Kin Foundation. Currently, the process can take up to a full month to take place (typically, issues are voted on by the board at the monthly foundation meetings). A month is a long time for a developer to wait to enter the buy track of the KRE. We propose that modules be default accepted *under review* during the interim period between which they have had their sign up form accepted by KRE Operators, and before the Kin Foundation has the chance to view the module's submission. The relevant section to be updated is below:
+Second, we recommend streamlining the process for new Buy Track Modules to be approved by the Kin Foundation. Currently, the process can take up to a full month to take place (typically, issues are voted on by the board at the monthly Foundation meetings). A month is a long time for a developer to wait to enter the buy track of the KRE. We propose that modules be default accepted *under review* during the interim period between which they have had their sign up form accepted by KRE Operators, and before the Kin Foundation has the chance to view the module's submission. The relevant section to be updated is below:
 
 **Module Submission**
 
