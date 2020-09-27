@@ -84,8 +84,8 @@ However, it would simplify how apps understand the reward system, and it would i
 ## Implementation
 There are two variables to adjust over time. This can start with the rewards weighted heavily for the Spend track (A) and, over 3 months, transition to a more even distribution as more apps implement buy modules.
 
-| Month           | Spend Track A % | Buy Track B %   |
+| Month           | Spend Track A   | Buy Track B     |
 | --------------- | --------------- | --------------- |
-| 1               | 90              | 10              |
-| 2               | 80              | 20              |
-| 3               | 60              | 40              |
+| 1               | 90%             | 10%             |
+| 2               | 80%             | 20%             |
+| 3               | 60%             | 40%             |
