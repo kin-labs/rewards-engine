@@ -18,15 +18,12 @@ The KRE has gone through several changes, and each change has improved upon its 
 
 The improvement proposal follows a short discussion below:
 
-## Purpose
-The incentive's purpose is to drive a healthy GDP and market value for Kin. Kin's economy is contrasted to the general crypto sphere below:
+## Kin Ecosystem
+Unlike most other crypto-currencies, which derive value from speculation and buy pressure from expected future rewards, Kin focuses its incentives on apps, which are analogues to miners and minters. Like miners, Kin apps do productive work, and are rewarded with Kin which propagates to the rest of the ecosystem. So far, this has been hugely successful in drawing Kin from the KRE and distributing it to users.
 
-While most crypto-currency value is driven by speculation of expected future rewards, and buy pressure driven by exchanges, Kin's differences are highlighted below.
-
-### Kin
-Kin focuses its incentives on apps, which are analogues to miners and minters.
 ![Kin](https://i.imgur.com/cKtxrRD.jpg)
-For Kin to succeed, the incentive layer needs pull KIN from exchanges, and push it leftward, into a growing economy of actual users. 
+
+This proposed itteration improves the current one by increasing the pull of KIN from exchanges, and pushing it leftward, into a growing economy of ready users. 
 
 ## Current Mechanism
 The current mechanism has driven this process, but has encountered the following challenges:
@@ -42,7 +39,7 @@ This proposal addresses these issues, while also making the KRE calculation simp
 2. B = Total Kin released for the buy track.
 3. GDP<sup>i</sup> = GDP for app *i*. (Total volume of transactions)
 4. Hr<sup>i</sup> = Hold ratio for app *i*. (Total Kin it holds / Sum held by all apps)
-5. Br<sup>i</sup> = Buy ratio for app *i*. (Total Kin it bought / Sum bought by all apps)
+5. Br<sup>i</sup> = Buy ratio for app *i*. (Total Kin from buy module / Sum bought by all apps)
 
 The reward attributed for app *i* of *n* total apps for a certain period becomes:
 
@@ -50,17 +47,17 @@ The reward attributed for app *i* of *n* total apps for a certain period becomes
 ![Reward](https://i.imgur.com/PdWkfx0.jpg)
 
 
-An app is rewarded for having a high GDP, a high buy ratio and a high hold ratio relative to other apps. The hold ratio as as a multiplier for an app's potential rewards.
+An app is rewarded for having a high GDP, a high buy ratio and a high hold ratio relative to other apps. The hold ratio acts as a multiplier for an app's potential rewards.
 
 ### Notes:
 **GDP**
 
-The current mechanism segragates spends - E.g. 1-9|10-99|100-999| etc. This proposal allows apps to simply focus on maximizing the number of trades and volume of trades, while still increasing Kin's economic GDP. Naturally, a cap can be put on the largest permisible trade to be 1,000 Kin.
+The current mechanism segragates spends - E.g. 1-9|10-99|100-999| etc. This proposal allows apps to simply focus on maximizing the number of trades and volume of trades, while still increasing Kin's economic GDP. Naturally, a cap can be put on the largest permisible trade to be 1,000 Kin. Even with this simplification, an app with higher average volumes (e.g. 500 Kin per transaction) is rewarded more than one with lower average volumes (e.g. 100 Kin per transaction).
 
 
 **Buy ratio (Br)**
 
-As long as an app is buying Kin and funneling it into the economy, no limit is placed on the amount of rewards it can earn.
+As long as an app is buying Kin and funneling it into the economy, no limit is placed on the amount of rewards it can earn by increasing by pressure. 
 
 
 **Hold ratio (Hr)**
@@ -80,6 +77,6 @@ These can be adjusted over time, to match the ecosystem's needs.
 ### Discussion
 The proposal aims to keep the reward mechanism simple, while also incentivizing GDP growth and driving Kin from exchanges into Kin's economy.
 
-It also encourages apps for holding Kin, and rewards those with the bigger stake in the ecosystem. Implemented, the new reward curve would resemble the current curve, in that the rankings would not change significantly.
+It also encourages apps to hold Kin, and rewards those with the bigger stake in the ecosystem. Implemented, the new reward curve would resemble the current curve, in that the rankings would not change significantly.
 
 However, it would simplify how apps understand the reward system, and it would incentivize a new game to use the buy modules, and also to hold Kin for the benefit of the entire ecosystem.
