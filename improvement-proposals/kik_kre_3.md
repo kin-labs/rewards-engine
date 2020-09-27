@@ -32,7 +32,7 @@ The current mechanism has driven this process, but has encountered the following
 2. The most an app can earn from the buy track is the max amount of Kin it bought.
 3. The hold track needs to be more appealing to apps and ecosystem.
 
-## Proposal
+## KRE Algorithm Updates
 This proposal addresses these issues, while also making the KRE calculation simpler. There are five variables to consider:
 
 1. A = Total Kin released for the spend track.
