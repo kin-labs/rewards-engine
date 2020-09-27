@@ -8,11 +8,22 @@ The KRE has gone through several changes, and each change has improved upon its 
 2. Incentivize users to buy more Kin (market value)
 3. Incentivize developers to hold Kin (market value, ecosystem commitment)
 
+
+## Summary of Improvements
+1. KRE Algorithm Updates
+
+ - Simplification of Spend track
+ - Simplification of Buy track
+ - Improvement of Hold track
+
+The improvement proposal follows a short discussion below:
+
 ## Purpose
 The incentive's purpose is to drive a healthy GDP and market value for Kin. Kin's economy is contrasted to the general crypto sphere below:
 
+
 ### Bitcoin protocol
-![Bitcoin](https://i.imgur.com/iLIFAfD.jpg)
+![Bitcoin](https://i.imgur.com/MaO9VGd.jpg)
 
 Most crypto-currency value is driven by speculation of expected future rewards, as shown above. Buy preasure is driven by exchanges, and currencies like Bitcoin have demand as the base currency for most of the trades.
 
