@@ -25,7 +25,7 @@ Unlike most other crypto-currencies, which derive value from speculation and buy
 
 This proposed itteration improves the current one by increasing the pull of KIN from exchanges, and pushing it leftward, into a growing economy of ready users. 
 
-## Current Mechanism
+### Current Mechanism
 The current mechanism has driven this process, but has encountered the following challenges:
 
 1. Given intricacy of the calculations, it is difficult for devs to get a 'gestalt' of their position in the game, and their next best action to improve their rankings. (Should they optimize for buy/hold/transactions, etc)
@@ -80,3 +80,12 @@ The proposal aims to keep the reward mechanism simple, while also incentivizing 
 It also encourages apps to hold Kin, and rewards those with the bigger stake in the ecosystem. Implemented, the new reward curve would resemble the current curve, in that the rankings would not change significantly.
 
 However, it would simplify how apps understand the reward system, and it would incentivize a new game to use the buy modules, and also to hold Kin for the benefit of the entire ecosystem.
+
+## Implementation
+There are two variables to adjust over time. This can start with the rewards weighted heavily for the Spend track (A) and, over 3 months, transition to a more even distribution as more apps implement buy modules.
+
+| Month           | Spend Track A % | Buy Track B %   |
+| --------------- | --------------- | --------------- |
+| 1               | 90              | 10              |
+| 2               | 80              | 20              |
+| 3               | 60              | 40              |
