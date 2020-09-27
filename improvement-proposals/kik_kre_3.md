@@ -21,11 +21,7 @@ The improvement proposal follows a short discussion below:
 ## Purpose
 The incentive's purpose is to drive a healthy GDP and market value for Kin. Kin's economy is contrasted to the general crypto sphere below:
 
-
-### Bitcoin protocol
-![Bitcoin](https://i.imgur.com/MaO9VGd.jpg)
-
-Most crypto-currency value is driven by speculation of expected future rewards, as shown above. Buy preasure is driven by exchanges, and currencies like Bitcoin have demand as the base currency for most of the trades.
+While most crypto-currency value is driven by speculation of expected future rewards, and buy pressure driven by exchanges, Kin's differences are highlighted below.
 
 ### Kin
 Kin focuses its incentives on apps, which are analogues to miners and minters.
