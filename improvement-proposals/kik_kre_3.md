@@ -38,7 +38,11 @@ This proposal addresses these issues, while also making the KRE calculation simp
 5. Br<sup>i</sup> = Buy ratio for app *i*. (Total Kin it bought / Sum bought by all apps)
 
 The reward attributed for app *i* of *n* total apps for a certain period becomes:
+
+
 ![Reward](https://i.imgur.com/PdWkfx0.jpg)
+
+
 An app is rewarded for having a high GDP, a high buy ratio and a high hold ratio relative to other apps. The hold ratio as as a multiplier for an app's potential rewards.
 
 ### Notes:
@@ -57,7 +61,10 @@ As long as an app is buying Kin and funneling it into the economy, no limit is p
 The Hold ratio is like a stake in the economy. For two apps that have the same volume of transactions, and the same buy ratio, the app that holds more Kin recieves a higher reward.
 
 To enable small apps to compete in terms of holding, the equation can be modified to use a log or root of the hold ratio. This smooths out the reward curve.
+
+
 ![Reward curve](https://i.imgur.com/uRvDWHm.jpg)
+
 
 **Spend track and Buy track (A,B)**
 
