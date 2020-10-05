@@ -33,21 +33,21 @@ The current mechanism has driven this process, but has encountered the following
 3. The hold track needs to be more appealing to apps and ecosystem.
 
 ## KRE Algorithm Updates
-This proposal addresses these issues, while also making the KRE calculation simpler. There are five variables to consider:
+This proposal addresses these issues, while also making the KRE calculation simpler. For a given period, there are five variables to consider:
 
-1. A = Total Kin released for the spend track.
-2. B = Total Kin released for the buy track.
-3. GDP<sup>i</sup> = GDP for app *i*. (Total volume of transactions)
-4. Hr<sup>i</sup> = Hold ratio for app *i*. (Total Kin it holds / Sum held by all apps)
-5. Br<sup>i</sup> = Buy ratio for app *i*. (Total Kin from buy module / Sum bought by all apps)
+1. St = Total Kin released for the spend track.
+2. Bt = Total Kin released for the buy track.
+3. GDP<sup>j</sup> = GDP for app *j*. (Total volume of transactions)
+4. H<sup>j</sup> = Total Kin held by app *j*.
+5. B<sup>j</sup> = Total Kin bought by app *j*.
 
-The reward attributed to app *i* of *n* total apps for a certain period becomes:
-
-
-![Reward](https://i.imgur.com/PdWkfx0.jpg)
+The reward attributed to app *j* of *n* total apps for a certain period becomes:
 
 
-An app is rewarded for having a high GDP *(GDP<sup>i</sup>)*, a high buy ratio *(Br<sup>i</sup>)* and a high hold ratio *(Hr<sup>i</sup>)* relative to other apps. Note that the hold ratio acts as a multiplier for an app's potential rewards.
+![Reward](https://i.imgur.com/Z8sIItA.jpg)
+
+
+An app is rewarded for having a high GDP *(GDP<sup>j</sup>)*, a high buy ratio *(Br<sup>j</sup>)* and a high hold ratio *(Hr<sup>j</sup>)* relative to other apps. Note that the hold ratio acts as a multiplier for an app's potential rewards.
 
 ### Notes:
 **GDP**
@@ -67,7 +67,7 @@ The Hold ratio is like a stake in the economy. For two apps that have the same v
 To enable small apps to compete in terms of holding, the equation can be modified to use a log or root of the hold ratio. This smooths out the reward curve and prevents monopolization of the hold track by large apps.
 
 
-![Reward curve](https://i.imgur.com/uRvDWHm.jpg)
+![Smooth reward curve](https://i.imgur.com/1RwZQgU.jpg)
 
 
 **Spend track and Buy track (A,B)**
