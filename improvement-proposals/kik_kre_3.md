@@ -74,12 +74,17 @@ To enable small apps to compete in terms of holding, the equation can be modifie
 
 These can be adjusted over time, to match the ecosystem's needs.
 
+### Monopoly Clause
+While no cap has been placed on the reward mechanism, a general cap should be placed to prevent monopolization of rewards by a single app. The current monopoly clause would be suitable in this case.
+
+
 ### Discussion
 The proposal aims to keep the reward mechanism simple, while also incentivizing GDP growth and driving Kin from exchanges into Kin's economy.
 
 It also encourages apps to hold Kin, and rewards those with the bigger stake in the ecosystem. Implemented, the new reward curve would resemble the current curve, in that the rankings would not change significantly.
 
 However, it would simplify how apps understand the reward system, and it would incentivize a new game to use the buy modules, and also to hold Kin for the benefit of the entire ecosystem.
+
 
 ## Implementation
 There are two variables to adjust over time. This can start with the rewards weighted heavily for the Spend track (A) and, over 3 months, transition to a more even distribution as more apps implement buy modules.
