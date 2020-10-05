@@ -55,14 +55,14 @@ An app is rewarded for having a high GDP *(GDP<sup>j</sup>)*, a high buy ratio *
 The current mechanism segragates spends - E.g. 1-9|10-99|100-999| etc. This proposal allows apps to simply focus on maximizing the number of trades and volume of trades, while still increasing Kin's economic GDP. Naturally, a cap can be put on the largest permisible trade to be 1,000 Kin. Even with this simplification, an app with higher average volumes (e.g. 500 Kin per transaction) is rewarded more than one with lower average volumes (e.g. 100 Kin per transaction).
 
 
-**Buy ratio (Br)**
+**Total Kin bought (B<sup>j</sup>)**
 
-As long as an app is buying Kin and funneling it into the economy, no limit is placed on the amount of rewards it can earn by increasing buy pressure. This allows apps to use buy modules more profitabley.
+As long as an app is buying Kin and funneling it into the economy, no limit is placed on the amount of rewards it can earn by increasing buy pressure. This allows apps to use buy modules more profitably.
 
 
-**Hold ratio (Hr)**
+**Total Kin held (H<sup>j</sup>)**
 
-The Hold ratio is like a stake in the economy. For two apps that have the same volume of transactions, and the same buy ratio, the app that holds more Kin recieves a higher reward.
+This is like a stake in the economy. For two apps that have the same volume of transactions, and the kin bought, the app that holds more Kin recieves a higher reward.
 
 To enable small apps to compete in terms of holding, the equation can be modified to use a log or root of the hold ratio. This smooths out the reward curve and prevents monopolization of the hold track by large apps.
 
