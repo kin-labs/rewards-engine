@@ -12,7 +12,7 @@ As such, this proposal seeks to outline a move toward dynamic recalibration.
 
 ## Summary of Improvements
 1. KRE Algorithm Updates
-- *Temporary dynamic payout adjustment: As the "central bank" of the Kin Economy, the Kin Foundation should adjust inflation dynamically for as long as they forecast potential high volatility (as opposed to remaining static until an even larger increase in price).*
+- *Temporary dynamic payout adjustment: As the "central bank" of the Kin Economy, the Kin Foundation should intervene and adjust inflation dynamically for as long as they forecast potential high volatility (as opposed to remaining static until an even larger increase in price).*
 
 ## KRE Algorithm Updates
 
