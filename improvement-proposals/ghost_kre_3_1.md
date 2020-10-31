@@ -4,28 +4,25 @@ The purpose of this document is to propose an emergency temporary KRE payout cal
 ## Proposed by: Ghost_Type
 
 ## Abstract
-Currently, the KRE pays developes in Kin based on USD prices, calculated based on a 7 day average of closing price on CoinMarketCap. While the KRE should seek to stabilize and broaden this calculation to a higher time-frame as the market matures,
-this system was not optimized for extreme price volatility, and CMC is particularly ill-suited due to the inclusion and exclusion of highly volalite markets. In fact, this was predicted by Kik Engineering and is noted in [current-KRE](current-KRE.md):
+In the past week, Kin grew by more than 600%. Due to the lack of elasticity in KRE payments, this has resulted in massive payouts that have stifled the potential economic growth of Kin. While the KRE should seek to stabilize and broaden payout readjustment to a higher time-frame as the market matures, this system was not optimized for extreme short-term price volatility or low liquidity, and is not forecasted to adjust until TDE sale prices, therefore hindering growth until that point. This was predicted by Kik Engineering as a potential issue and is noted in [current-KRE](current-KRE.md):
 
 *In the event of a dramatic price change (+/- 50% as defined by a 7-day average of closing price on CoinMarketCap), this frequency of recalibration can be more dynamic and can be addressed through a proposal to the Foundation.*
 
-In the past week, Kin grew by more than 600%. This has resulted in massive payouts based on past prices that have stifled the potential economic growth of Kin. As such, this proposal seeks to outline a recalibration, along with a novel adjustment to the method of calculating the price that is designed to mitigate economic impact.
+As such, this proposal seeks to outline a move toward dynamic recalibration.
 
 ## Summary of Improvements
 1. KRE Algorithm Updates
-- *Temporary real-time price calculation: While the opposite direction of the long-term payout objectives of the KRE, as the "central bank" of the Kin Economy, the Kin Foundation should adjust price calculation to be based on more recent data, for as long as they forecast potential high volaility.*
-- *Single data point price calculation: As volatility increases and the reliability of coinmarketcap decreases, the closing prices become less relevant an indicator of the economy at time of payout than originally intended. As such, prices calculation should be optimized for the mitigation of economic damage.*
-
+- *Temporary dynamic payout adjustment: As the "central bank" of the Kin Economy, the Kin Foundation should adjust inflation dynamically for as long as they forecast potential high volatility (as opposed to remaining static until an even larger increase in price).*
 
 ## KRE Algorithm Updates
 
 <ol type="a">
-  <li>Temporary Real-Time Price Calculation</li>
-<i>KRE payout amounts should be calculated using prices from the same week as payout, up to time of payout.</i>
+  <li>Temporary Dynamic Payout Adjustment</li>
+<i>KRE payout amounts should be immediately adjusted for the recent increase in price as determined appropriate by the recommendations of Kik Engineering and the Kin Foundation as well either manually at a more regular interval thereafter (e.g. monthly), or at a preset sloping scale based on forecasted performance of the economy.</i>
 
-<li>Single Price Point Price Calculation</li>
-<i>Kin price for payout calculation should be based on a single data point, proposed here to be the highest 7 day price of Kin that week. The data should be based on an single exchange or a combined average of price data from several exchanges with the most liquidity and/or volume, as CoinMarketCap is affected by extreme moves on unreliable exchanges.</i>
 </ol>
 
 ## Implementation
 It is recommended that this KIP be expedited to be approved by the Kin Foundation and enacted immediately, possibly along with KRE 3.0 if appropriate.
+
+
