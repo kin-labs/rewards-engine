@@ -28,4 +28,4 @@ In the past week, Kin grew by more than 600%. This has resulted in massive payou
 </ol>
 
 ## Implementation
-It is reommended that this KIP be expedited to be approved by the Kin Foundation and enacted immediately, possibly along with KRE 3.0 if appropriate.
+It is recommended that this KIP be expedited to be approved by the Kin Foundation and enacted immediately, possibly along with KRE 3.0 if appropriate.
