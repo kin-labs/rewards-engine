@@ -24,7 +24,7 @@ In the past week, Kin grew by more than 600%. This has resulted in massive payou
 <i>KRE payout amounts should be calculated using prices from the same week as payout, up to time of payout.</i>
 
 <li>Single Price Point Price Calculation</li>
-<i>Kin price for payout calculation should be based on a single data point, proposed here to be the lowest 7 day price of Kin that week.</i>
+<i>Kin price for payout calculation should be based on a single data point, proposed here to be the lowest 7 day price of Kin that week. The data should be based on an single exchange with the most liquidity and/or volume, as CoinMarketCap is affected by extreme moves on unreliable exchanges.</i>
 </ol>
 
 ## Implementation
