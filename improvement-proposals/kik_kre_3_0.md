@@ -9,7 +9,7 @@ We propose KRE 3.0 to take effect Janurary 1, 2021. It aims to build upon learni
 1. We recommend the daily payout cap be re-evaluated quarterly by the Kin Foundation. For Q1 2021, we recommend a daily payout cap of 250 million Kin or $USD 5000 in Kin, whichever is less.
 1. We recommend the KRE payout logic be adjusted. We provide two options with the latter (ii) being our recommendation because of its simplicity.
    1. We improve upon the existing KRE payout structure with updates to the size of each track, a simplification of the Spend Track and tighter logic for the Buy Track.
-   1. We simplify the KRE to one single track that rewards developers proportionally based on the sum of all Active User Balances in their app relative to the sum total of all Active User Balances across the Kin Ecosystem.
+   1. We simplify the KRE to one single track that rewards developers proportionally based on the sum of all Active User Balances (AUB) in their app relative to the sum total of all Active User Balances across the Kin Ecosystem.
 
 ## Introduction
 
