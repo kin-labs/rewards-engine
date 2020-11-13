@@ -9,7 +9,7 @@ We propose KRE 3.0 to take effect Janurary 1, 2021. It aims to build upon learni
 1. We recommend the daily payout cap be re-evaluated quarterly by the Kin Foundation. For Q1 2021, we recommend a daily payout cap of 250 million Kin or $USD 5000 in Kin, whichever is less.
 1. We recommend the KRE payout logic be adjusted. We provide two options with the latter (ii) being our recommendation because of its simplicity.
    1. We improve upon the existing KRE payout structure with updates to the size of each track, a simplification of the Spend Track and tighter logic for the Buy Track.
-   1. We simplify the KRE to one single track that rewards developers proportionally based on the sum of all Active User Wallet Balances in their app relative to the sum total of all Active User Wallet Balances across the Kin Ecosystem.
+   1. We simplify the KRE to one single track that rewards developers proportionally based on the sum of all Active User Balances in their app relative to the sum total of all Active User Balances across the Kin Ecosystem.
 
 ## Introduction
 
@@ -26,19 +26,21 @@ Despite this positive step forward, there are still challenges with the current 
 * Kin bought by users does not sufficiently offset the sell-pressure created by KRE payouts.
 * The KRE payout logic is very complex.
 
-In order to address these problems, the following proposal outlines a revision to both the daily KRE budget and the KRE logic. We provide two options for updating the KRE logic. Our recommendation is the latter option: Active User Wallet Balances.
+In order to address these problems, the following proposal outlines a revision to both the daily KRE budget and the KRE logic. We provide two options for updating the KRE logic. Our recommendation is the latter option: Active User Balances.
 
 ## Daily Payout Cap
 We recommend that the Kin Foundation re-evaluate and adjust daily payout caps on a quarterly basis to provide more flexibility when addressing changes in the economy. As the value on Kin has grown and the ecosystem has matured, the rate of inflation from KRE payouts will need to decrease in order to limit sell-side pressure from developers. This will enable the value of Kin to grow as adoption grows, which will increase participation and competition in the ecosystem.
 
 
-We recommend that the daily payout is the lesser of either 250 million Kin or USD $5000 worth of Kin per day:
+We recommend that the daily payout is the lesser of either 250 million Kin or USD $5000 worth of Kin per day for Q1 of 2021*:
 
 ```
 KRE_total = minimum(250000000, USD $5000 worth of Kin)
 ```
 
-The price of Kin will be calculated as the closing price on the prior day on Coin Market Cap.
+The daily price of Kin will be calculated as the average closing price on Coin Gecko of the 7 days immediately preceding the date in question.
+
+\* *Because the price of Kin is still so volatile, we recommend that the Kin Foundation make their final decision about the Q1 payout cap at the Kin Foundation's December Board Meeting.*
 
 ## KRE Logic Update
 
@@ -96,24 +98,25 @@ Module submission as described in KRE 2.2.2 will remain with the exception of th
 
 *- The user/developer are paid Kin at a rate at most 3x the market rate (i.e. a user can earn the developer at most $0.03 worth of Kin for an ad generating $0.01 of revenue, and a user buying $1.00 worth of kin cannot receive more than $3.00 worth of Kin).*
 
-### Option ii. Active User Wallet Balances
+### Option ii. Active User Balances
 
 The KRE payout logic would be replaced with the following simple logic:
 ```
 On a given day, payout for app i will be:
 
-Payout_i = (AUWB_i / sum for all apps j (AUWB_j)) * KRE_total
+Payout_i = (AUB_i / AUB_total) * KRE_total
 
 Where:
-AUWB_i = min(Sum of user balances over all MAS in app i, 100000*number of MAS in app i)
+AUB_i = min(Sum of user balances over all MAS in app i, 100000*number of MAS in app i)
+AUB_total = Sum for all apps j (AUB_j)
 
-A user is an MAS in app i if their last spend transaction in a KRE-app occurred in app i and was in the last 30 days.
+A user is an MAS in app i if they have spent Kin in app i and was in the last 30 days.
 The monopoly clause from the current KRE would still apply.
 ```
 
-While Option i. addresses some of the core challenges of the KRE, it is still very complex making it difficult for developers to participate effectively and for operators to execute payouts. Active User Wallet Balances removes all of this complexity, turning the KRE into a simple and compelling game to play.
+While Option i. addresses some of the core challenges of the KRE, it is still very complex making it difficult for developers to participate effectively and for operators to execute payouts. Active User Balances removes all of this complexity, turning the KRE into a simple and compelling game to play.
 
-Fundamentally, the purpose of the KRE is to reward developers based on their contributions to the growth of the Kin Economy. If we define the Kin Economy as Kin used by individual users in the ecosystem, then Active User Wallet Balances is the simplest way to measure each developer's contribution to the total economy.
+Fundamentally, the purpose of the KRE is to reward developers based on their contributions to the growth of the Kin Economy. If we define the Kin Economy as Kin used by individual users in the ecosystem, then Active User Balances is the simplest way to measure each developer's contribution to the total economy.
 
 We understand that this implementation is a significant divergence from previous KRE implementations that rewarded specific user behaviour. In our assessment, rewards based on specific user behaviours have led to the increased complexity of the KRE and increased vectors of gameability. KRE 2.0 incentivizes a variety of use cases. Many of these, like Kin Ads, are productive in driving positive demand for Kin on the open market. However, there are also many use cases that do not drive demand for Kin and are therefore a net negative on the value of Kin. This is not the product of any bad actors in the ecosystem, but is instead a function of the current incentive structure. 
 
@@ -123,12 +126,12 @@ We recognize that this may incentivize developers to “recycle” prior KRE pay
 
 1. The developer must ensure that the users continue to spend and keep the Kin within the app’s ecosystem. 
 1. This KRE payment that was distributed to users is now Kin that can not readily be sold.
-1. If a developer exclusively fuels their economy with KRE payouts then other developers can gain ground on this developer by getting their users to buy Kin, or by purchasing Kin themselves on the open market
+1. If a developer exclusively fuels their economy with KRE payouts then other developers can gain ground on this developer by getting their users to buy Kin, or by purchasing Kin themselves on the open market.
 
-The best option for a developer is to get users to buy kin with their own attention/$ and keep it within the economy. The developer can keep all of their current payouts (and sell them if they'd like) while increasing their future payouts. Removal of the buy track also removes all issues with the track in its current form: users are often unaware they are "purchasing" Kin. Another criticism would be that this does not have a hold track, thus removing the incentive for developers to hold KRE payouts for as long as possible. We argue that while some developers chose to hold KRE payouts, a majority of KRE payouts in 2020 were sold despite this Hold Track incentive. While there is still incentive to not sell KRE payouts, this incentive is shifted and instead pushes developers to move Kin into their app-economies: a developer can increase their payouts by growing user wallet balances in their app.
+The best option for a developer is to get users to buy kin with their own attention/$ and keep it within the economy. The developer can keep all of their current payouts (and sell them if they'd like) while increasing their future payouts. Removal of the buy track also removes all issues with the track in its current form: users are often unaware they are "purchasing" Kin. Another criticism would be that this does not have a hold track, thus removing the incentive for developers to hold KRE payouts for as long as possible. We argue that while some developers chose to hold KRE payouts, a majority of KRE payouts in 2020 were sold despite this Hold Track incentive. While there is still incentive to not sell KRE payouts, this incentive is shifted and instead pushes developers to move Kin into their app-economies: a developer can increase their payouts by growing user balances in their app.
 
 ## Implementation
-In either the Active User Wallet Balances option or the KRE 2.2.2 Extension option we recommend these changes take effect January 1, 2021.
+In either the Active User Balances option or the KRE 2.2.2 Extension option we recommend these changes take effect January 1, 2021.
 The only exception to this would be the changes to the Buy Track in the KRE 2.2.2 Extension Option. These should be delayed in the event that no publicly available Ad or Buy Module which complies with the KRE is available in the near future.
 Specifically, we recommend the Buy Module changes take effect no less than 21 days after such a module exists.
 
