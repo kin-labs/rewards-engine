@@ -2,7 +2,7 @@
 
 The purpose of this document is to provide an overview of the methodology and rules used for the Kin Rewards Engine.
 
-## KRE 2.2.1 
+## KRE 2.2.4 
 
 **Payout**  
 Across the three KRE tracks (Spend, Buy, Hold), a developer's (developer `i`) total payout would be:  
@@ -57,7 +57,7 @@ daily amount of Kin earned by users, and the daily amount of Kin Bought via modu
 Then the buy payout for app i is:  
 `Payout_buy_i = min(KRE_buy * buy_i / (sum for all apps j buy_j), buy_i)`
 
-Note that the amount of Kin bought via modules on a certain day will be the amount of Kin sent to developers from approved modules on that day (regardless of when the user action took place that resulted in a subsequent purchase of Kin). i.e. If a user watches an ad on August 1st, 2020, and the developer is paid for that ad completion by the module creator on September 1st, 2020 the Kin will have been considered bought on September 1st, 2020.
+Note that the amount of Kin bought via modules on a certain day will be the amount of Kin sent to developers from approved modules on that day (regardless of when the user action took place that resulted in a subsequent purchase of Kin). Note that a day is based on UTC time. i.e. If a user watches an ad on August 1st, 2020, and the developer is paid for that ad completion by the module creator on September 1st, 2020 the Kin will have been considered bought on September 1st, 2020.
 
 **Example 1:**  
 If 100 Kin is bought through a module (i.e. sent to the developer from a module) in app `i` on August 1st, and 200 is earned by users in app `i` on August 1st, `buy_i=100`.
@@ -81,9 +81,9 @@ Specifically, a *mod_id* must be appended to the memo field for daily (or more f
 The payment transactions from modules to developers must start with the form:
 - *1-mod_id-app_id* i.e. *1-kads-lipz*
 
-In addition, the Buy Track module submission must contain information denoting how it can be audited by KRE Operators or other parties. Developers must complete this [form](https://docs.google.com/forms/d/e/1FAIpQLSf5h20erxuLMTFIWwqQxLynLyQV-UYXXMgOaamRArPxzL9afQ/viewform?usp=sf_link) which must be approved by the Kin Foundation prior to counting towards the KRE. In order for the submission to approved:
+The Buy Track module submission must contain information denoting how it can be audited by KRE Operators or other parties. Developers must complete this [form](https://docs.google.com/forms/d/e/1FAIpQLSf5h20erxuLMTFIWwqQxLynLyQV-UYXXMgOaamRArPxzL9afQ/viewform?usp=sf_link). The module must first be approved by KRE operators for form completeness. After this, the module will be considered *under review* until it is fully approved by the Kin Foundation. While under review, the module will still be used to calculate KRE payouts but the Kin Foundation reserves the right to halt KRE payments for the module's use at any time. Moreover, regardless of a module's probation status, anyone can submit a report of a violation via the [KRE Transaction Guidelines Violation Procedure](https://github.com/kinecosystem/rewards-engine/blob/master/KRE%20Transaction%20Guidelines%20Procedure.pdf). In order for the submission to approved:
 - The user either watched an advertisement, filled out a survey or paid in another currency for the Kin before Kin was sent to the developer.
-- The user/developer are paid Kin at a rate at most 3x the market rate (i.e. a user can earn the developer at most $0.03 worth of Kin for an ad generating $0.01 of revenue, and a user buying $1.00 worth of kin cannot receive more than $3.00 worth of Kin).
+- The user/developer are paid Kin at a rate at most the market rate for Kin as calculated on the date of purchase (i.e. a user can earn the developer at most $0.01 worth of Kin for an ad generating $0.01 of revenue, and a user buying $1.00 worth of kin cannot receive more than $1.00 worth of Kin).
 - Kin was purchased on the open market.
 
 ## 3. Hold
