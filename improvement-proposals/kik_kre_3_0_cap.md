@@ -23,7 +23,7 @@ In November, we proposed a payout cap in our KRE 3.0 recommendation: *250 millio
 
 We have considered 3 different means of determining what the payout cap should be:
 1. MAS cap (the size of the ecosystem)
-1. Liquidity Cap (the amount of liquiditiy in the market)
+1. Liquidity Cap (the amount of liquidity in the market)
 1. Volatility Cap (how volatile the price of Kin is)
 
 Our recommendation is the last option, basing the payout on the volatility of the price of Kin. We feel this aligns the incentives of participants and remains relatively closed to attack vectors. We would recommend the Kin Foundation monitor the ecosystem and plan to make adjustments to the cap quarterly (or more frequently in the case of dramatic changes) based on material impact to any of the three variables listed above. This could include increasing or decreasing the cap.
