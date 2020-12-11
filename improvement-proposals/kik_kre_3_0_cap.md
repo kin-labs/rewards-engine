@@ -61,7 +61,7 @@ KRE_total = 250,000,000 * (1 - VF)
 Where `VF` (the volatility factor) is a number ranging from 0 to 1 which represents the average amount of volatility in the price over the last 30 days.
 More formally, it is the absolute average deviation over the last 30 days divided by the average closing price over the last 30 days.
 
-![VF Equation](https://i.imgur.com/LGDyTYm.jpg)
+![VF Equation](https://i.imgur.com/IcT2awX.jpg)
 ```
 Where,
 P is the set of closing prices in the last 30 days.
