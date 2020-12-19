@@ -5,7 +5,7 @@ The purpose of this document is to provide an overview of the methodology and ru
 ## KRE 3.0
 
 ### The Daily Payout 
-The total amount of Kin paid to developers for a day is daily_payout. It is based on a daily budget is adjusted based on the volatility of the price of Kin.
+The total amount of Kin paid to developers for a day is daily_payout. It is based on a daily budget and is adjusted based on the volatility of the price of Kin.
 
 ```
 daily_budget = 250,000,000 Kin
