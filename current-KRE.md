@@ -2,180 +2,48 @@
 
 The purpose of this document is to provide an overview of the methodology and rules used for the Kin Rewards Engine.
 
-## KRE 2.2.4 
+## KRE 3.0
 
-**Payout**  
-Across the three KRE tracks (Spend, Buy, Hold), a developer's (developer `i`) total payout would be:  
-`Payout_i = Payout_spend_i + Payout_buy_i + Payout_hold_i`
+### Payout Cap 
+The total amount of Kin paid to developers for a day is KRE_total. It has a limit of 250,000,000 Kin and is adjusted based on the volatility of the price of Kin.
 
-Note that a developer will only be rewarded KRE payouts for days where at least one Kin blockchain transaction took place in their respective application.
-
-## 1. Spend  
-`Let KRE_spend be the total amount of Kin paid to developers for the Spend track in a day.`  
-`Let spend_i be the number of users who spend Kin in a day in app i.`  
-`Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 15000 * spend_i)`  
-
-Starting Feb 1, 2020 the payout proportions will be: 
-
-Kin spent per DAS per day | 1 - 9 Kin spent per day | 10 - 99 Kin spent per day | 100 - 999 Kin spent per day | 1,000+
---------------------------|-------------------------|---------------------------|-------------------------|-------
-Max Payout per spender | 3,000 Kin | 6,000 Kin | 12,000 Kin | 30,000 Kin
-
-Thresholds and maximum payout amounts will be recalibrated on a quarterly basis to align with roughly $0.15 for a 1,000+ Kin spender (assuming the price of Kin is still below $0.15 for 1000 Kin). In the event of a dramatic price change (+/- 50% as defined by a 7-day average of closing price on CoinMarketCap), this frequency of recalibration can be more dynamic and can be addressed through a proposal to the Foundation.
-
-The notation of the Spend algorithm going forward will then be:  
-`Let KRE_spend be the total amount of Kin paid to developers for the Spend track in a day.`  
-`Let spend_i_1 be the number of users who spend 1-9 Kin in a day in app i.`  
-`Let spend_i_10 be the number of users who spend 10-99 Kin in a day in app i.`  
-`Let spend_i_100 be the number of users who spend 100-999 Kin in a day in app i.`  
-`Let spend_i_1000 be the number of users who spend 1000 or Kin in a day in app i.`  
-`Then spend_i = spend_i_1 + 2*spend_i_10 + 4*spend_i_100 + 10*spend_i_1000`  
-`Payout_spend_i = min(KRE_spend * spend_i / sum for all apps i (spend_i), 3000 * spend_i)`  
-
-## 2. Buy
-For Dates up to and including July 31, 2020:
-
-`Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
-`Let w_increase_i be the amount of Kin sent from the registered developer wallet to 
-user wallets (earns, creates) in app i over the lifetime of the KRE`  <br/>
-`Let w_decrease_i be the amount of Kin sent from user wallets to the registered
-developer wallet (spends) in app i over the lifetime of the KRE`  <br/>
-`Let KRE_prior_buy_payouts_i be the summed Kin paid to app i through the Buy track over the lifetime of the KRE`<br/> 
-`Let demand_i be the amount of Kin that has flowed into user wallets: w_increase_i - w_decrease_i.`<br/> 
-
-We define net_demand_i for app i as:
-`net_demand_i = max(demand_i - KRE_prior_buy_payouts_i, 0)`
-
-Then the buy payout for app i is:  
-`Payout_buy_i = min(KRE_buy * net_demand_i / (sum for all apps j net_demand_j), net_demand_i)`<br/>
-
-**2.2 Update** For August 1, 2020 - December 31, 2020: <br/>
-`Let KRE_buy be the total amount of Kin paid to developers for the Buy track in a day`<br/>
-`Let buy_i be the total amount of Kin purchased and sent to users in app i in a day. The amount purchased and sent to users will be the minimum of: the 
-daily amount of Kin earned by users, and the daily amount of Kin Bought via modules.`<br/>
-
-Then the buy payout for app i is:  
-`Payout_buy_i = min(KRE_buy * buy_i / (sum for all apps j buy_j), buy_i)`
-
-Note that the amount of Kin bought via modules on a certain day will be the amount of Kin sent to developers from approved modules on that day (regardless of when the user action took place that resulted in a subsequent purchase of Kin). Note that a day is based on UTC time. i.e. If a user watches an ad on August 1st, 2020, and the developer is paid for that ad completion by the module creator on September 1st, 2020 the Kin will have been considered bought on September 1st, 2020.
-
-**Example 1:**  
-If 100 Kin is bought through a module (i.e. sent to the developer from a module) in app `i` on August 1st, and 200 is earned by users in app `i` on August 1st, `buy_i=100`.
-
-
-**Example 2:**  
-If 100 Kin is bought through a module (i.e. sent to the developer from a module) in app `i` on August 1st, and 50 is earned by users in app `i` on August 1st, `buy_i=50`.
-
-**Impermissible Kin Bought**<br/>
-Note: Any Kin purchased due to user actions before August 1st, 2020 will not be considered part of Buy Track from August 1st, 2020 and forward. i.e. if a user watches an ad on July 1st, 2020 and the developer is paid by the module creator on August 1st, 2020, this Kin will not count towards the Buy Track. <br/>
-
-**Module Submission**
-
-For a submitted module to be recognized for use in the Buy Track it must be demonstrated that user actions resulted in the purchase of Kin. Blockchain transactions must occur for each user earn that happens through the module demonstrating:
-- That the user received Kin in exchange for a Kin purchase taking place
-- Which digital service (app) the purchase was made through
-- Which submitted Buy Track module was used
-
-Specifically, a *mod_id* must be appended to the memo field for daily (or more frequent) Kin payments to developers for purchases. A *mod_id* is a 4-digit module identifier for the Buy Track module (i.e. *kads*)
-
-The payment transactions from modules to developers must start with the form:
-- *1-mod_id-app_id* i.e. *1-kads-lipz*
-
-The Buy Track module submission must contain information denoting how it can be audited by KRE Operators or other parties. Developers must complete this [form](https://docs.google.com/forms/d/e/1FAIpQLSf5h20erxuLMTFIWwqQxLynLyQV-UYXXMgOaamRArPxzL9afQ/viewform?usp=sf_link). The module must first be approved by KRE operators for form completeness. After this, the module will be considered *under review* until it is fully approved by the Kin Foundation. While under review, the module will still be used to calculate KRE payouts but the Kin Foundation reserves the right to halt KRE payments for the module's use at any time. Moreover, regardless of a module's probation status, anyone can submit a report of a violation via the [KRE Transaction Guidelines Violation Procedure](https://github.com/kinecosystem/rewards-engine/blob/master/KRE%20Transaction%20Guidelines%20Procedure.pdf). In order for the submission to approved:
-- The user either watched an advertisement, filled out a survey or paid in another currency for the Kin before Kin was sent to the developer.
-- The user/developer are paid Kin at a rate at most the market rate for Kin as calculated on the date of purchase (i.e. a user can earn the developer at most $0.01 worth of Kin for an ad generating $0.01 of revenue, and a user buying $1.00 worth of kin cannot receive more than $1.00 worth of Kin).
-- Kin was purchased on the open market.
-
-## 3. Hold
-The notation for the holding payout calculation is as follows:  
-`Let w_i = min(KRE_prior_payouts_i, minimum amount of Kin in KRE wallet during a day)`  
-`Payout_hold_i = min(w_i / sum(w_j for all apps j in A) * KRE_hold, w_i * 50% / 365)`  
-Note that a developer's KRE wallet will include both their KRE payout wallet and an optional verified cold-storage wallet they have provided.
-
-## Implementation
-
-Month | Spend | Buy | Hold
-------|-----|------------|---------
-January | 95% | 0% | 5%
-February | 92% | 3% | 5%
-March | 84% | 6% | 10%
-April | 80% | 10% | 10%
-May | 75% | 15% | 10%
-June | 65% | 20% | 15%
-July | 60% | 25% | 15%
-August | 55% | 30% | 15%
-September | 50% | 35% | 15%
-October | 45% | 40% | 15%
-November | 40% | 45% | 15%
-December | 35% | 50% | 15%
-
-`KRE_total`: This will be 500,000,000 Kin / day in 2020.
-
-The notation for KRE payout allocation will be as follows (sample month: January, Option 2):  <br/>
-`KRE_das = 0.95 * KRE_total`<br/>
-`KRE_buy = 0.00 * KRE_total`<br/>
-`KRE_hold = 0.05 * KRE_total`<br/>
-
-**The KRE Carryover Pool**  
-Like in the KRE 1.0, Kin that was not paid out to developers will accumulate for future use. If there is unused payout for a particular KRE track this will become carryover pool added to future payouts averaged over the remainder of the year.
-
-The notation for the KRE carryover pool calculation is as follows:  
-For Dates up to and including July 31, 2020:
-
-Let `r` be the number of days left in 2020
-Let `KRE_carryover` be the KRE carryover pool (initialized at 0)
-
-Before a payout:
 ```
-KRE_total = 500,000,000
-If KRE_carryover > 0:
-    KRE_total += [KRE_carryover / r]
+KRE_total = 250,000,000 * (1 - VF)
+```
+Where `VF` (the volatility factor) is a number ranging from 0 to 1 which represents the average amount of volatility in the price over the last 30 days.
+More formally, it is the absolute average deviation over the last 30 days divided by the average closing price over the last 30 days.
+
+![VF Equation](https://i.imgur.com/IcT2awX.jpg)
+```
+Where,
+P is the set of closing prices in the last 30 days.
+p_avg is the average price in the last 30 days.
 ```
 
-After a payout:
-```
-If sum(Payout_i for all apps i in A) < KRE_total:
-    KRE_carryover += KRE_total - sum(Payout_i for all apps i in A)
-```
+CoinGecko is used for closing price information in $USD. Each KRE payout will pay for a week of activity and have the same KRE_total. The week of dates `[x:x+6]` will be paid on or about date `x+24` and use price information from dates `[x-10:x+18]`. I.e. payouts for the week of Nov 15-21 will be paid on or about Dec 9 and use payout information from Nov 5-Dec 4 inclusive. Note that is not a change in payout timing from the current process.
 
-**2.2 Update** <br/>
-On August 1, 2020 the KRE Carryover Pool will be split into 3 pools: <br/>
-Let `KRE_carryover_spend` = `KRE_carryover` * 0.55 <br/>
-Let `KRE_carryover_hold` = `KRE_carryover` * 0.15 <br/>
-Let `KRE_carryover_buy` = `KRE_carryover` * 0.30
+### Active User Balances
 
-Then, for August 1, 2020 - December 31, 2020:
-
-Let `r` be the number of days left in 2020<br/>
-Before a payout:
+Developers are paid a portion of the KRE_total based on the total sum of all balances of all active users in their app.
 ```
-If KRE_carryover_spend > 0:
-    KRE_spend += [KRE_carryover_spend / r]
-If KRE_carryover_hold > 0:
-    KRE_hold += [KRE_carryover_hold / r]
-If KRE_carryover_buy > 0:
-    KRE_buy += [KRE_carryover_buy / r]
+On a given day, payout for app i will be:
+
+Payout_i = (AUB_i / AUB_total) * KRE_total
+
+Where:
+AUB_i = min(Sum of user balances over all MAS in app i, 100000*number of MAS in app i)
+AUB_total = Sum for all apps j (AUB_j)
+
+A user is an MAS in app i if they have spent Kin in app i in the last 30 days.
 ```
 
-After a payout:
-```
-If sum(Payout_spend_i for all apps i in A) < KRE_spend:
-    KRE_carryover_spend += KRE_spend - sum(Payout_spend_i for all apps i in A)
-If sum(Payout_hold_i for all apps i in A) < KRE_hold:
-    KRE_carryover_hold += KRE_spend - sum(Payout_hold_i for all apps i in A)
-If sum(Payout_buy_i for all apps i in A) < KRE_buy:
-    KRE_carryover_buy += KRE_spend - sum(Payout_buy_i for all apps i in A)
-```
+### Monopoly Clause 
 
-**Monopoly Clause** 
+No single developer will receive more than 66.67% of the KRE payout for a single day and any developer that would have received more than 50% of the track's payout will have their track payout adjusted.
+No two developers will receive more than 90% of any KRE track's payout for a single day.
+In both cases, residual payouts will be redistributed proportionally to other developers.
 
-As in KRE 1.1 we propose a continuation of the Monopoly Clause. The fundamental change is that it will apply separately to each KRE track to ensure that developers targeting a specific track will still be able to compete effectively.
-
-No single developer will receive more than 66.67% of the KRE payout for specific track for a given period and any developer that would have received more than 50% of the track's payout will have their track payout adjusted.
-No two developers will receive more than 90% of any KRE track's payout for a given period.
-In both cases, residual payouts will be redistributed proportionally to other developers
-
-Let `s_1, s_2, …, s_n` be the KRE track payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
+Let `s_1, s_2, …, s_n` be the KRE payout shares ordered by payout proportion in descending order before invoking the monopoly clause.
 ```
 If (s_1 + s_2  > 0.90) or (s_1 > 0.5):
     If s_1 > 0.5:
@@ -201,25 +69,18 @@ Else:
 **Example 1:**  
 Payout track shares before clause: `{0.35, 0.3, 0.2, 0.15}`  
 Payout track shares after clause: `{0.35, 0.3, 0.2, 0.15}`  
-Reasoning: Clause does not apply
 
 **Example 2:**  
 Payout track shares before clause: `{0.90, 0.05, 0.03, 0.02}`  
 Payout track shares after clause: `{0.633, 0.183, 0.11, 0.073}`  
-Reasoning: 2.i.1 applies
 
 **Example 3:**  
 Payout track shares before clause: `{0.50, 0.45, 0.03, 0.02}`  
 Payout track shares after clause: `{0.474, 0.426, 0.06, 0.04}`  
-Reasoning: 2.i.2 applies
 
 **Example 4:**  
 Payout track shares before clause: `{0.55, 0.44, 0.01}`  
-Payout track shares after clause: `{0.486, 0.414, 0.06, 0.10}`  
-Reasoning: Both 3.1 and 3.2 apply, first `0.55` is changed to `0.517` by 3.1, then `0.517` and `0.44` are changed to by 2.a.2.
-
-While `66.67%` seems high for a single developer to receive, we do not want to discourage strong developers from entering the ecosystem. Moreover, because any app with payout shares above `50%` will be adjusted, most of the time the top app will receive much less than `66.67%`:
-
+Payout track shares after clause: `{0.486, 0.414, 0.06, 0.10}`
 
 Payout track shares before clause | Payout track shares after clause
 --------------------------- | --------------------------
@@ -229,5 +90,3 @@ Payout track shares before clause | Payout track shares after clause
 `80%` | `60%`
 `90%` | `63.33%`
 `95%` | `65%`
-
-This table assumes that 2.i.2 does not apply.
