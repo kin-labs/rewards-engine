@@ -25,6 +25,8 @@ CoinGecko is used for closing price information in $USD. Each KRE payout will pa
 
 The volatility adjustment is an algorithmic means to control the rate at which new Kin enters the market during times of volatility. If the price rises, and developers sell a constant percentage of their KRE payouts, then there may be insufficient market liquidity to absorb the increase in sell pressure causing dramatic swings in price. When the price is falling, it makes sense to tighten the flow of Kin in order to restabilize the price. In either of these situations, we can use the size of the KRE payouts to balance the economy.
 
+Note that a developer will only be rewarded KRE payouts for days where at least one Kin blockchain transaction took place in their respective application.
+
 ### Active User Balances
 
 Developers are paid a portion of the daily_payout based on the total sum of all balances of all active users in their app.
