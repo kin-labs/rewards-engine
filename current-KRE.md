@@ -21,7 +21,7 @@ P is the set of closing prices in the last 30 days.
 p_avg is the average price in the last 30 days.
 ```
 
-CoinGecko is used for closing price information in $USD. Each KRE payout will pay for a week of activity and have the same KRE_total. The week of dates `[x:x+6]` will be paid on or about date `x+24` and use price information from dates `[x-10:x+18]`. I.e. payouts for the week of Nov 15-21 will be paid on or about Dec 9 and use payout information from Nov 5-Dec 4 inclusive. Note that is not a change in payout timing from the current process.
+CoinGecko is used for closing price information in $USD. Each KRE payout will pay for a week of activity and have the same KRE_total. The week of dates `[x:x+6]` will be paid on or about date `x+24` and use price information from dates `[x-10:x+19]`. I.e. payouts for the week of Nov 15-21 will be paid on or about Dec 9 and use payout information from Nov 5-Dec 4 inclusive. Note that is not a change in payout timing from the current process.
 
 The volatility adjustment is an algorithmic means to control the rate at which new Kin enters the market during times of volatility. If the price rises, and developers sell a constant percentage of their KRE payouts, then there may be insufficient market liquidity to absorb the increase in sell pressure causing dramatic swings in price. When the price is falling, it makes sense to tighten the flow of Kin in order to restabilize the price. In either of these situations, we can use the size of the KRE payouts to balance the economy.
 
