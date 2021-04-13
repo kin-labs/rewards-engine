@@ -23,7 +23,7 @@ However, we have noticed that some apps may have trouble controlling this number
 
 **This leads to some developers getting less kin than they should due to this imbalance.**
 
-While many of the apps have been proactive in controlling this, a minor change in the definition of MAU will also help to address this.
+While many of the apps have been proactive in controlling this, a minor change in the definition of MAU will also help to address this universally.
 
 
 ## Summary of Improvements
