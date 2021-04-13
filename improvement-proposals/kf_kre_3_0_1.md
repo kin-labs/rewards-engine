@@ -37,7 +37,7 @@ to:
 A user is an MAU in app i if they have spent Kin >= 3 times in app i in the last 30 days.
 ```
 
-The data we have shows that this will keep bot & churn accounts from from being counted as MAU. For the payout calculated week of April 11 2021, the MAU and AUB cap would be as follows:
+The data we have shows that this will keep bot & churn accounts from from being counted as MAU. For the payout calculated on April 11 2021, the MAU and AUB cap would be as follows:
 
 |App|MAU = 1 spend|AUB cap (100,000 * MAU)|MAU >= 3 spends|AUB cap (100,000 * MAU)|
 |------------------|-------------|-----------------------|---------------|-----------------------|
