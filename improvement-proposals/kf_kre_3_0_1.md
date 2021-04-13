@@ -55,6 +55,6 @@ This method is more fair and will ensure rewards count towards users who are eng
 This will also only affect apps with both large kin deposits and churn or bot accounts. The effect will be to ensure only actual active users are counted towards the reward.
 
 ## Implementation
-We propose this is included in the KRE as soon as it is approved so it can be part of KRE 3 by April 30 2021
+We propose this is included in the KRE as soon as it is approved by the Kin Foundation so it can be part of KRE 3 by April 30 2021
 
 
