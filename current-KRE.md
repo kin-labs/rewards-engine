@@ -39,7 +39,8 @@ Where:
 AUB_i = min(Sum of user balances over all MAS in app i, 100000*number of MAS in app i)
 AUB_total = Sum for all apps j (AUB_j)
 
-A user is an MAS in app i if they have spent Kin in app i in the last 30 days.
+A user is an MAU in app i if they have spent Kin >= 3 times in app i in the last 30 days.
+
 ```
 
 ### Monopoly Clause 
