@@ -36,7 +36,7 @@ Suppose the app has addresses with about 10 Kin each:
 | ... | 10 |
 | 1000 | 10 |
 
-It&#39;s total AUB from usage would be 10 \* 1,000 = 10,000 Kin
+Its total AUB from usage would be 10 \* 1,000 = 10,000 Kin
 
 However, a vulnerability exists where the app could create an address it controls, and deposit a large volume of Kin to increase its AUB.
 
