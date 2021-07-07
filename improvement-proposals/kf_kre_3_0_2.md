@@ -71,11 +71,11 @@ This method allows apps to have a healthy distribution of balances without addin
 ## **KRE Logic Update**
  Where payout for app i is defined as follows: [ref](https://github.com/kinecosystem/rewards-engine/blob/master/accepted/kik_kre_3_0.md#option-ii-active-user-balances)
 
-Payout\_i = (AUB\_i / AUB\_total) \* KRE\_total
+Payout_i = (AUB_i / AUB_total) * KRE_total
 
-let AUB\_i = 0
- for each account of app\_i
- AUB\_i = AUB\_i + IF(account \&gt;= 15stdev\_avg THEN avg ELSE account)
+let AUB_i = 0
+ for each account of app_i
+ AUB_i = AUB_i + IF(account >= 15stdev_avg THEN avg ELSE account)
 
 Where for a payment period:
  account = the balance of an active user
