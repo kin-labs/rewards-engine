@@ -13,7 +13,7 @@ _The Kin Foundation_
 
 ## **Summary**
 
-This proposal introduces and addresses the vulnerability of _parked accounts_. A parked account is a large developer controlled account with a disproportionately large balance that could be used to game the AUB metric. This can be controlled using standard deviations as described below.
+This proposal introduces and addresses the vulnerability of _parked accounts_. A parked account is a large account with a disproportionately large balance that could be used to game the AUB metric. This can be controlled using standard deviations as described below.
 
 ## **Abstract**
 
@@ -29,7 +29,7 @@ In short, the AUB metric encourages Kin to flow into apps while also requiring t
 
 ### **Vulnerability**
 
-Consider an app X with 1,000 Active users. This app can have up to 100,000,000 Kin (AUB )counted by the KRE for its KRE reward.
+Consider an app X with 1,000 Active users. This app can have up to 100,000,000 Kin (AUB ) counted by the KRE for its KRE reward.
 
 Suppose the app has addresses with about 10 Kin each:
 
@@ -64,7 +64,7 @@ These balances also change with time as apps evolve and gain more use cases. Som
 1. Cap the maximum balance that can be counted per account to 1MM Kin:
  As described above, different apps have different balances and use-cases for Kin, so this method would be too constrained.
 2. Cap the maximum balance that can be counted to an average of the app&#39;s current Active Users:
- This is slightly less constrained but given that apps can have a large range in balances, this would also affect non parked addresses
+ This is slightly less constrained but given that apps can have a large range in balances, this would also affect non parked addresses.
 
 Since parked addresses are extreme outliers of an app&#39;s distribution of balances, the KRE can use a simple standard deviation to protect itself from outlier parked accounts.
 
