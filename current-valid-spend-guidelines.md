@@ -41,7 +41,7 @@ SECTION A - GENERAL REQUIREMENTS
 
 3.1. For each Spend Transaction, the User must make a voluntary choice to initiate the Spend Transaction unless it is Passive Subscription Payment.
 
-The Spend Transaction is not a voluntary choice of the User if (a) the User is forced to perform it (b) the User is not aware the Spend Transaction is occurring at the time it occurs, or ( c) the User's wallet was debited by the Developer and this was not expressly authorised by the User at the time of the Transaction. Being aware of the action that initiated the Spend Transaction is not the same as being aware of the Spend Transaction itself.
+The Spend Transaction is not a voluntary choice of the User if (a) the User is forced to perform it (b) the User is not aware the Spend Transaction is occurring at the time it occurs, or (c) the User's wallet was debited by the Developer and this was not expressly authorised by the User at the time of the Transaction. Being aware of the action that initiated the Spend Transaction is not the same as being aware of the Spend Transaction itself.
 
 4.  Developer to be in compliance
     
@@ -73,7 +73,7 @@ SECTION B - SPECIFIC TRANSACTION REQUIREMENTS
 
 (b) include clear communication to the User of what they will receive in return for their KIN;
 
-( c) be initiated by a unique action undertaken by the User;
+(c) be initiated by a unique action undertaken by the User;
 
 (d) include a clear confirmation to the User once the Spend Transaction has occurred / payment was made;
 
