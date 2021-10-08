@@ -1,3 +1,4 @@
+
 # KRE Valid Transaction Guidelines V3
 
 These Kin Rewards Engine Valid Transaction Guidelines (the "KRE Transaction Guidelines") are supplemental and subject to the [Kin Foundation Developer Guidelines](https://www.kin.org/developers/guidelines.pdf) (the "Guidelines"). Unless otherwise defined below, terms defined in the Guidelines have the same meaning when used in these KRE Transaction Guidelines.
@@ -6,9 +7,7 @@ About these guidelines
 
 The Kin Rewards Engine was built to promote a healthy digital ecosystem which maximizes everyone's opportunity for participation and recognition. However in order to keep a fair playing field amongst developers and ensure a safe user experience for end-users, these guidelines set minimum standards that applications must satisfy in order to be eligible for payouts from the Kin Rewards Engine.
 
-These guidelines are regulated by the members of the Kin Community Council and the Kin Foundation and may be updated from time to time.
-
-Last updated: 30 April 2021
+Last updated: 24 September 2021
 
 1.  Definitions
     
@@ -49,7 +48,7 @@ The Spend Transaction is not a voluntary choice of the User if (a) the User is f
 
 You must not be:
 
-4.1 in breach of the Guidelines and/or these KRE Transaction Guidelines; or
+4.1 in breach of the Terms of Use Agreement and/or these KRE Transaction Guidelines; or
 
 4.2 in breach of any App Store policy (howsoever described) that your Application is available to the extent this is detrimental to the Kin Ecosystem,
 
@@ -122,27 +121,15 @@ SECTION B - SPECIFIC TRANSACTION REQUIREMENTS
 
 9.3. The cost of the Subscription must be set to a fixed amount for the period of the Subscription.
 
-9.4. The length of a Subscription period may only be monthly or annually. The length of a Subscription must not exceed one year.
+9.4. The length of a Subscription period must not be less than one week.
 
 9.5 For each Subscription period set out in Column 1 in the table below (a) the User's payment obligations for that Subscription must correspond to Column 2; and (b) unless the Subscription is renewed by the User, the maximum length of the Subscription must not exceed the numbers of days prescribed in Column 3 (if any).
 
-Column 1 (Subscription Period)
-
-Column 2 (How does a User pay for the Subscription)
-
-Column 3 Maximum length of Subscription (unless User elects to renew)
-
-Monthly
-
-The User pays once per calendar month at fixed intervals.
-
-365 days
-
-Annually
-
-The Users pays once per year.
-
-No maximum limit
+| Column 1 (Subscription Period) | Column 2 (How does a User pay for the Subscription period)  |  Column 3 Maximum length of Subscription (unless User elects to renew)  |
+| ------------- | ------------- | ------------- |
+| Weekly | The User pays once per week at fixed intervals. | No maximum limit |
+| Monthly | The User pays once per calendar month at fixed intervals. | No maximum limit |
+| Annually | The Users pays once per year. | No maximum limit
 
 9.6. If a User is offered a renewal of their Subscription, the renewal must be offered around the time their current Subscription is due to expire. The offer to renew must be clear and explicit to the User and be in accordance with this Section 9.
 
