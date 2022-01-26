@@ -1,6 +1,6 @@
 *This is a sample template for Kin improvement proposals. This template is only meant to serve as an initial guide, and should be customized as necessary. Text like this should be removed.*
 
-# Kin Improvement Proposal
+# KRE Improvement Proposal
 The purpose of this document is to outline a proposed improvement to the existing KRE algorithm and/or valid spend guidelines. 
 
 *versioning:*
