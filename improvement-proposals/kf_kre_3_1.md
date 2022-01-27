@@ -16,16 +16,16 @@ The KRE has gone through several changes, and each change has improved
 upon its predecessor and also revealed new avenues for refinement. Each
 iteration tries to solve for the following:
 
-1.  > Incentivize growth of Active Users (economic spread)
+1.  Incentivize growth of Active Users (economic spread)
 
-2.  > Incentivize amount of Kin spent (economic depth)
+2.  Incentivize amount of Kin spent (economic depth)
 
 These two incentives interplay with each other causing growth of the
 ecosystem, where more users are:
 
-1.  > Holding more Kin (pull Kin from exchanges into apps)
+1.  Holding more Kin (pull Kin from exchanges into apps)
 
-2.  > Spending more Kin (growing economic value of Kin)
+2.  Spending more Kin (growing economic value of Kin)
 
 This proposal aims to continue to drive Kin along this path in a way
 that continues to benefit users and developers, while maintaining the
@@ -35,24 +35,24 @@ key AUB metric currently used.
 
 KRE 3.1 aims to incentivize additional factors to the AUB metric:
 
-1.  > Active Users (AU)  
-    > This is to recognize apps that increase the overall size of Kin’s
-    > economy. Of two apps with similar AUB, the app with significantly
-    > higher AU has an additional contribution to Kin’s economy.
-    > (Economic Breadth).
+1.  Active Users (AU)  
+    This is to recognize apps that increase the overall size of Kin’s
+    economy. Of two apps with similar AUB, the app with significantly
+    higher AU has an additional contribution to Kin’s economy.
+    (Economic Breadth).
 
-2.  > The size of median balances its users have _relative to other
-    > apps_  
-    > Apps with higher median balances are pulling more Kin into the
-    > economy and have a richer ‘middle class’. While an app with a high
-    > AUB might only have a handful of users holding a lot of Kin, an
-    > app with a median balance has a more equitable spread of Kin and
-    > consequently, more spend opportunities per user.
+2.  The size of median balances its users have _relative to other
+    apps_  
+    Apps with higher median balances are pulling more Kin into the
+    economy and have a richer ‘middle class’. While an app with a high
+    AUB might only have a handful of users holding a lot of Kin, an
+    app with a median balance has a more equitable spread of Kin and
+    consequently, more spend opportunities per user.
 
-3.  > The size of spends in that app _relative to other apps_  
-    > While AU increases _Economic Breadth_, an app with larger spends
-    > increases _Economic Depth_, where the value of goods and services
-    > being traded are worth more Kin (and indirectly USD).
+3.  The size of spends in that app _relative to other apps_  
+    While AU increases _Economic Breadth_, an app with larger spends
+    increases _Economic Depth_, where the value of goods and services
+    being traded are worth more Kin (and indirectly USD).
 
 ## Additionally, KRE 3.1 also aims to:
 
@@ -68,12 +68,12 @@ While Active User Balance (AUB) is the primary method to calculate
 economic contribution we propose to cap the AUB count for each app based
 on that app’s:
 
-1.  > Active Users (AU)
+1.  Active Users (AU)
 
-2.  > The size of median balances its users have _relative to other
-    > apps_
+2.  The size of median balances its users have _relative to other
+    apps_
 
-3.  > The size of spends in that app _relative to other apps_
+3.  The size of spends in that app _relative to other apps_
 
 In other words, apps will compete to have higher median user balances
 and higher AU and the greater these figures are, the more of the app’s
@@ -202,39 +202,39 @@ a higher KRE Score.
 
 Advantages:
 
--   > At Day 1 implementation, the current app ranking is not overly
-    > affected and allows apps to start to adjust over time to improve
-    > these values. Apps that adapt quickly will find their KRE ranking
-    > to change positively.
+-   At Day 1 implementation, the current app ranking is not overly
+    affected and allows apps to start to adjust over time to improve
+    these values. Apps that adapt quickly will find their KRE ranking
+    to change positively.
 
--   > Apps that raise the economic value of Kin (volume of spends,
-    > balances and users) are rewarded more. This will create a more
-    > competitive environment between apps of a similar size, as in-app
-    > Kin user activity will be taken into account to determine overall
-    > KRE ranking between apps.
+-   Apps that raise the economic value of Kin (volume of spends,
+    balances and users) are rewarded more. This will create a more
+    competitive environment between apps of a similar size, as in-app
+    Kin user activity will be taken into account to determine overall
+    KRE ranking between apps.
 
--   > The barrier to entry for new ecosystem apps with high AU but low
-    > AUB (initially) is reduced. This is because at the outset of a new
-    > Kin integration with a large consumer app, large numbers of highly
-    > engaged active users with low balances will provide more
-    > significant opportunities to take KRE market share away from
-    > existing apps (friendly competition). This is by altering the
-    > ecosystem’s AU Max, BalanceMax and SpendMax factors where if they
-    > outperform existing apps on key metrics their own AUB growth may
-    > be unconstrained. Each cap can be weighted with a multiplier to
-    > apply relative importance to each one. We propose the following
-    > weights: (lower weights increase the strictness of a cap).
+-   The barrier to entry for new ecosystem apps with high AU but low
+    AUB (initially) is reduced. This is because at the outset of a new
+    Kin integration with a large consumer app, large numbers of highly
+    engaged active users with low balances will provide more
+    significant opportunities to take KRE market share away from
+    existing apps (friendly competition). This is by altering the
+    ecosystem’s AU Max, BalanceMax and SpendMax factors where if they
+    outperform existing apps on key metrics their own AUB growth may
+    be unconstrained. Each cap can be weighted with a multiplier to
+    apply relative importance to each one. We propose the following
+    weights: (lower weights increase the strictness of a cap).
 
-    -   > AU cap: 0.1
+    -   AU cap: 0.1
 
-    -   > Spend cap: 0.3
+    -   Spend cap: 0.3
 
-    -   > Balance cap: 1
+    -   Balance cap: 1
 
-> The initial cap an app reaches would be AU and finally the Balance
-> cap. This method allows us to tweak the ‘levers’ of the ecosystem
-> going forward to draw out the in-app economic behaviour we want to
-> further incentivize.
+The initial cap an app reaches would be AU and finally the Balance
+cap. This method allows us to tweak the ‘levers’ of the ecosystem
+going forward to draw out the in-app economic behaviour we want to
+further incentivize.
 
 ### \#Changes to facilitate a more Open Economy
 
@@ -269,7 +269,7 @@ exists to ensure a variety of app sizes are able to coexist and increase
 Kin’s value through cooperative competition. To encourage very small
 apps to participate and compete on their level, we propose adding a
 minor curve to the payout, evening out the tail end of KRE rewards for
-small apps with \> 20 AU.
+small apps with \20 AU.
 
 The curve formula proposed for an app i is: ((2,999)\*Payout_i /
 3,000)+(MAX(Payout)\*(1/3,000))
