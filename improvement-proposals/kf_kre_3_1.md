@@ -53,7 +53,7 @@ KRE 3.1 aims to incentivize additional factors to the AUB metric:
 
 Additionally, KRE 3.1 also aims to:
 
-1.  Make it possible for users to move between apps and encourage a more open economy; and
+1.  Make it possible for users to move between apps and encourage a more open economy.
 
 2.  Lower the barrier to entry for new apps to encourage adoption.
 
@@ -153,7 +153,7 @@ he KRE 3.0 algorithm is summarized below, where apps are rewarded
 based solely on the ranking of each app’s capped AUB. (AUBapp/AUBTotal)
 
 <p align="left">
-<img src="../images/kre3/kre3.png">
+<img height="110" src="../images/kre3/kre3.png">
 </p>
 
 **The Proposed KRE 3.1**
@@ -163,7 +163,7 @@ competitive environment where apps with higher AU, Balances and Spends
 will earn more than apps with a similar AUB.
 
 <p align="left">
-<img  src="../images/kre3/kre3.1.png">
+<img height="110" src="../images/kre3/kre3.1.png">
 </p>
 
 **The Complicated Part**
@@ -252,7 +252,7 @@ cap. This method allows us to tweak the ‘levers’ of the ecosystem
 going forward to draw out the in-app economic behaviour we want to
 further incentivize.
 
-## **Changes to facilitate a more Open Economy**
+## **Changes to facilitate a more open economy**
 
 With the Kin SDKs backup and restore system maturing, users find they
 can create an account in one app and restore it in another, or in one
