@@ -365,6 +365,8 @@ It adds a new dynamic where the relative size of an apps’ AU, Balances
 and Spends becomes part of the criteria that affects rewards. Over time,
 we expect to see apps continue to innovate in these areas as a result.
 
+To kickstart larger spends, we will start counting only transactions >= 1,000 KIN for KRE rewards. In other words, transactions smaller than 1,000 KIN will not be counted towards the KRE. Eventually, we may remove this caveat as apps begin to adapt to the new system.
+
 As apps begin to work on balances and spends, the amount of Kin flowing
 into the ecosystem from exchanges is expected to increase. The growth of
 Kin’s economy in terms of users, spends and balances creates a pull in
