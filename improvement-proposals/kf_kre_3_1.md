@@ -150,7 +150,7 @@ compelling spends that improves Kin’s _economic depth_.
 **The Current KRE 3.0**
 
 he KRE 3.0 algorithm is summarized below, where apps are rewarded
-based solely on the ranking of each app’s capped AUB. (AUBapp/AUBTotal)
+based solely on the ranking of each app’s capped AUB. `(AUBapp / AUBTotal)`
 
 <p align="left">
 <img height="110" src="../images/kre3/kre3.png">
