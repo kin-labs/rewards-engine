@@ -102,6 +102,10 @@ similar level, even as it moves up the ranks.
 users into the ecosystem, the app with significantly higher AU gets a
 slightly higher reward.
 
+<p align="center">
+<img height="200" src="../images/kre3/au.png">
+</p>
+
 Rationale: App B has an additional contribution of users in the economy
 and improves Kin’s _economic spread_. Additionally, rewarding apps for
 AU also indirectly affects the number of spends to increase.
@@ -109,6 +113,10 @@ AU also indirectly affects the number of spends to increase.
 2\. For two apps having similar AUB, but with one where users have a
 higher _median_ balance, the app with a significantly higher balance
 gets a slightly higher reward.
+
+<p align="center">
+<img height="200" src="../images/kre3/balance.png">
+</p>
 
 A sample cross section of these two apps is shown below, where App B’s
 users have a bigger ‘middle class’ compared to App A.
@@ -125,6 +133,10 @@ users and increases the size of Kin’s _middle class_.
 3\. For two apps having similar AUB, but with one where users have a
 higher _median_ spend, the app with significantly higher spends gets a
 slightly higher reward.
+
+<p align="center">
+<img height="200" src="../images/kre3/spend.png">
+</p>
 
 A sample cross section of these two apps is shown below, where App B’s
 users have a bigger ‘middle class’ compared to App A.
@@ -144,11 +156,19 @@ compelling spends that improves Kin’s _economic depth_.
 \*\*The KRE 3.0 algorithm is summarized below, where apps are rewarded
 based solely on the ranking of each app’s capped AUB. (AUBapp/AUBTotal)
 
+<p align="center">
+<img src="../images/kre3/kre3.png">
+</p>
+
 **The Proposed KRE 3.1**
 
 This proposed KRE 3.1 inserts additional incentives that create a more
 competitive environment where apps with higher AU, Balances and Spends
 will earn more than apps with a similar AUB.
+
+<p align="center">
+<img  src="../images/kre3/kre3.1.png">
+</p>
 
 **The Complicated Part**
 
@@ -335,7 +355,9 @@ rate from 250MM Kin to 220MM KIN beginning June 1st, 2022</span>**. We
 invite all ecosystem stakeholders to comment and/or make separate
 proposals on the appropriateness of the proposed daily payout rate.
 
-![](media/image6.png)
+<p align="center">
+<img  src="../images/kre3/payouts.png">
+</p>
 
 ## Discussion
 
