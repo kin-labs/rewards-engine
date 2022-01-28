@@ -99,7 +99,7 @@ similar level, even as it moves up the ranks.
 users into the ecosystem, the app with significantly higher AU gets a
 slightly higher reward.
 
-<p align="center">
+<p align="left">
 <img height="200" src="../images/kre3/au.png">
 </p>
 
@@ -111,7 +111,7 @@ AU also indirectly affects the number of spends to increase.
 higher _median_ balance, the app with a significantly higher balance
 gets a slightly higher reward.
 
-<p align="center">
+<p align="left">
 <img height="200" src="../images/kre3/balance.png">
 </p>
 
@@ -131,7 +131,7 @@ users and increases the size of Kin’s _middle class_.
 higher _median_ spend, the app with significantly higher spends gets a
 slightly higher reward.
 
-<p align="center">
+<p align="left">
 <img height="200" src="../images/kre3/spend.png">
 </p>
 
@@ -149,11 +149,10 @@ compelling spends that improves Kin’s _economic depth_.
 
 **The Current KRE 3.0**
 
-\*\*  
-\*\*The KRE 3.0 algorithm is summarized below, where apps are rewarded
+he KRE 3.0 algorithm is summarized below, where apps are rewarded
 based solely on the ranking of each app’s capped AUB. (AUBapp/AUBTotal)
 
-<p align="center">
+<p align="left">
 <img src="../images/kre3/kre3.png">
 </p>
 
@@ -163,7 +162,7 @@ This proposed KRE 3.1 inserts additional incentives that create a more
 competitive environment where apps with higher AU, Balances and Spends
 will earn more than apps with a similar AUB.
 
-<p align="center">
+<p align="left">
 <img  src="../images/kre3/kre3.1.png">
 </p>
 
@@ -351,7 +350,7 @@ rate from 250MM Kin to 220MM KIN beginning June 1st, 2022</span>**. We
 invite all ecosystem stakeholders to comment and/or make separate
 proposals on the appropriateness of the proposed daily payout rate.
 
-<p align="center">
+<p align="left">
 <img  src="../images/kre3/payouts.png">
 </p>
 
