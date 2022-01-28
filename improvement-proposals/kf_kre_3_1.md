@@ -1,6 +1,3 @@
-Release post (blog): [<span class="underline">Introducing KRE
-3.1</span>](https://docs.google.com/document/d/1_ZgmzHtc17Qh4ZacGwMkvHa6_HqbcafwANPmDbsLTDg/edit?usp=sharing)
-
 # KRE Improvement Proposal
 
 The purpose of this document is to outline a proposed new version of the
@@ -31,7 +28,7 @@ This proposal aims to continue to drive Kin along this path in a way
 that continues to benefit users and developers, while maintaining the
 key AUB metric currently used.
 
-**Abstract**
+## **Abstract**
 
 KRE 3.1 aims to incentivize additional factors to the AUB metric:
 
@@ -54,15 +51,15 @@ KRE 3.1 aims to incentivize additional factors to the AUB metric:
     increases _Economic Depth_, where the value of goods and services
     being traded are worth more Kin (and indirectly USD).
 
-## Additionally, KRE 3.1 also aims to:
+Additionally, KRE 3.1 also aims to:
 
-1.  ## make it possible for users to move between apps and encourage a more open economy; and
+1.  Make it possible for users to move between apps and encourage a more open economy; and
 
-2.  ## lower the barrier to entry for new apps to encourage adoption.
+2.  Lower the barrier to entry for new apps to encourage adoption.
 
 ## **Description of Improvements**
 
-### \#Incentivizing Meaningful Economic Activity
+### Incentivizing Meaningful Economic Activity
 
 While Active User Balance (AUB) is the primary method to calculate
 economic contribution we propose to cap the AUB count for each app based
@@ -121,9 +118,9 @@ gets a slightly higher reward.
 A sample cross section of these two apps is shown below, where App B’s
 users have a bigger ‘middle class’ compared to App A.
 
-| App A | 5   | 5   | 10  | 20  | 800 |
-| ----- | --- | --- | --- | --- | --- |
-| App B | 10  | 100 | 100 | 100 | 150 |
+| App A | 5   | 5   | 10    | 20  | 800 |
+| ----- | --- | --- | ----- | --- | --- |
+| App B | 10  | 100 | 100✅ | 100 | 150 |
 
 Rationale: App A and B may have similar AUB. However, app A has many
 users with small balances and a few ‘whales’ that push app its AUB
@@ -141,14 +138,14 @@ slightly higher reward.
 A sample cross section of these two apps is shown below, where App B’s
 users have a bigger ‘middle class’ compared to App A.
 
-| App A | 5   | 5   | 5   | 50  | 100 |
-| ----- | --- | --- | --- | --- | --- |
-| App B | 10  | 200 | 200 | 200 | 200 |
+| App A | 5   | 5   | 5     | 50  | 100 |
+| ----- | --- | --- | ----- | --- | --- |
+| App B | 10  | 200 | 200✅ | 200 | 200 |
 
 Rationale: App A and B may have similar AUB. However, app B has
 compelling spends that improves Kin’s _economic depth_.
 
-### Implementation
+## **Implementation**
 
 **The Current KRE 3.0**
 
@@ -180,30 +177,30 @@ of their AUB will be taken into account for the purposes of the
 calculation. The caps which may apply to an app’s AUB are defined
 formally below:
 
-AU cap = (AUapp / AUmax ) \* AUBcapped
+```
+AU cap = (AUapp / AUmax ) * AUBcapped
 
-Balance cap = (Balanceapp / Balancemax ) \* AUBcapped
+Balance cap = (BalanceApp / BalanceMax ) * AUBcapped
 
-Spend cap = (Spendapp / Spendmax ) \* AUBcapped
+Spend cap = (SpendApp / SpendMax ) * AUBcapped
+```
 
 Where:
 
-AUapp, Balanceapp and Spendapp are the Active Users, Median Balance and
-Median spend of a specific app respectively.
+`AUapp`, `BalanceApp` and `SpendApp` are the Active Users, Median Balance and Median spend of a specific app respectively.
 
-AUmax, Balancemax and Spendmax are the highest Active Users, highest
+`AUmax`, `BalanceMax` and `SpendMax` are the highest Active Users, highest
 Median Balance and highest Median spend attained by apps in that pay
 period.
 
-AUBcapped is the capped AUB of a specific app AUBcapped = MIN(100,000 \*
-AU, AUB).
+`AUBcapped` is the capped AUB of a specific app `AUBcapped = MIN(100,000 * AU, AUB)`.
 
 While the KRE 3.0 rewarded apps on a ranking of the capped AUB (which is
 the lesser of AUB and AU \* 100,000), the proposed update rewards apps
 based on their _KRE Score (eligible AUB to be counted)_ , effectively
 the lesser of: AU cap, Balance cap and Spend cap.
 
-Formally: **_KRE Score = MIN(AU cap, Balance cap, Spend cap)_**
+Formally: `KRE Score = MIN(AU cap, Balance cap, Spend cap)`
 
 Practically, this translates to an app with relatively higher AU,
 balances and spends receiving a higher reward than a similar app with
@@ -220,7 +217,7 @@ developer in such circumstances would need to focus on improving the
 quality of their spend opportunities in order to ‘break out’ and achieve
 a higher KRE Score.
 
-Advantages:
+### Advantages:
 
 -   At Day 1 implementation, the current app ranking is not overly
     affected and allows apps to start to adjust over time to improve
@@ -256,7 +253,7 @@ cap. This method allows us to tweak the ‘levers’ of the ecosystem
 going forward to draw out the in-app economic behaviour we want to
 further incentivize.
 
-### \#Changes to facilitate a more Open Economy
+## **Changes to facilitate a more Open Economy**
 
 With the Kin SDKs backup and restore system maturing, users find they
 can create an account in one app and restore it in another, or in one
@@ -281,7 +278,7 @@ came from App A, the rewards would be credited there. If both apps had
 transactions on another day, the AU, AUB, etc would be credited to both
 apps.
 
-### \#Changes to the Monopoly Clause
+## **Changes to the Monopoly Clause**
 
 The [<span class="underline">monopoly
 clause</span>](https://github.com/kinecosystem/rewards-engine/blob/b63e38c3fd0eb110f58c85340bd561ee8593af12/current-KRE.md#monopoly-clause)
@@ -291,14 +288,13 @@ apps to participate and compete on their level, we propose adding a
 minor curve to the payout, evening out the tail end of KRE rewards for
 small apps with \20 AU.
 
-The curve formula proposed for an app i is: ((2,999)\*Payout_i /
-3,000)+(MAX(Payout)\*(1/3,000))
+The curve formula proposed for an app i is: `((2,999)\*Payout_i / 3,000)+(MAX(Payout)\*(1/3,000))`
 
 Practically, this results in small apps getting an extra \~ 50K Kin as
 they start to experiment with rewards. This number would change based on
 total apps in the ecosystem.
 
-## Impact of Transitioning to KRE 3.1
+## **Impact of Transitioning to KRE 3.1**
 
 We have taken care to balance these proposals against the position
 current ecosystem apps have earned themselves in the ecosystem today
@@ -312,25 +308,25 @@ median balances and spends are actual values.
 Three middle sized apps with the lowest median spends have seen a
 decrease in Kin distribution that has moved to apps with larger spends.
 
-| **App** | **AU**  | **Capped AUB** | **Median Balance** | **Median Spend** | **KRE 4 Payout** | **Change**   |
-| ------- | ------- | -------------- | ------------------ | ---------------- | ---------------- | ------------ |
-| 1       | 196,798 | 18,457,217,255 | 402                | 24,719           | 148,449,999      | \+28,557,770 |
-| 2       | 60,568  | 6,056,800,000  | 19,935             | 3,748            | 69,842,377       | \+30,499,325 |
-| 3       | 40,116  | 2,282,889,498  | 5,241              | 5,745            | 30,666,297       | \+15,837,370 |
-| 4       | 13,338  | 10,216,976     | 1,819              | 24               | 194,944          | \+128,578    |
-| 5       | 79,754  | 7,975,400,000  | 601                | 3                | 158,206          | \-51,647,463 |
-| 6       | 1,869   | 186,900,000    | 1,988              | 2,055            | 115,941          | \-1,098,102  |
-| 7       | 26,005  | 1,646,690,009  | 19,730             | 1                | 61,300           | \-10,635,076 |
-| 8       | 1,820   | 25,395,773     | 111                | 11               | 58,167           | \-106,796    |
-| 9       | 18,107  | 1,810,700,000  | 298                | 1                | 55,982           | \-11,705,750 |
-| 10      | 205     | 20,500,000     | 67                 | 828              | 50,283           | \-82,879     |
-| 11      | 56      | 5,600,000      | 1,800              | 1,228            | 49,543           | \+13,167     |
-| 12      | 42      | 4,200,000      | 228                | 34               | 49,517           | \+22,235     |
-| 13      | 36      | 3,000,723      | 13,743             | 677              | 49,508           | \+30,016     |
-| 14      | 12      | 1,200,000      | 1,024              | 1,500            | 49,486           | \+41,691     |
-| 15      | 2       | 200,000        | 1                  | 3,200            | 49,483           | \+48,184     |
-| 16      | 1       | 100,000        | 48,118,139         | 538,176          | 49,483           | \+48,834     |
-| 17      | 1       | 90,492         | 10,000             | 1                | 49,483           | \+48,896     |
+| **App** |  **AU** | **Capped AUB** | **Median Balance** | **Median Spend** | **KRE 4 Payout** |     **Change** |
+| ------- | ------: | -------------: | -----------------: | ---------------: | ---------------: | -------------: |
+| 1       | 196,798 | 18,457,217,255 |                402 |           24,719 |      148,449,999 |   \+28,557,770 |
+| 2       |  60,568 |  6,056,800,000 |             19,935 |            3,748 |       69,842,377 |   \+30,499,325 |
+| 3       |  40,116 |  2,282,889,498 |              5,241 |            5,745 |       30,666,297 |   \+15,837,370 |
+| 4       |  13,338 |     10,216,976 |              1,819 |               24 |          194,944 |      \+128,578 |
+| 5       |  79,754 |  7,975,400,000 |                601 |                3 |          158,206 | 🔻\-51,647,463 |
+| 6       |   1,869 |    186,900,000 |              1,988 |            2,055 |          115,941 |    \-1,098,102 |
+| 7       |  26,005 |  1,646,690,009 |             19,730 |                1 |           61,300 | 🔻\-10,635,076 |
+| 8       |   1,820 |     25,395,773 |                111 |               11 |           58,167 |      \-106,796 |
+| 9       |  18,107 |  1,810,700,000 |                298 |                1 |           55,982 | 🔻\-11,705,750 |
+| 10      |     205 |     20,500,000 |                 67 |              828 |           50,283 |       \-82,879 |
+| 11      |      56 |      5,600,000 |              1,800 |            1,228 |           49,543 |       \+13,167 |
+| 12      |      42 |      4,200,000 |                228 |               34 |           49,517 |       \+22,235 |
+| 13      |      36 |      3,000,723 |             13,743 |              677 |           49,508 |       \+30,016 |
+| 14      |      12 |      1,200,000 |              1,024 |            1,500 |           49,486 |       \+41,691 |
+| 15      |       2 |        200,000 |                  1 |            3,200 |           49,483 |       \+48,184 |
+| 16      |       1 |        100,000 |         48,118,139 |          538,176 |           49,483 |       \+48,834 |
+| 17      |       1 |         90,492 |             10,000 |                1 |           49,483 |       \+48,896 |
 
 While most apps have had some increases in Kin disbursed, some (apps 5,
 7 and 9) have had a significant reduction. (Up to 50 MM Kin). This is
@@ -345,7 +341,7 @@ active on and from April 1, 2022</span>**. During the transition period,
 we recommend apps to begin to adjust the size of spends and balances
 held by their end-users.
 
-### Inflation 2022 - Changes to the Daily Payout
+## **Inflation 2022 - Changes to the Daily Payout**
 
 We have seen the value of Kin correlate to the amount of Kin inflated by
 the KRE. The USD value of Kin paid out to developers has continued to
@@ -359,7 +355,7 @@ proposals on the appropriateness of the proposed daily payout rate.
 <img  src="../images/kre3/payouts.png">
 </p>
 
-## Discussion
+## **Discussion**
 
 This proposal updates the reward formula from a ranking based on the
 capped AUB, to the formula: KRE Score = MIN(AU cap, Balance cap, Spend
