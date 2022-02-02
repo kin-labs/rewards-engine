@@ -287,7 +287,7 @@ apps to participate and compete on their level, we propose adding a
 minor curve to the payout, evening out the tail end of KRE rewards for
 small apps with \20 AU.
 
-The curve formula proposed for an app i is: `((2,999)\*Payout_i / 3,000)+(MAX(Payout)\*(1/3,000))`
+The curve formula proposed for an app i is: `(2,999 * Payout_i / 3,000) + (MAX(Payout) * (1 / 3,000))`
 
 Practically, this results in small apps getting an extra \~ 50K Kin as
 they start to experiment with rewards. This number would change based on
