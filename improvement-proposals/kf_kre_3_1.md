@@ -335,6 +335,12 @@ need to improve the size of spends in their apps. There will be ample
 time for apps to adjust and monitor their stats before the KRE 3.1 rewards
 are switched on.
 
+**Note:** The final payment would still be subject to the [monopoly clause](https://github.com/kinecosystem/rewards-engine/blob/b63e38c3fd0eb110f58c85340bd561ee8593af12/current-KRE.md#monopoly-clause), which states:
+
+> No single developer will receive more than 66.67% of the KRE payout for a single day and any developer that would have received more than 50% of the payout will have their payout adjusted. No two developers will receive more than 90% of the KRE's payout for a single day. In both cases, residual payouts will be redistributed proportionally to other developers.
+
+However, they are displayed pre-monopoly adjustment for apps to understand the impact each stat will have on their pre-monopoly earnings. With a larger ecosystem of more apps, it becomes less likely for a monopoly to develop.
+
 **<span class="underline">We propose to have the KRE 3.1 algorithm be
 active on and from April 1, 2022</span>**. During the transition period,
 we recommend apps to begin to adjust the size of spends and balances
