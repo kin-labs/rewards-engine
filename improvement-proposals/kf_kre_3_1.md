@@ -235,7 +235,7 @@ a higher KRE Score.
     engaged active users with low balances will provide more
     significant opportunities to take KRE market share away from
     existing apps (friendly competition). This is by altering the
-    ecosystem’s AU Max, BalanceMax and SpendMax factors where if they
+    ecosystem’s AUMax, BalanceMax and SpendMax factors where if they
     outperform existing apps on key metrics their own AUB growth may
     be unconstrained. Each cap can be weighted with a multiplier to
     apply relative importance to each one. We propose the following
