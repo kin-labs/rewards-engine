@@ -216,6 +216,8 @@ developer in such circumstances would need to focus on improving the
 quality of their spend opportunities in order to ‘break out’ and achieve
 a higher KRE Score.
 
+Note: `BalanceMax` and `SpendMax` are obtained from established apps, which have economically feasible numbers. While it is trivial for a 10 user app to game these numbers, it is virtually impossible for large app to do so. To get a feasible `BalanceMax` and `SpendMax`, apps are ranked in order of their `AU` and these numbers taken from the pareto minority (20%)
+
 ### Advantages:
 
 -   At Day 1 implementation, the current app ranking is not overly
@@ -235,7 +237,7 @@ a higher KRE Score.
     engaged active users with low balances will provide more
     significant opportunities to take KRE market share away from
     existing apps (friendly competition). This is by altering the
-    ecosystem’s AU Max, BalanceMax and SpendMax factors where if they
+    ecosystem’s AUMax, BalanceMax and SpendMax factors where if they
     outperform existing apps on key metrics their own AUB growth may
     be unconstrained. Each cap can be weighted with a multiplier to
     apply relative importance to each one. We propose the following
