@@ -1,4 +1,4 @@
-# KRE Valid Transaction Guidelines V3
+# KRE Valid Transaction Guidelines
 
 These Kin Rewards Engine Valid Transaction Guidelines (the "KRE Transaction Guidelines") are supplemental and subject to the [Kin Foundation Developer Guidelines](https://www.kin.org/developers/guidelines.pdf)
 
