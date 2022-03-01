@@ -5,7 +5,7 @@ The purpose of this document is to propose a complete new set of KRE rules.
 ## Proposed by:  Freedom-Kin
 
 ## Abstract:
-Before we can speak of a Kin **Ecosystem** we must first build a Kin **Economy** and to do so this proposal aims to go back to the basics of economic thinking. An ecosystem must be self-sustaining. If not then it is nothing more than an aquarium. As long as you feed your fish, maintain the temperature and circulate the water, the ecosystem will stay alive. Until now KRE has kept apps 'alive', but we need to think bigger. Apps should be able to stand on their own two feet and the KRE should help with that.
+Before we can speak of a Kin **Ecosystem** we must first build a Kin **Economy** and to do so this proposal aims to go **back to  basic economics**. An ecosystem must be self-sustaining. If not then it is nothing more than an aquarium. As long as you feed your fish, maintain the temperature and circulate the water, the ecosystem will stay alive. Until now KRE has kept apps 'alive', but we need to think bigger. Apps should be able to stand on their own two feet and the KRE should help with that.
 
 We aim for:
 1. Keeping inflation under controll
@@ -93,7 +93,7 @@ Developers Turnover = SPENDS.
 
 Every business has costs connected to it's turnover like give aways, presents etc.
 Apps have them too....we call them EARNS.
-A developer can let you EARN a little Kin as an incentive to spend more time in his store or attract more customers. The EARNs for the users are costs for the developer.
+A developer can let you EARN a little Kin as an incentive to spend more time in his app or to attract more users. The EARNs for the users are costs for the developer.
 
 His actual net turnover is the **SPENDS minus EARNS**, and is what we here call **net SPENDS**.
 
@@ -178,18 +178,18 @@ They know exactly how much they will get.
 Maybe it can be adjusted every 6 or 12 months.
 
 11. Every developer has the same opportunity as larger apps.
-There is no competition needed for KRE.
+There is no competition needed for the KRE.
 
 12. Since there is no AUB to defend there is no reason for an app to be an island in the system and hinder tourism.
 
-13. Additional benefit is that if we keep the KRE % lower than the taxes developers  have to pay to local governments it is not interesting for anyone to artificially raise their SPENDS with all kinds of tricks. If they do than they pay more taxes than  they get from KRE.
+13. Additional benefit is that if we keep the KRE % lower than the taxes developers  have to pay to local governments it is not interesting for anyone to artificially raise their SPENDS with all kinds of tricks. If they do than they pay more taxes than they get from the KRE.
 
 ## What if my app doesn't generate any SPENDS?
-Apps that don't generate spends can't compete for KRE.
+Apps that don't generate spends can't compete for the KRE.
 However, such an app might have value for the Kin Community.
 Think of a Wallet, Buy module or Tipping app, which might generate no SPENDS but is VERY useful for the community. 
 
-I suggest that for those apps a second fund will be created..
+I suggest that for those apps a second fund will be created.
 Apps can apply for a grant and a periodical amount of Kin for maintenance.
 It will be evaluated on a case by case base.
 
@@ -217,7 +217,7 @@ Demand will become larger because less free Kin will be given away by apps.
 03. Now the benefits of the **buy module** will be fully utilized.
 The user base will grow because they don't have to first go to exchanges to get Kin, which can be a very scary thing to do, but they can buy Kin right in the app where they want to spend it.
 
-04. Apps are benefiting from **two sources of income**, their own generated SPENDS and the KRE reward. Since developers have **no need to protect the AUB** from getting lower, they can come up with meaningful SPENDS.    
+04. Apps are benefiting from **two sources of income**, their own generated SPENDS **and** the KRE reward. Since developers have **no need to protect the AUB** from getting lower, they can come up with meaningful SPENDS.    
 
 05. No more need for 3 mandatory SPENDS per 30 days.
 
@@ -231,7 +231,7 @@ The user base will grow because they don't have to first go to exchanges to get 
 
 10. It will save the Kin Foundation a lot of unnecessary transaction fees if there is no need for 3 mandatory spends. 
 
-11. It's an easy to understand system. Just make a profit like you would in a regular store and get an extra bonus from the KRE.
+11. It's an easy to understand system. Just make a profit like you would in a regular business and get an extra bonus from the KRE.
 
 12. Users will still be able to EARN some Kin, but maybe not as much as before.
 The benefit is that **we will get inflation under control**. The price of Kin will go up and that is good for developers, investors and users. 
