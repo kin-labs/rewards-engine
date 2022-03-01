@@ -8,7 +8,7 @@ The purpose of this document is to propose a complete new set of KRE rules.
 Before we can speak of a Kin **Ecosystem** we must first build a Kin **Economy** and to do so this proposal aims to go **back to  basic economics**. An ecosystem must be self-sustaining. If not then it is nothing more than an aquarium. As long as you feed your fish, maintain the temperature and circulate the water, the ecosystem will stay alive. Until now KRE has kept apps 'alive', but we need to think bigger. Apps should be able to stand on their own two feet and the KRE should help with that.
 
 We aim for:
-1. Keeping inflation under controll
+1. Keeping inflation under control
 2. A simple and easy to understand KRE
 3. More income for developers
 4. Fair rewarding system
@@ -18,7 +18,7 @@ We aim for:
 8. Equal opportunities for all developers.
 
 
-So let's start with some concepts that we will use here.
+So let's start with some concepts that we will be using here.
 
 ## The Kin Economy
 The Kin Economy consists of all apps and users that use Kin. 
@@ -38,7 +38,7 @@ Within this proposal, the question of what a meaningful SPEND is will solve itse
 ## Inflation
 Inflation is the increase of money supply (Kin) without the underlying values increasing proportionally. 
 
-A common mistake is to think that inflation only occurs when products become more expensive. However, rising prices is the result of inflation, not the cause.
+A common mistake is to think that inflation only occurs when products become more expensive. However, rising prices is the **result** of inflation, not the **cause**.
 Central Banks would like us to believe that. This way they can print a lot of money. The consequences often come much later and only then they call it inflation. Actual inflation is any dollar printed that has no real value to count for in return.
 
 
@@ -70,7 +70,7 @@ We try to achieve the following:
 4. KRE rules should be simple to understand.
 
 
-## What makes this proposal differend?
+## What makes this proposal different?
 To begin with, please forget everything about the Active User Balance (AUB) as if it doesn't exist.
 
 **Why?**
@@ -147,10 +147,21 @@ KRE_Payout = MIN( KRE_Payout , Max_KRE )
 This is basically all the code needed.
 
 Of course the KRE% can be tweaked.
-In the first year a startup app could get 40%.
-Also, if an app only accepts Kin as payment and no other coins it could get 10% extra as a loyalty bonus. The Max_KRE however should not be raised.
+Like in the first year a startup app could get 40%.
+We propose that all apps be considered startups for 1 year, at implementation of this proposal, since they all need to adjust to generating SPENDS.
 
-We propose that with the implementation of this proposal all apps wil be seen as startups. They all need to adjust to generating more SPENDS.
+To qualify for KRE, each EARN and SPEND must be a direct transaction on the blockchain. EARNS should not be delayed.
+
+```
+Example:
+If app X has 25,000,000 Kin in SPENDS, and it let users EARN 5,000,000 Kin, 
+than its net SPENDS are 25,000,000 minus 5,000,000  = 20,000,000 Kin.
+
+Its reward would be 20,000,000 x 30% = 6,000,000 Kin
+If is was a startup, it would be  20,000,000 x 40% = 8,000,000 Kin (all apps should be considered startups the 1st year)
+These rewards are calculated for every single day.
+
+```
 
 ## Advantages
 01. It is a very simple and easy to implement code.
@@ -169,7 +180,7 @@ Kin will actually be bought, either on exchanges or with a buy module in the app
 
 07. There are no extra factors for a KRE score, so nothing else can be gamed.
 
-08. Developers rewards do not depend on the performance of other apps.
+08. Developer rewards do not depend on the performance of other apps.
 They know exactly how much they will get.
 
 09. We also solve the problem on how much we should raise the daily available KRE if more and more apps join the economy. This amount will adjust automatically to the number of apps in the economy.
@@ -217,26 +228,28 @@ Demand will become larger because less free Kin will be given away by apps.
 03. Now the benefits of the **buy module** will be fully utilized.
 The user base will grow because they don't have to first go to exchanges to get Kin, which can be a very scary thing to do, but they can buy Kin right in the app where they want to spend it.
 
-04. Apps are benefiting from **two sources of income**, their own generated SPENDS **and** the KRE reward. Since developers have **no need to protect the AUB** from getting lower, they can come up with meaningful SPENDS.    
+04. Apps are benefiting from **two sources of income**, their own generated SPENDS **and** the KRE reward. 
 
-05. No more need for 3 mandatory SPENDS per 30 days.
+05. Since developers have **no need to protect the AUB** from getting lower, they can come up with meaningful SPENDS.    
 
-06. No need for the developer to limit withdrawals to just one day a month. 
+06. No more need for 3 mandatory SPENDS per 30 days.
 
-07. No need to lock up user balances to e.g. 100,000 Kin.
+07. No need for the developer to limit withdrawals to just one day a month. 
 
-08. No need to hinder tourism because they don't need to protect their AUB.
+08. No need to lock up user balances to e.g. 100,000 Kin.
+
+09. No need to hinder tourism because they don't need to protect their AUB.
  
-09. No more irritation of users which leads to a **better user experience.** 
+10. No more irritation of users which leads to a **better user experience.** 
 
-10. It will save the Kin Foundation a lot of unnecessary transaction fees if there is no need for 3 mandatory spends. 
+11. It will save the Kin Foundation a lot of unnecessary transaction fees if there is no need for 3 mandatory spends. 
 
-11. It's an easy to understand system. Just make a profit like you would in a regular business and get an extra bonus from the KRE.
+12. It's an easy to understand system. Just make a profit like you would in a regular business and get an extra bonus from the KRE.
 
-12. Users will still be able to EARN some Kin, but maybe not as much as before.
+13. Users will still be able to EARN some Kin, but maybe not as much as before.
 The benefit is that **we will get inflation under control**. The price of Kin will go up and that is good for developers, investors and users. 
 
-13. More **meaningful SPEND opportunities** lead to more USERS, leads to more $$ value, leads to more profit for developers, leads to bigger and more apps.
+14. More **meaningful SPEND opportunities** lead to more USERS, leads to more $$ value, leads to more profit for developers, leads to bigger and more apps.
 The Kin Economy will grow.  Large apps with millions of users might get interested in joining and the snowball gets bigger.
 
 The Kin Economy will eventually become a **self sustaining ecosystem**.
