@@ -252,5 +252,5 @@ The benefit is that **we will get inflation under control**. The price of Kin wi
 14. More **meaningful SPEND opportunities** lead to more USERS, leads to more $$ value, leads to more profit for developers, leads to bigger and more apps.
 The Kin Economy will grow.  Large apps with millions of users might get interested in joining and the snowball gets bigger.
 
-The Kin Economy will eventually become a **self sustaining ecosystem**.
+The Kin Economy will eventually become a **self-sustaining ecosystem**.
 
