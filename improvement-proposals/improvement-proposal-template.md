@@ -1,12 +1,16 @@
 *This is a sample template for Kin improvement proposals. This template is only meant to serve as an initial guide, and should be customized as necessary. Text like this should be removed.*
 
+Make sure to create a discussion [here](https://github.com/kinecosystem/rewards-engine/discussions/new?category=kre-suggestions) with the same title as your proposal (see below) and link to it. This will make it easier for the community to reference your proposal and discuss its merits.
 # KRE Improvement Proposal
 The purpose of this document is to outline a proposed improvement to the existing KRE algorithm and/or valid spend guidelines. 
 
-*naming:*
-The proposal should have the format: KRE PROPOSAL: {Function}
+*Naming:*
+The proposal should be named based on its intention
 
-E.g. *KRE PROPOSAL: Reward apps based on balances and spend volumes*
+E.g.
+- *Reward apps based on balances and spend volumes*
+- *Increase incentivization for Active Users*
+- *Change definition of Active User Balance*
 
 ## Proposed by:
 *(optional: insert name or organization)*
