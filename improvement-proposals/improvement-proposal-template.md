@@ -4,8 +4,8 @@ Make sure to create a discussion [here](https://github.com/kinecosystem/rewards-
 # KRE Improvement Proposal
 The purpose of this document is to outline a proposed improvement to the existing KRE algorithm and/or valid spend guidelines. 
 
-*Naming:*
-The proposal should be named based on its intention
+*Title:*
+The proposal should be titled based on its intention
 
 E.g.
 - *Reward apps based on balances and spend volumes*
