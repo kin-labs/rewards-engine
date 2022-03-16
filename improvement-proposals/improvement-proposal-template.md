@@ -1,6 +1,6 @@
 *This is a sample template for Kin improvement proposals. This template is only meant to serve as an initial guide, and should be customized as necessary. Text like this should be removed.*
 
-Make sure to create a discussion [here](https://github.com/kinecosystem/rewards-engine/discussions/new?category=kre-suggestions) with the same title as your proposal (see below) and link to it. This will make it easier for the community to reference your proposal and discuss its merits.
+Notify the Kin Foundation developers to create a category [here](https://github.com/kinecosystem/rewards-engine/discussions) with the same title as your proposal. This will make it easier for the community to reference your proposal and discuss its merits.
 # KRE Improvement Proposal
 The purpose of this document is to outline a proposed improvement to the existing KRE algorithm and/or valid spend guidelines. 
 
