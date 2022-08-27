@@ -1,0 +1,59 @@
+I'd like to see staking of Kin more incentivized in the KRE. From the beginning, Ted and the team has been focused on incentivizing spending of Kin by consumers. I think this should still be a focus. But what we don't want as a focus is the selling of Kin by KRE app partners. I think this is one of the big forces that has been driving down the price of Kin since the KRE has been making significant payouts.
+
+When I say staking Kin, I really just mean that app developers who receive KRE payouts should be more incentivized to hold a substantial amount of Kin that they designate and that the KRE algorithm is tying into its payout calculations.
+
+There are a bunch of ways this could be done, but here's what I'm thinking:
+
+Each developer receiving KRE rewards gets one KRE-linked wallet. Those wallets are checked as the KRE rewards go out. The app with the most Kin staked in proportion to how much it would normally get paid out gets the most staking bonus, etc. For instance, a simple example: With only 3 KRE receiving apps: App Alpha would normally receive 1,000 Kin, and has 1,000 staked Kin, App Beta would normally receive 500 Kin, and has 2,000 staked Kin, App Gamma would normally receive 250 Kin, and has 0 staked Kin.
+
+Here would be the payout before, for simplicity's sake:
+
+Alpha: 1,000
+
+Beta: 500
+
+Gamma: 250
+
+Total Rewards: 1,750
+
+But in the new model 50% of the old rewards would be paid out like before, and 50% would be related to staking. So, on the left we have the old rewards + on the right we have the new staking bonus, and then the total:
+
+Alpha: 500 + 525 = 1,025
+
+Beta: 250 + 350 = 600
+
+Gamma: 125 + 0 = 125
+
+Total Rewards: 1,750
+
+The formula for the second part might need work (meaning I don't think it's accurate) and is pretty arbitrary right now, but here it is:
+
+KRE staking reward for a particular app = All KRE staking rewards available / (((percent of the regularly owed KRE that's staked by the highest proportionally staking app / percent of the regularly owed KRE that's staked by the second highest proportionally staking app) + 1) / 2) * KRE regular reward for a particular app / All KRE staking rewards available
+
+I don't know if that works out, but with some tweaking I think it can!
+
+High level description of the formula: total Kin staked from all app developers divided by the amount the KRE would otherwise owe... and from that you divvy out proportionally half of what the KRE would give based on staking to everyone.
+
+I think developer staking is a must so they aren't always selling like crazy. Essentially, if they are staking a sizable amount they should be able to double their KRE payout they would normally get, or even quadruple it if they are smaller.
+
+The bigger you in terms of the KRE rewards you would normally get means you have to stake more in order to get the bonus rewards, but yeah, as a small app more staking would give you more of a bonus. I think Ted was too focused on getting people to spend, but I think since apps are paid from the KRE they need to get paid to keep their Kin.... otherwise they tank the market.
+
+The goal here is to not only give developers an incentive to hold onto Kin that they receive from the KRE, but also to get them in a bit of competition with one another to buy more Kin and get more of it in their KRE linked wallet to get more of the KRE-payout rewards, while still giving new KRE developers, and small developers, the ability to get at least half of the KRE rewards they would otherwise get with staked Kin even with no Kin in their KRE linked wallet.
+
+Thoughts?
+
+**Update (8/27/2022, adding this and below): Here's how I think the KRE 4.0 should be changed:
+
+(The key to this algorithm (below) is the "4"s. This means KRE earners automatically get 1/4 of the normal KRE payout, and can earn the additional 3/4 through enough staking (or varying degrees of that 3/4 based on the ammount staked). We can change the 4 to a 2 so that one half is automatically earned and the other half is earned through staking, etc.
+
+Get rid of the "VA (the volatility adjustment)". This takes care of what that's supposed to solve for and a lot of volatility is out of the hands of an individual developer.
+
+The Payout[i] algorithm will become as follows (where letters in ("[]") square brackets denote subscript letter, N is the number of apps that will receive a reward, and Q[i] is the amount of Kin in the staking wallet for any given app):
+
+Payout[i] = (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout) / 4 *
+
+( ( (Q[i] / (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout))
+
+/
+
+(((Q[for the app with the 1st highest amount of absolute staked Kin in their own staking wallet]) / (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout){for 1st highest Kin staker}) + (Q[for 2nd highest Kin staker]) / (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout){for 2nd highest Kin staker}) + (Q[for 3rd highest Kin staker]) / (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout){for 3rd highest Kin staker}) + (Q[for 4th highest Kin staker]) / (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout){for 4th highest Kin staker}) + (Q[for 5th highest Kin staker]) / (f (ECS[i]/SUM[j]ECS[j]) * Dailypayout){for 5th highest Kin staker})) / 5) ) {if final value of the calculated value between the parentheses to the left is greater than one, then it is change to one} * 4) {if final value of the calculated value between the parentheses to the left is less than one, then it is change to one}
