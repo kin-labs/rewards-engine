@@ -1,0 +1,13 @@
+Ted had a simple suggestion to add a staking element to the KRE for developers who would otherwise receive KRE rewards. Here are some of Ted's words:
+
+"what if, as a final calculation, a developer’s payout is multiplied by (dev wallet Kin / dev lifetime KRE earnings)?
+
+So if a dev has sold 25% of their KRE earnings, such that their dev wallet only holds 75% the amount of Kin as their lifetime KRE earnings, then their payout would be multiplied by 0.75. Perhaps the other 25% could be burned.
+
+So every dev can sell, but how much you sell relative to how much you hold impacts your future payouts.
+
+Perhaps to make things fair every dev could start with a clean slate, so any selling and earning from the past won’t impact future payouts, only selling and earning going forward."
+
+Also, an idea I wrote to clarify but perhaps already baked into the above, which Ted agreed with: "it should be based on Lifetime earning going forward starting when this is put into place, since otherwise it's sprung on them."
+
+I hope the needed parties can agree to this or something similar to get it done. The goal is to stop the constant selling pressure put on Kin or at least moderate that a bit. Here's the full post from Reddit where this emerged: https://www.reddit.com/r/KinFoundation/comments/wxeolk/staking_and_the_kre/
