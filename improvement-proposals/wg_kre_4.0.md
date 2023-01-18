@@ -92,7 +92,7 @@ _Reasoning_
 
 This allows us to encourage a vibrant economy in apps, while keeping things simple. The KRE equation now becomes:
 
-![](RackMultipart20230118-1-gtjhze_html_cf03bf3213f7147c.png)
+![](images/../../images/kre4/payout.png)
 
 Where the numerator (top) is the NEA of the app multiplied by its AU. The denominator is the sum of other apps' NEA & AU. This equation is simple, includes all of our factors and is difficult to game.
 
